@@ -57,25 +57,28 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
         <Tabs variant="unstyled" size="sm">
           <TabList>
             <Tab
-              _selected={{ color: "white", bg: "blue.500" }}
+              _selected={{ color: "white", bg: "brand.900" }}
               border={"1px solid"}
               w="fit-content"
               rounded="lg"
-              px={"2"}
-              py={"1"}
+              px={"3"}
+              py={"2"}
               marginLeft={{ lg: 20, base: 10 }}
             >
-              <Text>Private Hospitals & Clinics</Text>
+              <Text fontWeight={"bold"}>Private Hospitals & Clinics</Text>
             </Tab>
             <Tab
+              _selected={{ color: "white", bg: "brand.900" }}
               border={"1px solid"}
               w="fit-content"
               rounded="lg"
-              px={"2"}
-              py={"1"}
+              px={"3"}
+              py={"2"}
               marginLeft={{ lg: 5, base: 10 }}
             >
-              <Text>Government & Private Medical Colleges</Text>
+              <Text fontWeight={"bold"}>
+                Government & Private Medical Colleges
+              </Text>
             </Tab>
           </TabList>
 

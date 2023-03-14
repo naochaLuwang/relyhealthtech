@@ -130,7 +130,7 @@ const Footer = () => {
             className={`
         
         ${
-          !isMobile && " h-96"
+          isMobile && " h-96"
         } "w-full h-0  lg:hidden px-4 transition-all overflow-y-scroll  ease-out duration-500 md:transition-none md:w-auto md:flex-grow md:flex md:items-center"`}
           >
             <ul
@@ -256,8 +256,8 @@ const Footer = () => {
             className={`
         
         ${
-          !isLink && " h-0"
-        } "w-full h-40  lg:hidden px-4 transition-all overflow-hidden  ease-out duration-500 md:transition-none md:w-auto md:flex-grow md:flex md:items-center"`}
+          isLink && " h-40"
+        } "w-full h-0  lg:hidden px-4 transition-all overflow-hidden  ease-out duration-500 md:transition-none md:w-auto md:flex-grow md:flex md:items-center"`}
           >
             <ul
               className={`${
@@ -381,34 +381,7 @@ const Footer = () => {
           </div>
 
           {/* <div className="flex ml-32">
-            <IconButton>
-              <a
-                href="https://www.linkedin.com/company/rely-healthcare-technologies/?originalSubdomain=in"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Facebook fontSize="large" className="text-primary" />
-              </a>
-            </IconButton>
-
-            <IconButton>
-              <a
-                href="https://www.linkedin.com/company/rely-healthcare-technologies/?originalSubdomain=in"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LinkedInIcon fontSize="large" className="text-primary" />
-              </a>
-            </IconButton>
-            <IconButton>
-              <a
-                href="https://www.youtube.com/channel/UCtjt3sziodrFqho6j5QaKyg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <YouTubeIcon fontSize="large" className="text-primary" />
-              </a>
-            </IconButton>
+           
           </div>
         </div> */}
         </div>
