@@ -13,7 +13,7 @@ import { groq } from "next-sanity";
 import { client } from "../../lib/sanity.client";
 import FlagShipProducts from "@/components/FlagShipProducts";
 import ClientsHome from "@/components/ClientsHome";
-import TestimonialsCard from "@/components/TestimonialsCard";
+
 import ClientTestimonial from "@/components/ClientTestimonial";
 
 const query = groq`

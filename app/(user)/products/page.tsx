@@ -3,6 +3,10 @@ import Image from "next/image";
 import { HIS, HRM, LIS, RIS, PIS, AIS, GIS, Doctor } from "../../../lib/data";
 import ProductCard from "@/components/ProductCard";
 
+export const metadata = {
+  title: "Products | Rely Healthcare Technologies",
+};
+
 const ProductsPage = () => {
   return (
     <div className="bg-backgroundColor  relative">
@@ -46,30 +50,30 @@ const ProductsPage = () => {
           <h1 className=" text-xl lg:text-3xl mb-12 lg:mb-0 font-bold text-textPrimary">
             Our Unmatched Products
           </h1>
-          <ProductCard data={HIS} />
+          <ProductCard {...HIS} />
         </div>
         {/* Rely LIS */}
         <div className=" max-w-7xl flex justify-end  px-8 pb-10  mx-auto space-y-5 lg:py-8">
-          <ProductCard data={LIS} />
+          <ProductCard {...LIS} />
         </div>
         {/* Rely HRM */}
         <div className=" max-w-7xl  px-8 pb-10  mx-auto space-y-4 lg:py-8">
-          <ProductCard data={HRM} />
+          <ProductCard {...HRM} />
         </div>
         <div className=" max-w-7xl flex justify-end  px-8 pb-10  mx-auto space-y-5 lg:py-8">
-          <ProductCard data={RIS} />
+          <ProductCard {...RIS} />
         </div>
         <div className=" max-w-7xl  px-8 pb-10  mx-auto space-y-4 lg:py-8">
-          <ProductCard data={PIS} />
+          <ProductCard {...PIS} />
         </div>
         <div className=" max-w-7xl flex justify-end  px-8 pb-10  mx-auto space-y-5 lg:py-8">
-          <ProductCard data={AIS} />
+          <ProductCard {...AIS} />
         </div>
         <div className=" max-w-7xl  px-8 pb-10  mx-auto space-y-4 lg:py-8">
-          <ProductCard data={GIS} />
+          <ProductCard {...GIS} />
         </div>
         <div className=" max-w-7xl flex justify-end  px-8 pb-10  mx-auto space-y-5 lg:py-8">
-          <ProductCard data={Doctor} />
+          <ProductCard {...Doctor} />
         </div>
       </div>
     </div>

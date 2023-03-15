@@ -52,3 +52,161 @@ export const Doctor = {
   description: `Rely Doctor is suitable for individual doctors to manage OPD appointments ( both online & Offline ), payment gateway, paperless prescriptions, online consultations etc. with ease. You can start online clinic without requiring any additional device, setup or training at just nominal cost.`,
   slug: "rely_doctor",
 };
+
+export const hospitalBasicFeatures = [
+  {
+    name: "OP and IP registration",
+  },
+  {
+    name: "OPD Billing",
+  },
+  {
+    name: "IPD Billing",
+  },
+  {
+    name: "Laboratory Management System (LIS)",
+  },
+  {
+    name: "Radiology management System (RIS)",
+  },
+  {
+    name: "Pharmacy Management System (PIS)",
+  },
+  {
+    name: "ADT and bed management",
+  },
+  {
+    name: "OT Management",
+  },
+  {
+    name: "Health checkup Packages",
+  },
+  {
+    name: "IPD Cashsheet",
+  },
+];
+
+export const hospitalHidden = [
+  {
+    name: "IPD Electronic Order",
+  },
+  {
+    name: "MIS reports",
+  },
+  {
+    name: "Graphical reports",
+  },
+  {
+    name: "Patient standard SMS/emails",
+  },
+  {
+    name: "Doctor appointments and management",
+  },
+  {
+    name: "OP consultation and triage",
+  },
+  {
+    name: "User management and master settings",
+  },
+  {
+    name: "Payments-Consultations, external doctor , outhouses",
+  },
+  {
+    name: "Vouchers Payment for Expenses",
+  },
+  {
+    name: "Standard SMS",
+  },
+];
+
+export const hospitalStandard = [
+  {
+    name: "Surgery Packages",
+  },
+  {
+    name: "Surgery scheduler & billing",
+  },
+  {
+    name: "Medical records-case file-tracking",
+  },
+  {
+    name: "Medical records - Documents upload",
+  },
+  {
+    name: "EMR",
+  },
+  {
+    name: "MRD Management",
+  },
+  {
+    name: "Insurance and Cashless Billing",
+  },
+  {
+    name: "Daycare / Emergency Management",
+  },
+  {
+    name: "Customized SMS",
+  },
+];
+export const hospitalStandardHidden = [
+  {
+    name: "Inventory Store Management System",
+  },
+  {
+    name: "Fixed assets and complaints tracking",
+  },
+];
+
+export const hospitalPremium = [
+  {
+    name: "Patient Portal",
+  },
+  {
+    name: "Feedback Management",
+  },
+  {
+    name: "Queue Management",
+  },
+  {
+    name: "Diet Ordering",
+  },
+  {
+    name: "CSSD",
+  },
+  {
+    name: "Patient satisfaction surveys",
+  },
+  {
+    name: "Accounting of consumables (OT, Services, Tests)",
+  },
+  {
+    name: "Incident Management",
+  },
+];
+
+export const premiumHidden = [
+  {
+    name: "Nurse Module",
+  },
+  {
+    name: "LIS Integration",
+  },
+  {
+    name: "PACS Server Integration",
+  },
+  {
+    name: "CMD App",
+  },
+  {
+    name: "Doctor App",
+  },
+  {
+    name: "Nurse App",
+  },
+  {
+    name: "Pharmacy App",
+  },
+  {
+    name: "Patient App",
+  },
+];
