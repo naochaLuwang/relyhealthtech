@@ -1,12 +1,12 @@
-"use client";
-
-import { Box, Text } from "@chakra-ui/react";
+import AboutBanner from "@/components/about/banner";
+import AboutHero from "@/components/about/hero";
 
 const AboutPage = () => {
   return (
-    <Box>
-      <Text>This is about Page</Text>
-    </Box>
+    <main>
+      <AboutHero />
+      <AboutBanner />
+    </main>
   );
 };
 

@@ -1,0 +1,120 @@
+import Image from "next/image";
+
+const Team = () => {
+  return (
+    <div className="bg-primary h-auto relative overflow-hidden">
+      {/* <div className="absolute -top-5 -right-10 h-40 w-40 rotate-45 border border-buttonColor py-2 px-2">
+        <div className="w-40 h-40 border border-buttonColor rotate-6"></div>
+      </div> */}
+      <div className="hidden lg:block absolute w-[800px] h-[418px] -right-32 top-40 -rotate-90">
+        <Image
+          src={"/circuitxl.svg"}
+          alt=""
+          layout="fill"
+          objectFit="contain"
+        />
+      </div>
+      {/* Founder and leadership team */}
+      <div className="lg:max-w-6xl max-w-sm flex items-center mx-auto    lg:pt-6 justify-center lg:pb-3">
+        <h1 className="lg:text-3xl text-xl font-bold text-center text-buttonColor mt-10">
+          Founder & Leadership Team
+        </h1>
+      </div>
+      {/* <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
+          {founder.map((member) => (
+            <TeamCard member={member} key={member.name} />
+          ))}
+        </div>
+      </div> */}
+
+      {/* Advisor team */}
+      {/* <div className="max-w-6xl flex items-center mx-auto mt-5  lg:mt-5 lg:pt-6 justify-center lg:pb-3">
+        <h1 className="lg:text-3xl text-xl font-bold text-buttonColor">
+          Advisors
+        </h1>
+      </div>
+      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
+          {advisors.map((member) => (
+            <TeamCard member={member} key={member.name} />
+          ))}
+        </div>
+      </div> */}
+
+      {/* Management team */}
+      {/* <div className="max-w-6xl flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
+        <h1 className="lg:text-3xl text-xl font-bold text-buttonColor">
+          Management Team
+        </h1>
+      </div>
+      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
+          {management.map((member) => (
+            <TeamCard member={member} key={member.name} />
+          ))}
+        </div>
+      </div> */}
+
+      {/* Technology team */}
+      {/* <div className="max-w-6xl flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
+        <h1 className="lg:text-3xl text-xl font-bold text-buttonColor">
+          Technology Team
+        </h1>
+      </div>
+      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
+          {technology.map((member) => (
+            <TeamCard member={member} key={member.name} />
+          ))}
+        </div>
+      </div> */}
+
+      {/* UI/UX Designer */}
+
+      {/* <div className="max-w-6xl flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
+        <h1 className="lg:text-3xl text-xl font-bold text-buttonColor">
+          Design Team
+        </h1>
+      </div>
+      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 pb-9 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
+          {designer.map((member) => (
+            <TeamCard member={member} key={member.name} />
+          ))}
+        </div>
+      </div> */}
+
+      {/* marketing and sales team */}
+
+      {/* <div className="max-w-6xl flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
+        <h1 className="lg:text-3xl text-xl font-bold text-buttonColor">
+          Marketing & Sales Team
+        </h1>
+      </div>
+      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
+          {marketing.map((member) => (
+            <TeamCard member={member} key={member.name} />
+          ))}
+        </div>
+      </div> */}
+
+      {/* Support & Implemntation Team */}
+      {/* <div className="lg:max-w-6xl max-w-sm flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
+        <h1 className="lg:text-3xl text-xl text-center font-bold text-buttonColor">
+          Support & Implementation Team
+        </h1>
+      </div>
+      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
+          {support.map((member) => (
+            <TeamCard member={member} key={member.name} />
+          ))}
+        </div>
+      </div> */}
+    </div>
+  );
+};
+
+export default Team;
