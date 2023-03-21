@@ -53,7 +53,15 @@ const ProductsPage = () => {
           <ProductCard {...HIS} />
         </div>
         {/* Rely LIS */}
-        <div className=" max-w-7xl flex justify-end  px-8 pb-10  mx-auto space-y-5 lg:py-8">
+        <div className=" max-w-7xl flex justify-between  px-8 pb-10  mx-auto space-y-5 lg:py-8">
+          <div>
+            <Image
+              src="/adicon/Laboratory-bro.svg"
+              height={400}
+              width={400}
+              alt="lis"
+            />
+          </div>
           <ProductCard {...LIS} />
         </div>
         {/* Rely HRM */}
@@ -63,8 +71,16 @@ const ProductsPage = () => {
         <div className=" max-w-7xl flex justify-end  px-8 pb-10  mx-auto space-y-5 lg:py-8">
           <ProductCard {...RIS} />
         </div>
-        <div className=" max-w-7xl  px-8 pb-10  mx-auto space-y-4 lg:py-8">
+        <div className=" max-w-7xl  px-8 pb-10  mx-auto space-y-4 lg:py-8 flex justify-between items-center">
           <ProductCard {...PIS} />
+          <div>
+            <Image
+              src="/adicon/Pharmacist-bro.svg"
+              height={400}
+              width={400}
+              alt="lis"
+            />
+          </div>
         </div>
         <div className=" max-w-7xl flex justify-end  px-8 pb-10  mx-auto space-y-5 lg:py-8">
           <ProductCard {...AIS} />

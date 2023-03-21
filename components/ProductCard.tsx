@@ -18,7 +18,7 @@ const ProductCard = ({ name, description, slug }: Products) => {
             {description}
           </p>
           <Link href={`/products/${slug}`}>
-            <div className="border-textGreen border-2 max-w-fit py-2 px-4 cursor-pointer duration-200 rease-in-out rounded-lg hover:bg-textGreen group ">
+            <div className=" mt-8 border-textGreen border-2 max-w-fit py-2 px-4 cursor-pointer duration-200 rease-in-out rounded-lg hover:bg-textGreen group ">
               <p className="font-bold text-textGreen lg:text-lg text-base group-hover:text-buttonColor">
                 Know more
               </p>

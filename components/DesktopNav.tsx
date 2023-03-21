@@ -47,12 +47,12 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: "Rely HIS",
         subLabel: "Hospital Information System",
-        href: "#",
+        href: "/products/rely_his_hospital_information_system",
       },
       {
-        label: "Rely PIS",
-        subLabel: "Pharmacy Information System",
-        href: "#",
+        label: "Rely LIS",
+        subLabel: "LIS Information System",
+        href: "/products/rely_lis_laboratory_information_system",
       },
     ],
   },
