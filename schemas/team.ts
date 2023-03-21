@@ -21,29 +21,24 @@ export default defineType({
     }),
     defineField({
       name: "department",
-      title: "Author",
+      title: "Department",
       type: "reference",
-      to: { type: "author" },
+      to: { type: "department" },
     }),
     defineField({
-      name: "mainImage",
-      title: "Main image",
+      name: "title",
+      title: "Title",
+      type: "string",
+    }),
+    defineField({
+      name: "profileImage",
+      title: "Profile image",
       type: "image",
       options: {
         hotspot: true,
       },
     }),
-    defineField({
-      name: "categories",
-      title: "Categories",
-      type: "array",
-      of: [{ type: "reference", to: { type: "category" } }],
-    }),
-    defineField({
-      name: "publishedAt",
-      title: "Published at",
-      type: "datetime",
-    }),
+
     defineField({
       name: "body",
       title: "Body",
@@ -53,13 +48,13 @@ export default defineType({
 
   preview: {
     select: {
-      title: "title",
-      author: "author.name",
+      title: "name",
+
       media: "mainImage",
     },
-    prepare(selection) {
-      const { author } = selection;
-      return { ...selection, subtitle: author && `by ${author}` };
-    },
+    // prepare(selection) {
+    //   const { author } = selection;
+    //   return { ...selection, subtitle: author && `by ${author}` };
+    // },
   },
 });

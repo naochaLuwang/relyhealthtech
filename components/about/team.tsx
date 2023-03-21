@@ -1,6 +1,15 @@
 import Image from "next/image";
+import TeamCard from "./teamCard";
 
-const Team = () => {
+const Team = ({
+  founder,
+  advisor,
+  management,
+  technology,
+  design,
+  marketing,
+  support,
+}: any) => {
   return (
     <div className="bg-primary h-auto relative overflow-hidden">
       {/* <div className="absolute -top-5 -right-10 h-40 w-40 rotate-45 border border-buttonColor py-2 px-2">
@@ -20,99 +29,99 @@ const Team = () => {
           Founder & Leadership Team
         </h1>
       </div>
-      {/* <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
-          {founder.map((member) => (
-            <TeamCard member={member} key={member.name} />
+          {founder.map((member: any) => (
+            <TeamCard {...member} key={member.name} />
           ))}
         </div>
-      </div> */}
+      </div>
 
       {/* Advisor team */}
-      {/* <div className="max-w-6xl flex items-center mx-auto mt-5  lg:mt-5 lg:pt-6 justify-center lg:pb-3">
+      <div className="max-w-6xl flex items-center mx-auto mt-5  lg:mt-5 lg:pt-6 justify-center lg:pb-3">
         <h1 className="lg:text-3xl text-xl font-bold text-buttonColor">
           Advisors
         </h1>
       </div>
       <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
-          {advisors.map((member) => (
-            <TeamCard member={member} key={member.name} />
+          {advisor.map((member: any) => (
+            <TeamCard {...member} key={member.name} />
           ))}
         </div>
-      </div> */}
+      </div>
 
       {/* Management team */}
-      {/* <div className="max-w-6xl flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
+      <div className="max-w-6xl flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
         <h1 className="lg:text-3xl text-xl font-bold text-buttonColor">
           Management Team
         </h1>
       </div>
       <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
-          {management.map((member) => (
-            <TeamCard member={member} key={member.name} />
+          {management.map((member: any) => (
+            <TeamCard {...member} key={member.name} />
           ))}
         </div>
-      </div> */}
+      </div>
 
       {/* Technology team */}
-      {/* <div className="max-w-6xl flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
+      <div className="max-w-6xl flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
         <h1 className="lg:text-3xl text-xl font-bold text-buttonColor">
           Technology Team
         </h1>
       </div>
       <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
-          {technology.map((member) => (
-            <TeamCard member={member} key={member.name} />
+          {technology.map((member: any) => (
+            <TeamCard {...member} key={member.name} />
           ))}
         </div>
-      </div> */}
+      </div>
 
       {/* UI/UX Designer */}
 
-      {/* <div className="max-w-6xl flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
+      <div className="max-w-6xl flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
         <h1 className="lg:text-3xl text-xl font-bold text-buttonColor">
           Design Team
         </h1>
       </div>
       <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 pb-9 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
-          {designer.map((member) => (
-            <TeamCard member={member} key={member.name} />
+          {design.map((member: any) => (
+            <TeamCard {...member} key={member.name} />
           ))}
         </div>
-      </div> */}
+      </div>
 
       {/* marketing and sales team */}
 
-      {/* <div className="max-w-6xl flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
+      <div className="max-w-6xl flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
         <h1 className="lg:text-3xl text-xl font-bold text-buttonColor">
           Marketing & Sales Team
         </h1>
       </div>
       <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
-          {marketing.map((member) => (
-            <TeamCard member={member} key={member.name} />
+          {marketing.map((member: any) => (
+            <TeamCard {...member} key={member.name} />
           ))}
         </div>
-      </div> */}
+      </div>
 
       {/* Support & Implemntation Team */}
-      {/* <div className="lg:max-w-6xl max-w-sm flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
+      <div className="lg:max-w-6xl max-w-sm flex items-center mx-auto  mt-5 lg:pt-6 justify-center lg:pb-3">
         <h1 className="lg:text-3xl text-xl text-center font-bold text-buttonColor">
           Support & Implementation Team
         </h1>
       </div>
       <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
-          {support.map((member) => (
-            <TeamCard member={member} key={member.name} />
+          {support.map((member: any) => (
+            <TeamCard {...member} key={member.name} />
           ))}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -24,7 +24,7 @@ const query = groq`
 `;
 
 const clientquery = groq`
-*[_type=='clients']{
+*[_type=='clients' ]{
   ...,
   
 } | order(_createdAt asc)

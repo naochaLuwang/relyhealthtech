@@ -9,21 +9,18 @@ type Base = {
   _updatedAt: string;
 };
 
-interface Post extends Base {
-  author: Author;
+interface Team extends Base {
+  department: Department;
   body: Block[];
-  categories: Category[];
-  mainImage: Image;
+
+  profileImage: Image;
   slug: Slug;
+  name: string;
   title: string;
-  description: string;
 }
 
-interface Author extends Base {
-  bio: Block[];
-  image: Image;
+interface department extends Base {
   name: string;
-  slug: Slug;
 }
 
 interface CarousalImage extends Base {
