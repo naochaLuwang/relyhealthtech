@@ -1,14 +1,19 @@
-import HRMBanner from "@/components/HRM/Banner";
-import HRMHero from "@/components/HRM/Hero";
+import ProductOverview from "@/components/HRM/ProductOverview";
+import Benefits from "@/components/HRM/Benefits";
+import Modules from "@/components/HRM/Modules";
 
 const HRMPage = () => {
   return (
     <div>
       <div className="bg-buttonColor h-full py-10">
         {/* hero body */}
-        <HRMHero />
-        {/* banner */}
-        <HRMBanner />
+        <ProductOverview />
+        <Benefits />
+        <div className="w-full h-auto px-20 pt-10 pb-10">
+          <h1 className="text-center text-3xl font-bold">MODULES</h1>
+
+          <Modules />
+        </div>
       </div>
     </div>
   );

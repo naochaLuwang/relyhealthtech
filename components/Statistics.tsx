@@ -22,13 +22,13 @@ interface StatsCardProps {
   title: string;
   stat: string;
   icon: ReactNode;
+  bgc: string;
 }
 function StatsCard(props: StatsCardProps) {
-  const { title, stat, icon } = props;
+  const { title, stat, icon, bgc } = props;
   return (
     <Stat
-      px={{ base: 2, md: 6 }}
-      py={"5"}
+      pl={2}
       shadow={"xl"}
       border={"1px solid"}
       borderColor={useColorModeValue("brand.900", "brand.900")}
@@ -43,11 +43,11 @@ function StatsCard(props: StatsCardProps) {
           {icon}
         </Box>
 
-        <Box pl={{ base: 2, md: 4 }}>
-          <StatLabel fontWeight={"medium"} isTruncated>
+        <Box pl={{ base: 2, md: 4 }} py={2} bg={bgc} w={"full"}>
+          <StatLabel fontWeight={"medium"} color={"white"} isTruncated>
             {title}
           </StatLabel>
-          <StatNumber fontSize={"2xl"} fontWeight={"medium"}>
+          <StatNumber fontSize={"2xl"} color={"white"} fontWeight={"medium"}>
             {stat}
           </StatNumber>
         </Box>
@@ -59,39 +59,36 @@ function StatsCard(props: StatsCardProps) {
 const Statistics = () => {
   return (
     <Box maxW="full" mx={"auto"} pt={8} px={{ base: 2, sm: 4, md: 12 }}>
-      {/* <chakra.h1
-        textAlign={"center"}
-        fontSize={"4xl"}
-        py={10}
-        fontWeight={"bold"}
-      >
-        Our company is expanding, you could be too.
-      </chakra.h1> */}
       <SimpleGrid columns={{ base: 2, md: 5 }} spacing={{ base: 5, lg: 6 }}>
         <StatsCard
           title={"Experience"}
           stat={"5+ Years"}
           icon={<BsPerson size={"3em"} />}
+          bgc={"blue.400"}
         />
         <StatsCard
           title={"Clients"}
           stat={"200+"}
           icon={<FiServer size={"3em"} />}
+          bgc={"green.400"}
         />
         <StatsCard
           title={"Admission Per Year"}
           stat={"250000+"}
           icon={<GoLocation size={"3em"} />}
+          bgc={"orange.400"}
         />
         <StatsCard
           title={"OPD Patients Per Year"}
           stat={"1250000+"}
           icon={<GoLocation size={"3em"} />}
+          bgc={"red.300"}
         />
         <StatsCard
           title={"User Per Month"}
           stat={"275000+"}
           icon={<GoLocation size={"3em"} />}
+          bgc={"purple.400"}
         />
       </SimpleGrid>
     </Box>

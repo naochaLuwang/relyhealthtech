@@ -12,12 +12,12 @@ const Benefits = () => {
       <div className="mt-10 flex justify-between">
         <div className="flex flex-col flex-1 pr-10">
           <div className="flex items-center space-x-2">
-            <Image
+            {/* <Image
               src="/adicon/integration.png"
               height={50}
               width={50}
               alt="integration"
-            />
+            /> */}
             <h1 className="text-2xl font-semibold text-textPrimary">
               Seamless Integration
             </h1>
@@ -47,12 +47,12 @@ const Benefits = () => {
         </div>
         <div className="flex flex-col flex-1">
           <div className="flex items-center space-x-2">
-            <Image
+            {/* <Image
               src="/adicon/order-history.png"
               height={40}
               width={40}
               alt="integration"
-            />
+            /> */}
             <h1 className="text-2xl font-semibold text-textPrimary">
               Store Historical Results
             </h1>
