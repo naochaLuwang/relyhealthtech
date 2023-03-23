@@ -1,27 +1,15 @@
 import {
   ChevronDownIcon,
   DevicePhoneMobileIcon,
-  ExclamationCircleIcon,
   MapPinIcon,
   EnvelopeIcon,
   PhoneIcon,
-  XCircleIcon,
 } from "@heroicons/react/24/solid";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
-// import Facebook from "@mui/icons-material/Facebook";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
-// import YouTubeIcon from "@mui/icons-material/YouTube";
-// // import { Dialog, Slide } from "@mui/material";
-// import IconButton from "@mui/material/IconButton";
 import Link from "next/link";
-// import Loader from "./Loader";
-// import Form from "./Form";
 
-// const Transition = React.forwardRef(function Transition(props, ref) {
-//   return <Slide direction="down" ref={ref} {...props} />;
-// });
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isLink, setIsLink] = useState(false);
@@ -47,7 +35,7 @@ const Footer = () => {
 
   const onSubmit = (data: any) => console.log(data);
   return (
-    <footer className="bg-black h-full bg-opacity-20">
+    <footer className="bg-primary h-full bg-opacity-20">
       <div className="flex flex-col  max-w-7xl mx-auto py-10 space-x-10">
         <div className="flex flex-col lg:flex-row">
           <div className="flex-col lg:w-[30rem] items-center  flex">
@@ -66,51 +54,51 @@ const Footer = () => {
             </h1>
 
             <div className="flex-col lg:space-y-4 space-y-3 lg:mt-5 mt-2 text-base text-primary">
-              <Link href="/products/rely_his_hospital_information_system">
+              <Link href="/products/rely_his">
                 <p className="cursor-pointer font-md text-base hover:font-bold  duration-200 translate-all ease-in-out">
                   Rely HIS (Hospital Information System)
                 </p>
               </Link>
-              <Link href="/products/rely_lis_laboratory_information_system">
+              <Link href="/products/rely_lis">
                 <p className="cursor-pointer font-md text-base hover:font-bold  duration-200 translate-all ease-in-out">
                   Rely LIS (Laboratory Information System)
                 </p>
               </Link>
-              <Link href="/products/rely_hrm_hr_payroll_management_system">
+              <Link href="/products/rely_hrm">
                 <p className="cursor-pointer font-md text-base hover:font-bold  duration-200 translate-all ease-in-out">
                   Rely HRM (HR & Payroll Management System)
                 </p>
               </Link>
-              <Link href="/products/rely_ris_radiology_information_system">
+              <Link href="/products/rely_ris">
                 <p className="cursor-pointer font-md text-base hover:font-bold  duration-200 translate-all ease-in-out">
                   Rely RIS (Radiology Information System)
                 </p>
               </Link>
-              <Link href="/products/rely_pis_pharmacy_information_system">
+              <Link href="/products/rely_pis">
                 <p className="cursor-pointer font-md text-base hover:font-bold  duration-200 translate-all ease-in-out">
                   Rely PIS (Pharmacy Information System)
                 </p>
               </Link>
-              <Link href="/products/rely_ais_asset_information_system">
+              <Link href="/products/rely_ais">
                 <p className="cursor-pointer font-md text-base hover:font-bold  duration-200 translate-all ease-in-out">
                   Rely AIS (Asset Information System)
                 </p>
               </Link>
-              <Link href="/products/rely_gis_general_store_information_system">
+              {/* <Link href="/products/rely_gis_general_store_information_system">
                 <p className="cursor-pointer font-md text-base hover:font-bold  duration-200 translate-all ease-in-out">
                   Rely GIS (General Store Information System)
                 </p>
-              </Link>
+              </Link> */}
               <Link href="/products/rely_ivf">
                 <p className="cursor-pointer font-md text-base hover:font-bold  duration-200 translate-all ease-in-out">
                   Rely IVF
                 </p>
               </Link>
-              <Link href="/products/rely_doctor">
+              {/* <Link href="/products/rely_doctor">
                 <p className="cursor-pointer font-md text-base hover:font-bold  duration-200 translate-all ease-in-out">
                   Rely Doctor
                 </p>
-              </Link>
+              </Link> */}
             </div>
           </div>
 

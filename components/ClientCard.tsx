@@ -12,7 +12,14 @@ const IMAGE =
 export default function ClientCard({ image }: Client) {
   return (
     <Center py={6}>
-      <Card maxW="sm" variant={"elevated"} rounded="2xl" boxShadow={"xl "}>
+      <Card
+        maxW="sm"
+        variant={"elevated"}
+        rounded="2xl"
+        boxShadow={"xl "}
+        border="1px solid"
+        borderColor={"gray.200"}
+      >
         <CardBody>
           <Image
             src={image}

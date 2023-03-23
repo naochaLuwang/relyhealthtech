@@ -1,8 +1,9 @@
-import ProductOverview from "@/components/IVF/ProductOverview";
-import Benefits from "@/components/IVF/Benefits";
-import Modules from "@/components/IVF/Modules";
+// @ts-ignore
+import Benefits from "@/components/HIS/Benefits";
+import Modules from "@/components/HIS/Modules";
+import ProductOverview from "@/components/HIS/ProductOverview";
 
-const IVFpage = () => {
+const HISpage = () => {
   return (
     <div>
       <ProductOverview />
@@ -16,4 +17,4 @@ const IVFpage = () => {
   );
 };
 
-export default IVFpage;
+export default HISpage;

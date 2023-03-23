@@ -34,139 +34,89 @@ const Modules = () => {
             }}
           >
             <Box as="span" flex="1" textAlign="left">
-              Patient Administration
+              Front Office / Billing
             </Box>
             <AccordionIcon />
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
           <UnorderedList pl={4}>
-            <ListItem>Patient Registration</ListItem>
-            <ListItem>Appoinment</ListItem>
-            <ListItem>Patient Sticker</ListItem>
-          </UnorderedList>
-        </AccordionPanel>
-      </AccordionItem>
-
-      <AccordionItem>
-        <h2>
-          <AccordionButton
-            _expanded={{
-              bg: "purple.50",
-              color: "purple.900",
-              fontWeight: "bold",
-            }}
-          >
-            <Box as="span" flex="1" textAlign="left">
-              Billing
-            </Box>
-            <AccordionIcon />
-          </AccordionButton>
-        </h2>
-        <AccordionPanel pb={4}>
-          <UnorderedList pl={4}>
-            <ListItem>Cash</ListItem>
-            <ListItem>Credit</ListItem>
-          </UnorderedList>
-        </AccordionPanel>
-      </AccordionItem>
-
-      <AccordionItem>
-        <h2>
-          <AccordionButton
-            _expanded={{
-              bg: "purple.50",
-              color: "purple.900",
-              fontWeight: "bold",
-            }}
-          >
-            <Box as="span" flex="1" textAlign="left">
-              Phlebotomy
-            </Box>
-            <AccordionIcon />
-          </AccordionButton>
-        </h2>
-        <AccordionPanel pb={4}>
-          <UnorderedList pl={4}>
+            <ListItem>Registration</ListItem>
+            <ListItem>Appoinment Management</ListItem>
             <ListItem>Queue Management</ListItem>
-            <ListItem>Sample Collection & ID Generation</ListItem>
-            <ListItem>Barcode Label Printing</ListItem>
-            <ListItem>Sample Dispatch</ListItem>
-          </UnorderedList>
-        </AccordionPanel>
-      </AccordionItem>
-      <AccordionItem>
-        <h2>
-          <AccordionButton
-            _expanded={{
-              bg: "purple.50",
-              color: "purple.900",
-              fontWeight: "bold",
-            }}
-          >
-            <Box as="span" flex="1" textAlign="left">
-              LIS
-            </Box>
-            <AccordionIcon />
-          </AccordionButton>
-        </h2>
-        <AccordionPanel pb={4}>
-          <UnorderedList pl={4}>
-            <ListItem>Sample Acknowledgement / Rejection</ListItem>
-            <ListItem>Result Entry / Lab result from devices</ListItem>
-            <ListItem>Report Finalization</ListItem>
-            <ListItem>Report Printing</ListItem>
-            <ListItem>Report Dispatch</ListItem>
-            <ListItem>LIS Dashboard</ListItem>
-          </UnorderedList>
-        </AccordionPanel>
-      </AccordionItem>
-      <AccordionItem>
-        <h2>
-          <AccordionButton
-            _expanded={{
-              bg: "purple.50",
-              color: "purple.900",
-              fontWeight: "bold",
-            }}
-          >
-            <Box as="span" flex="1" textAlign="left">
-              Reports
-            </Box>
-            <AccordionIcon />
-          </AccordionButton>
-        </h2>
-        <AccordionPanel pb={4}>
-          <UnorderedList pl={4}>
-            <ListItem>Daily Collection Report</ListItem>
-            <ListItem>Doctor Commission Report</ListItem>
-            <ListItem>MIS Reports</ListItem>
-            <ListItem>Graphical Reports</ListItem>
-          </UnorderedList>
-        </AccordionPanel>
-      </AccordionItem>
-      <AccordionItem>
-        <h2>
-          <AccordionButton
-            _expanded={{
-              bg: "purple.50",
-              color: "purple.900",
-              fontWeight: "bold",
-            }}
-          >
-            <Box as="span" flex="1" textAlign="left">
-              Administration
-            </Box>
-            <AccordionIcon />
-          </AccordionButton>
-        </h2>
-        <AccordionPanel pb={4}>
-          <UnorderedList pl={4}>
-            <ListItem>Role Wise User Management</ListItem>
-            <ListItem>Rate Master</ListItem>
-            <ListItem>LIS Setup</ListItem>
+            <ListItem>IP/Daycare Patient Admission</ListItem>
+            <ListItem>OP/IP/Daycare Billing</ListItem>
+            <ListItem>Cashless/TPA Billing</ListItem>
             <ListItem>Package Management</ListItem>
-            <ListItem>Software Management</ListItem>
+            <ListItem>Billing Charge Master</ListItem>
+          </UnorderedList>
+        </AccordionPanel>
+      </AccordionItem>
+
+      <AccordionItem>
+        <h2>
+          <AccordionButton
+            _expanded={{
+              bg: "purple.50",
+              color: "purple.900",
+              fontWeight: "bold",
+            }}
+          >
+            <Box as="span" flex="1" textAlign="left">
+              Clinical Modules
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+        </h2>
+        <AccordionPanel pb={4}>
+          <UnorderedList pl={4}>
+            <ListItem>Electronic Medical Report (EMR)</ListItem>
+            <ListItem>Laboratory Information System</ListItem>
+            <ListItem>Radiology Information System</ListItem>
+            <ListItem>OP Clinical Management</ListItem>
+            <ListItem>IP Clinical Management</ListItem>
+            <ListItem>Discharge Management</ListItem>
+            <ListItem>Ward/Bed Management</ListItem>
+            <ListItem>OT Management</ListItem>
+            <ListItem>Master Health Checkup Management</ListItem>
+            <ListItem>Computerized Patient Order</ListItem>
+            <ListItem>Antenatal Service Management</ListItem>
+            <ListItem>Accident & Emergency Management</ListItem>
+            <ListItem>Medical Record Department (MRD)</ListItem>
+          </UnorderedList>
+        </AccordionPanel>
+      </AccordionItem>
+
+      <AccordionItem>
+        <h2>
+          <AccordionButton
+            _expanded={{
+              bg: "purple.50",
+              color: "purple.900",
+              fontWeight: "bold",
+            }}
+          >
+            <Box as="span" flex="1" textAlign="left">
+              Ancillary Modules
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+        </h2>
+        <AccordionPanel pb={4}>
+          <UnorderedList pl={4}>
+            <ListItem>Inventory Management Modules</ListItem>
+            <ListItem>Purchase Management</ListItem>
+            <ListItem>Store Management</ListItem>
+            <ListItem>ncident Management</ListItem>
+            <ListItem>Drug Stores & Pharmacy Management</ListItem>
+            <ListItem>Accounting Management</ListItem>
+            <ListItem>Equipment Maintenance</ListItem>
+            <ListItem>Doctor Payment Management</ListItem>
+            <ListItem>Linen & Laundry Management</ListItem>
+            <ListItem>Feedback Management</ListItem>
+            <ListItem>Cashless/TPA Accounting Management</ListItem>
+            <ListItem>Blood Bank</ListItem>
+            <ListItem>E-Prescription</ListItem>
           </UnorderedList>
         </AccordionPanel>
       </AccordionItem>
@@ -180,17 +130,67 @@ const Modules = () => {
             }}
           >
             <Box as="span" flex="1" textAlign="left">
-              Interfaces & Integration
+              MIS Modules
             </Box>
             <AccordionIcon />
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
           <UnorderedList pl={4}>
-            <ListItem>Interfaces (Unidirectional & Biirectional)</ListItem>
-            <ListItem>Patient Portal / Result uploaded on website</ListItem>
-            <ListItem>e-mails</ListItem>
-            <ListItem>SMS for various events</ListItem>
+            <ListItem>Dashboard</ListItem>
+            <ListItem>Revenue Reports</ListItem>
+            <ListItem>Hospital Performance Reports</ListItem>
+            <ListItem>Department Wise MIS Reports</ListItem>
+            <ListItem>Inventory Reports</ListItem>
+            <ListItem>Pharmacy Reports</ListItem>
+          </UnorderedList>
+        </AccordionPanel>
+      </AccordionItem>
+      <AccordionItem>
+        <h2>
+          <AccordionButton
+            _expanded={{
+              bg: "purple.50",
+              color: "purple.900",
+              fontWeight: "bold",
+            }}
+          >
+            <Box as="span" flex="1" textAlign="left">
+              Mobile App
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+        </h2>
+        <AccordionPanel pb={4}>
+          <UnorderedList pl={4}>
+            <ListItem>Rely App for CMD</ListItem>
+            <ListItem>Rely App for Doctor</ListItem>
+            <ListItem>Rely App for Nurse</ListItem>
+            <ListItem>Rely App for Patients</ListItem>
+          </UnorderedList>
+        </AccordionPanel>
+      </AccordionItem>
+
+      <AccordionItem>
+        <h2>
+          <AccordionButton
+            _expanded={{
+              bg: "purple.50",
+              color: "purple.900",
+              fontWeight: "bold",
+            }}
+          >
+            <Box as="span" flex="1" textAlign="left">
+              Dietary Modules
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+        </h2>
+        <AccordionPanel pb={4}>
+          <UnorderedList pl={4}>
+            <ListItem>Retail Diet Billing</ListItem>
+            <ListItem>OP/IP Diet Billing</ListItem>
+            <ListItem>Dietary Order Management</ListItem>
           </UnorderedList>
         </AccordionPanel>
       </AccordionItem>

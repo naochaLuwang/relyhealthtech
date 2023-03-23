@@ -7,7 +7,7 @@ interface BreadCrumb {
 
 const ProductHeader = ({ name, product }: BreadCrumb) => {
   return (
-    <div className="w-full h-40 bg-brandColor flex items-center px-20">
+    <div className="w-full lg:h-40 h-32 bg-brandColor flex items-center lg:px-20 px-10">
       <div className="flex flex-col">
         <h2 className="text-4xl font-semibold text-buttonColor">{name}</h2>
 

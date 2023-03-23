@@ -7,52 +7,32 @@ import {
 
 import { FaFacebookF, FaTwitter, FaLinkedin, FaMobile } from "react-icons/fa";
 
-import Image from "next/image";
-
-import { useForm } from "react-hook-form";
-// import toast from "react-hot-toast";
-// import { Toaster } from "react-hot-toast";
-// import axios from "axios";
+import { useState } from "react";
+import { Message } from "@/typings";
+import postMessage from "@/lib/postMessage";
 
 const ContactForm = () => {
-  const {
-    register,
-    handleSubmit,
-    resetField,
+  const [formData, setFormData] = useState<Message>({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+  });
 
-    formState: { errors },
-  } = useForm();
+  const handleInputChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
+  };
 
-  //   const onSubmit = async ({
-  //     firstName,
-  //     lastName,
-  //     email,
-  //     phone,
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    postMessage(formData);
+  };
 
-  //     message,
-  //   }) => {
-  //     try {
-  //       const data = await axios.post("/api/message", {
-  //         firstName,
-  //         lastName,
-  //         email,
-  //         phone,
-
-  //         message,
-  //       });
-
-  //       resetField("firstName");
-  //       resetField("lastName");
-  //       resetField("email");
-  //       resetField("phone");
-
-  //       resetField("message");
-
-  //       toast("Message saved successfully", {});
-  //     } catch (error) {
-  //       toast("Failed to send message");
-  //     }
-  //   };
   return (
     <>
       <div className="bg-backgroundColor h-auto">
@@ -108,7 +88,7 @@ const ContactForm = () => {
                 </div>
               </div>
               <div className="p-8 max-w-sm lg:max-w-4xl">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className=" flex-col flex lg:flex-row  lg:space-x-5 space-y-5 lg:space-y-0 ">
                     <div className="flex-col flex space-y-2">
                       <div className="flex space-x-2 ">
@@ -121,9 +101,11 @@ const ContactForm = () => {
                         <p className="text-lg text-textPrimary font-bold">*</p>
                       </div>
                       <input
-                        {...register("firstName", { required: true })}
+                        name="firstName"
                         type="text"
                         className="form-input rounded-md w-80  shadow-sm"
+                        value={formData.firstName}
+                        onChange={handleInputChange}
                       />
                     </div>
                     <div className="flex-col flex space-y-2">
@@ -137,7 +119,9 @@ const ContactForm = () => {
                         <p className="text-lg text-textPrimary font-bold">*</p>
                       </div>
                       <input
-                        {...register("lastName", { required: true })}
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleInputChange}
                         type="text"
                         className="form-input rounded-md w-80 shadow-sm"
                       />
@@ -155,7 +139,9 @@ const ContactForm = () => {
                         <p className="text-lg text-textPrimary font-bold">*</p>
                       </div>
                       <input
-                        {...register("email", { required: true })}
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
                         type="text"
                         className="form-input rounded-md w-80 shadow-sm"
                       />
@@ -171,7 +157,9 @@ const ContactForm = () => {
                         <p className="text-lg text-textPrimary font-bold">*</p>
                       </div>
                       <input
-                        {...register("phone", { required: true })}
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleInputChange}
                         type="text"
                         className="form-input rounded-md w-80 shadow-sm"
                       />

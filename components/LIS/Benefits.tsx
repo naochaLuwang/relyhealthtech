@@ -3,15 +3,15 @@ import React from "react";
 
 const Benefits = () => {
   return (
-    <div className="max-w-full h-auto bg-bgPrimary px-20 py-20">
+    <div className="max-w-full h-auto bg-bgPrimary lg:px-20 px-10 py-20">
       <div className="flex flex-col ">
         <h1>BENEFITS</h1>
         <h1 className="text-3xl font-bold">Key Benefits</h1>
       </div>
 
-      <div className="mt-10 flex justify-between">
-        <div className="flex flex-col flex-1 pr-10">
-          <div className="flex items-center space-x-2">
+      <div className="grid lg:grid-cols-2 grid-cols-1 mt-10 gap-6">
+        <div className="flex flex-col flex-1 ">
+          <div className="">
             {/* <Image
               src="/adicon/integration.png"
               height={50}
@@ -45,8 +45,8 @@ const Benefits = () => {
             reduces the time it takes to complete tasks.
           </p>
         </div>
-        <div className="flex flex-col flex-1">
-          <div className="flex items-center space-x-2">
+        <div className="flex flex-col">
+          <div className="flex items-center ">
             {/* <Image
               src="/adicon/order-history.png"
               height={40}

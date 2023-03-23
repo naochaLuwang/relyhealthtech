@@ -19,6 +19,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import DesktopNav from "./DesktopNav";
 // @ts-ignore
 import MobileNav from "./MobileNav";
+import Link from "next/link";
 
 const Header = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -63,7 +64,9 @@ const Header = () => {
           </Text> */}
 
           <Box>
-            <Image src="/logo.jpg" alt="logo" h={10} />
+            <Link href="/">
+              <Image src="/logo.jpg" alt="logo" h={10} />
+            </Link>
           </Box>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>

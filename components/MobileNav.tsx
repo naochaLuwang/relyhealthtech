@@ -100,41 +100,59 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Inspiration",
+    label: "About Us",
+    href: "/about",
+  },
+  {
+    label: "Product",
+    href: "#",
     children: [
       {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "#",
+        label: "Rely HIS",
+        subLabel: "Hospital Information System",
+        href: "/products/rely_his",
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "#",
+        label: "Rely LIS",
+        subLabel: "Laboratory Information System",
+        href: "/products/rely_lis",
+      },
+      {
+        label: "Rely PIS",
+        subLabel: "Pharmacy Information System",
+        href: "/products/rely_pis",
+      },
+      {
+        label: "Rely RIS",
+        subLabel: "Radiology Information System",
+        href: "/products/rely_ris",
+      },
+      {
+        label: "Rely HRM",
+        subLabel: "HR Management System",
+        href: "/products/rely_hrm",
+      },
+      {
+        label: "Rely IVF",
+        subLabel: "Infertility Management System",
+        href: "/products/rely_ivf",
       },
     ],
   },
   {
-    label: "Find Work",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
-    ],
-  },
-  {
-    label: "Learn Design",
+    label: "Services",
     href: "#",
   },
   {
-    label: "Hire Designers",
+    label: "Client",
+    href: "/clients",
+  },
+  {
+    label: "Contact Us",
+    href: "/contact",
+  },
+  {
+    label: "People",
     href: "#",
   },
 ];

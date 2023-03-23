@@ -42,13 +42,9 @@ const HomePage = async () => {
       <Statistics />
       <Hero />
       <FlagShipProducts />
-      {/* our major applications */}
-      {/* testimonials */}
-      {/* <ClientTestimonial /> */}
 
-      {/* happiest client carousal */}
       <ClientsHome PRIVATE_CLIENTS={privateclients} />
-      {/* <TestimonialsCard /> */}
+
       <ClientTestimonial />
     </Box>
   );

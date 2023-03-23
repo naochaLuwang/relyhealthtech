@@ -6,6 +6,8 @@ import department from "./department";
 import carousalmage from "./carousalmage";
 import clients from "./clients";
 import location from "./location";
+import clientCategory from "./clientCategory";
+import message from "./message";
 
 export const schemaTypes = [
   team,
@@ -15,4 +17,6 @@ export const schemaTypes = [
   carousalmage,
   clients,
   location,
+  clientCategory,
+  message,
 ];

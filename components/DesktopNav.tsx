@@ -21,21 +21,6 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
-  //   {
-  //     label: "Inspiration",
-  //     children: [
-  //       {
-  //         label: "Explore Design Work",
-  //         subLabel: "Trending Design to inspire you",
-  //         href: "#",
-  //       },
-  //       {
-  //         label: "New & Noteworthy",
-  //         subLabel: "Up-and-coming Designers",
-  //         href: "#",
-  //       },
-  //     ],
-  //   },
   {
     label: "About Us",
     href: "/about",
@@ -47,17 +32,17 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: "Rely HIS",
         subLabel: "Hospital Information System",
-        href: "/products/rely_his_hospital_information_system",
+        href: "/products/rely_his",
       },
       {
         label: "Rely LIS",
         subLabel: "Laboratory Information System",
-        href: "/products/rely_lis_laboratory_information_system",
+        href: "/products/rely_lis",
       },
       {
         label: "Rely PIS",
         subLabel: "Pharmacy Information System",
-        href: "/products/rely_pis_pharmacy_information_system",
+        href: "/products/rely_pis",
       },
       {
         label: "Rely RIS",
@@ -67,7 +52,7 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: "Rely HRM",
         subLabel: "HR Management System",
-        href: "/products/rely_hrm_hr_payroll_management_system",
+        href: "/products/rely_hrm",
       },
       {
         label: "Rely IVF",
@@ -151,13 +136,13 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
+      _hover={{ bg: useColorModeValue("purple.50", "gray.900") }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
             transition={"all .3s ease"}
-            _groupHover={{ color: "pink.400" }}
+            _groupHover={{ color: "purple.400" }}
             fontWeight={500}
           >
             {label}

@@ -3,8 +3,8 @@ import React from "react";
 
 const ProductOverview = () => {
   return (
-    <div className="w-full  px-20 py-20">
-      <div className="flex items-center h-96 justify-between">
+    <div className="w-full  lg:px-20 lg:py-20 px-8 py-10">
+      <div className="flex items-center flex-col lg:flex-row lg:h-96 h-auto justify-between">
         <div className="flex flex-col max-w-2xl">
           <div>
             <h1 className="text-lg">Prodct Overview</h1>

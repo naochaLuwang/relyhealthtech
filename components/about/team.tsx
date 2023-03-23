@@ -29,7 +29,7 @@ const Team = ({
           Founder & Leadership Team
         </h1>
       </div>
-      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+      <div className="px-20 lg:px-0 max-w-6xl mx-auto mt-7 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
           {founder.map((member: any) => (
             <TeamCard {...member} key={member.name} />
@@ -43,7 +43,7 @@ const Team = ({
           Advisors
         </h1>
       </div>
-      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+      <div className="px-20 lg:px-0 max-w-6xl mx-auto mt-7 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
           {advisor.map((member: any) => (
             <TeamCard {...member} key={member.name} />
@@ -57,7 +57,7 @@ const Team = ({
           Management Team
         </h1>
       </div>
-      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+      <div className="px-20 lg:px-0 max-w-6xl mx-auto mt-7 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
           {management.map((member: any) => (
             <TeamCard {...member} key={member.name} />
@@ -71,7 +71,7 @@ const Team = ({
           Technology Team
         </h1>
       </div>
-      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+      <div className="px-20 lg:px-0 max-w-6xl mx-auto mt-7 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
           {technology.map((member: any) => (
             <TeamCard {...member} key={member.name} />
@@ -86,7 +86,7 @@ const Team = ({
           Design Team
         </h1>
       </div>
-      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 pb-9 ">
+      <div className="px-20 lg:px-0 max-w-6xl mx-auto mt-7 pb-9 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
           {design.map((member: any) => (
             <TeamCard {...member} key={member.name} />
@@ -101,7 +101,7 @@ const Team = ({
           Marketing & Sales Team
         </h1>
       </div>
-      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+      <div className="px-20 lg:px-0 max-w-6xl mx-auto mt-7 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
           {marketing.map((member: any) => (
             <TeamCard {...member} key={member.name} />
@@ -115,7 +115,7 @@ const Team = ({
           Support & Implementation Team
         </h1>
       </div>
-      <div className="px-4 lg:px-0 max-w-6xl mx-auto mt-7 ">
+      <div className="px-20 lg:px-0 max-w-6xl mx-auto mt-7 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6  ">
           {support.map((member: any) => (
             <TeamCard {...member} key={member.name} />

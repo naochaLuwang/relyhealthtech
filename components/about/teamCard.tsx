@@ -13,7 +13,7 @@ const TeamCard = ({ name, title, profileImage }: Team) => {
   return (
     <Link href={`/about/view_profile/`}>
       <div className="flex flex-col   shadow-lg bg-buttonColor bg-opacity-10  py-4 lg:py-10 px-8 items-center rounded-xl cursor-pointer transition-transform duration-200 ease-in-out hover:scale-105">
-        <div className="lg:h-32 lg:w-32 w-24 h-24 border-4 border-buttonColor rounded-full  border-opacity-80 shadow-md  relative ">
+        <div className="lg:h-32 lg:w-32 w-16 h-16 border-4 border-buttonColor rounded-full  border-opacity-80 shadow-md  relative ">
           <Image
             className="rounded-full"
             src={urlFor(profileImage).url()}

@@ -18,7 +18,7 @@ const Modules = () => {
     <Accordion
       defaultIndex={[0]}
       allowToggle
-      w="2xl"
+      w={{ lg: "2xl", sm: "base" }}
       borderX="1px solid"
       borderColor={"gray.500"}
       rounded={"md"}
