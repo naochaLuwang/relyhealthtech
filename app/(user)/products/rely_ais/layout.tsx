@@ -1,8 +1,8 @@
 import ProductHeader from "@/components/ProductHeader";
 
-export default function HRMLayout({ children }: { children: React.ReactNode }) {
+export default function AISLayout({ children }: { children: React.ReactNode }) {
   return (
-    <section className="pb-20">
+    <section>
       <ProductHeader name="Rely AIS" product="Rely AIS" />
 
       {children}

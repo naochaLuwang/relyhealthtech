@@ -85,4 +85,5 @@ interface Message {
   lastName: string;
   email: string;
   phone: string;
+  message: string;
 }

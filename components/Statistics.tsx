@@ -11,6 +11,7 @@ import {
   useColorModeValue,
   chakra,
   SimpleGrid,
+  Image,
 } from "@chakra-ui/react";
 
 import { ReactNode } from "react";
@@ -21,7 +22,7 @@ import { GoLocation } from "react-icons/go";
 interface StatsCardProps {
   title: string;
   stat: string;
-  icon: ReactNode;
+  icon: string;
   bgc: string;
 }
 function StatsCard(props: StatsCardProps) {
@@ -40,7 +41,7 @@ function StatsCard(props: StatsCardProps) {
           color={useColorModeValue("gray.800", "gray.200")}
           alignContent={"center"}
         >
-          {icon}
+          <Image src={`/${icon}`} alt="icon" />
         </Box>
 
         <Box pl={{ base: 2, md: 4 }} py={2} bg={bgc} w={"full"}>
@@ -63,31 +64,31 @@ const Statistics = () => {
         <StatsCard
           title={"Experience"}
           stat={"5+ Years"}
-          icon={<BsPerson size={"3em"} />}
+          icon={"experience.png"}
           bgc={"blue.400"}
         />
         <StatsCard
           title={"Clients"}
           stat={"200+"}
-          icon={<FiServer size={"3em"} />}
+          icon={"client.png"}
           bgc={"green.400"}
         />
         <StatsCard
           title={"Admission Per Year"}
           stat={"250000+"}
-          icon={<GoLocation size={"3em"} />}
+          icon={"admission.png"}
           bgc={"orange.400"}
         />
         <StatsCard
           title={"OPD Patients Per Year"}
           stat={"1250000+"}
-          icon={<GoLocation size={"3em"} />}
+          icon={"experience.png"}
           bgc={"red.300"}
         />
         <StatsCard
           title={"User Per Month"}
           stat={"275000+"}
-          icon={<GoLocation size={"3em"} />}
+          icon={"experience.png"}
           bgc={"purple.400"}
         />
       </SimpleGrid>

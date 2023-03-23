@@ -35,7 +35,7 @@ const Footer = () => {
 
   const onSubmit = (data: any) => console.log(data);
   return (
-    <footer className="bg-primary h-full bg-opacity-20">
+    <footer className="bg-primary h-full bg-opacity-5">
       <div className="flex flex-col  max-w-7xl mx-auto py-10 space-x-10">
         <div className="flex flex-col lg:flex-row">
           <div className="flex-col lg:w-[30rem] items-center  flex">

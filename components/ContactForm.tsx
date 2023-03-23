@@ -5,6 +5,8 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/outline";
 
+import { useToast } from "@chakra-ui/react";
+
 import { FaFacebookF, FaTwitter, FaLinkedin, FaMobile } from "react-icons/fa";
 
 import { useState } from "react";
@@ -17,7 +19,12 @@ const ContactForm = () => {
     lastName: "",
     email: "",
     phone: "",
+    message: "",
   });
+
+  const [loading, setLoading] = useState(false);
+
+  const toast = useToast();
 
   const handleInputChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -30,7 +37,8 @@ const ContactForm = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    postMessage(formData);
+    setLoading(true);
+    postMessage(formData, setFormData, toast, setLoading);
   };
 
   return (
@@ -167,20 +175,23 @@ const ContactForm = () => {
                   </div>
 
                   <h1 className="text-base font-medium mt-2 ">Message</h1>
-                  {/* <textarea
-                    {...register("message", { required: true })}
+                  <textarea
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    name="message"
+                    // @ts-ignore
                     type="text"
                     className="w-full rounded-lg mt-2"
                     rows={4}
                     placeholder="Enter your message"
-                  /> */}
+                  />
 
                   <div className="flex mt-5 w-full justify-end">
                     <button
                       type="submit"
                       className="w-fit border px-4 py-3 cursor-pointer rounded-lg bg-card  text-buttonColor font-bold"
                     >
-                      Send Message
+                      {loading ? "Sending..." : "Send Message"}
                     </button>
                   </div>
                 </form>

@@ -2,7 +2,12 @@ import post from "@/schemas/post";
 import { Message } from "@/typings";
 import axios from "axios";
 
-const postMessage = async (data: Message) => {
+const postMessage = async (
+  data: Message,
+  setFormData: any,
+  toast: any,
+  setLoading: any
+) => {
   try {
     const response = await axios({
       method: "post",
@@ -26,7 +31,24 @@ const postMessage = async (data: Message) => {
       },
     });
 
-    console.log(response);
+    if (response) {
+      setLoading(false);
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+
+      toast({
+        title: "Message Sent.",
+        description: "We will get back to you shortly.",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      });
+    }
   } catch (error) {
     console.error(error);
   }
