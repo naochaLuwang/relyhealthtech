@@ -2,6 +2,7 @@
 import Benefits from "@/components/RIS/Benefits";
 import Modules from "@/components/RIS/Modules";
 import ProductOverview from "@/components/RIS/ProductOverview";
+import RisVideo from "@/components/RIS/RisVideo";
 
 const PISpage = () => {
   return (
@@ -13,6 +14,7 @@ const PISpage = () => {
 
         <Modules />
       </div>
+      <RisVideo />
     </div>
   );
 };

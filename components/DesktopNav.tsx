@@ -59,6 +59,11 @@ const NAV_ITEMS: Array<NavItem> = [
         subLabel: "Infertility Management System",
         href: "/products/rely_ivf",
       },
+      {
+        label: "Rely AIS",
+        subLabel: "Asset Information System",
+        href: "/products/rely_ais",
+      },
     ],
   },
   {
