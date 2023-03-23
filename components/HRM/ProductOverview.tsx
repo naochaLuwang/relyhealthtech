@@ -41,12 +41,7 @@ const ProductOverview = () => {
           </p> */}
         </div>
         <div>
-          <Image
-            src="/adicon/Pharmacist-bro.svg"
-            alt="lab"
-            width={500}
-            height={500}
-          />
+          <Image src="/adicon/HR.svg" alt="lab" width={500} height={500} />
         </div>
       </div>
     </div>

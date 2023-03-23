@@ -69,6 +69,11 @@ const NAV_ITEMS: Array<NavItem> = [
         subLabel: "HR Management System",
         href: "/products/rely_hrm_hr_payroll_management_system",
       },
+      {
+        label: "Rely IVF",
+        subLabel: "Infertility Management System",
+        href: "/products/rely_ivf",
+      },
     ],
   },
   {

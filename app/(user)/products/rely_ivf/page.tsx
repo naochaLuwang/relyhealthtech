@@ -1,9 +1,8 @@
-// @ts-ignore
-import Benefits from "@/components/RIS/Benefits";
-import Modules from "@/components/RIS/Modules";
-import ProductOverview from "@/components/RIS/ProductOverview";
+import ProductOverview from "@/components/IVF/ProductOverview";
+import Benefits from "@/components/IVF/Benefits";
+import Modules from "@/components/IVF/Modules";
 
-const PISpage = () => {
+const IVFpage = () => {
   return (
     <div>
       <ProductOverview />
@@ -17,4 +16,4 @@ const PISpage = () => {
   );
 };
 
-export default PISpage;
+export default IVFpage;
