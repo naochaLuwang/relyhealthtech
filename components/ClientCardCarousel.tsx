@@ -22,7 +22,7 @@ const responsive = {
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 2,
-    slidesToSlide: 2, // optional, default to 1.
+    slidesToSlide: 1, // optional, default to 1.
   },
 };
 
@@ -44,7 +44,7 @@ const ClientCardCarousel = ({ PRIVATE_CLIENTS }: any) => {
       partialVisbile={true}
     >
       {PRIVATE_CLIENTS.map((client: any) => (
-        <Center py={6} key={client.name}>
+        <Center py={6} key={client.name} mr={{ base: 2 }}>
           <Card maxW="sm" variant={"elevated"} rounded="2xl" boxShadow={"xl "}>
             <CardBody>
               <Image

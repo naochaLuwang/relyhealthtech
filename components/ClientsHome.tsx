@@ -63,7 +63,7 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
               rounded="lg"
               px={"3"}
               py={"2"}
-              marginLeft={{ lg: 20, base: 10 }}
+              marginLeft={{ lg: 20, base: 3 }}
             >
               <Text fontWeight={"bold"}>Private Hospitals & Clinics</Text>
             </Tab>
@@ -74,7 +74,7 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
               rounded="lg"
               px={"3"}
               py={"2"}
-              marginLeft={{ lg: 5, base: 10 }}
+              marginLeft={{ lg: 5, base: 3 }}
             >
               <Text fontWeight={"bold"}>
                 Government & Private Medical Colleges
@@ -84,7 +84,7 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
 
           <TabPanels>
             <TabPanel>
-              <Box pl={16}>
+              <Box pl={{ lg: 16, base: 3 }}>
                 <ClientCardCarousel PRIVATE_CLIENTS={PRIVATE_CLIENTS} />
               </Box>
             </TabPanel>
@@ -92,8 +92,8 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
               <SimpleGrid
                 columns={{ base: 2, md: 5 }}
                 spacing={{ base: 2, lg: 0 }}
-                pl={{ lg: 16 }}
-                px={{ base: 10 }}
+                pl={{ lg: 16, base: 2 }}
+                px={{ base: 3 }}
               >
                 {GOVERNMENT_CLIENTS.map((client: any) => (
                   <ClientCard key={client.name} {...client} />

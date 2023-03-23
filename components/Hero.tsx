@@ -17,11 +17,11 @@ export default function Hero() {
         py={8}
         flex={1}
         pl={{ md: 20 }}
-        px={{ sm: 8 }}
+        px={{ base: 8 }}
         align={"center"}
         justify={"end"}
       >
-        <Stack spacing={6} w={"2xl"}>
+        <Stack spacing={6} w={"2xl"} px={{}}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text
               as={"span"}
@@ -42,7 +42,11 @@ export default function Hero() {
             </Text>
             <br />{" "}
           </Heading>
-          <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
+          <Text
+            fontSize={{ base: "md", lg: "lg" }}
+            color={"gray.500"}
+            textAlign={{ base: "justify", md: "start" }}
+          >
             <Text as={"span"}>Rely Healthcare Technologies</Text> one of the
             fastest growing healthcare technology company which design and
             develop innovative health information systems and also provides IT

@@ -47,9 +47,9 @@ const ClientTestimonial = () => {
             arrows={false}
             customTransition="transform 10000ms  ease-in-out"
             transitionDuration={10000}
-            partialVisbile={true}
+            partialVisbile={false}
           >
-            <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor  justify-center  rounded-2xl shadow-lg space-y-5 flex flex-col py-8 px-8">
+            <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor  justify-center  rounded-2xl shadow-lg space-y-5 flex flex-col py-8 px-8 sm:mx-10 lg:mx-0">
               <div className="flex justify-between items-center flex-col lg:flex-row space-y-8 lg:space-y-0">
                 <div className="lg:pl-16">
                   <div className="relative ">

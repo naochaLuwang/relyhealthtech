@@ -29,7 +29,6 @@ function StatsCard(props: StatsCardProps) {
   const { title, stat, icon, bgc } = props;
   return (
     <Stat
-      pl={2}
       shadow={"xl"}
       border={"1px solid"}
       borderColor={useColorModeValue("brand.900", "brand.900")}
@@ -37,14 +36,16 @@ function StatsCard(props: StatsCardProps) {
     >
       <Flex justifyContent={"start"}>
         <Box
+          display={{ base: "none", lg: "block" }}
           my={"auto"}
           color={useColorModeValue("gray.800", "gray.200")}
           alignContent={"center"}
+          px={{ md: 2 }}
         >
-          <Image src={`/${icon}`} alt="icon" />
+          <Image src={`/${icon}`} alt="icon" objectFit={"contain"} />
         </Box>
 
-        <Box pl={{ base: 2, md: 4 }} py={2} bg={bgc} w={"full"}>
+        <Box pl={{ md: 4 }} px={{ base: 4 }} py={2} bg={bgc} w={"full"}>
           <StatLabel fontWeight={"medium"} color={"white"} isTruncated>
             {title}
           </StatLabel>
