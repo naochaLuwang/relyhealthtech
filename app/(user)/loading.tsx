@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 // import { Spinner, Flex } from "@chakra-ui/react";
 
 export default function Loading() {

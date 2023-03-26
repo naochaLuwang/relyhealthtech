@@ -16,6 +16,8 @@ import ClientsHome from "@/components/ClientsHome";
 
 import ClientTestimonial from "@/components/ClientTestimonial";
 import WhatsNew from "@/components/WhatsNew";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const query = groq`
 *[_type=='carousalImage']{
@@ -47,7 +49,10 @@ const HomePage = async () => {
   return (
     <Box>
       <HomeCarousal carousalImages={carousalImages} />
-      <WhatsNew BANNER_NEW={bannerNew} />
+      <Suspense fallback={<Loading />}>
+        <WhatsNew BANNER_NEW={bannerNew} />
+      </Suspense>
+
       <Statistics />
 
       <Hero />

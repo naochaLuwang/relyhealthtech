@@ -14,14 +14,15 @@ const WhatsNew = ({ BANNER_NEW }: any) => {
         </h1>
         <div className="absolute bg-logo right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 rotate-45 w-4 h-4 bg-white border-r border-t border-indigo-500"></div>
       </div>
-      <div className=" py-2 flex-1 justify-start  bg-buttonColor px-4">
+      <div className=" py-2 flex-1 overflow-hidden   bg-buttonColor px-4">
         <Carousel
           verticalMode
           itemsToShow={1}
           showArrows={false}
           enableAutoPlay={true}
           //   @ts-ignore
-          itemPosition="flex-start"
+          itemPosition="consts.START"
+          autoTabIndexVisibleItems={false}
           ref={carouselRef}
           isRTL={false}
           onNextEnd={({ index }) => {
