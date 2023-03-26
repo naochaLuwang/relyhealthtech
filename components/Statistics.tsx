@@ -30,9 +30,9 @@ function StatsCard(props: StatsCardProps) {
   return (
     <Stat
       shadow={"xl"}
-      border={"1px solid"}
-      borderColor={useColorModeValue("brand.900", "brand.900")}
-      rounded={"lg"}
+      border={{ base: "1px solid", lg: "0px" }}
+      borderColor={"brand.900"}
+      rounded={{ base: "lg", lg: "none" }}
     >
       <Flex justifyContent={"start"}>
         <Box
@@ -60,8 +60,15 @@ function StatsCard(props: StatsCardProps) {
 
 const Statistics = () => {
   return (
-    <Box maxW="full" mx={"auto"} pt={8} px={{ base: 2, sm: 4, md: 12 }}>
-      <SimpleGrid columns={{ base: 2, md: 5 }} spacing={{ base: 5, lg: 6 }}>
+    <Box maxW="full" mx={"auto"} pt={2} px={{ base: 4, md: 12 }}>
+      <SimpleGrid
+        columns={{ base: 2, md: 5 }}
+        spacing={{ base: 5, lg: 0 }}
+        border={{ base: "0px", lg: "1px solid" }}
+        roundedLeft="lg"
+        roundedRight={"lg"}
+        borderColor={"brand.900"}
+      >
         <StatsCard
           title={"Experience"}
           stat={"5+ Years"}

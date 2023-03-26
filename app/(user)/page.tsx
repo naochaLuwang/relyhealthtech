@@ -15,6 +15,7 @@ import FlagShipProducts from "@/components/FlagShipProducts";
 import ClientsHome from "@/components/ClientsHome";
 
 import ClientTestimonial from "@/components/ClientTestimonial";
+import WhatsNew from "@/components/WhatsNew";
 
 const query = groq`
 *[_type=='carousalImage']{
@@ -39,7 +40,9 @@ const HomePage = async () => {
   return (
     <Box>
       <HomeCarousal carousalImages={carousalImages} />
+      <WhatsNew />
       <Statistics />
+
       <Hero />
       <FlagShipProducts />
 

@@ -79,11 +79,12 @@ const Header = () => {
           justify={"flex-end"}
           direction={"row"}
           spacing={6}
+          ml={6}
         >
           <Button
             as={"a"}
             display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
+            fontSize={"xs"}
             fontWeight={600}
             color={"white"}
             bg={"brand.900"}

@@ -36,14 +36,18 @@ export default function FlagshipCards({
         bg="white"
         border={"1px"}
         borderColor="black"
-        boxShadow={useColorModeValue("6px 6px 0 black", "6px 6px 0 cyan")}
+        boxShadow={useColorModeValue("6px 6px 0 gray ", "6px 6px 0 cyan")}
       >
         <Box h={"auto"} borderBottom={"1px"} borderColor="black" py={2}>
-          <Heading textAlign={"center"} fontSize={{ base: "xl", md: "3xl" }}>
+          <Heading
+            textAlign={"center"}
+            fontSize={{ base: "xl", md: "3xl" }}
+            color={"brand.900"}
+          >
             {title}
           </Heading>
         </Box>
-        <Box p={4}>
+        <Box p={4} bg={"brand.700"}>
           <Flex
             mb={2}
             display={"flex"}
@@ -54,7 +58,7 @@ export default function FlagshipCards({
             <Image src={icon} alt="hospital" width={80} height={80} />
           </Flex>
 
-          <Text color={"gray.500"} noOfLines={5}>
+          <Text color={"brand.900"} noOfLines={5}>
             {description}
           </Text>
         </Box>
@@ -67,6 +71,7 @@ export default function FlagshipCards({
             roundedBottom={"sm"}
             cursor={"pointer"}
             w="full"
+            pt={2}
           >
             <Text fontSize={"md"} fontWeight={"semibold"} mr={2}>
               View more
