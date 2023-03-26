@@ -27,7 +27,7 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "Product",
-    href: "#",
+    href: "/products",
     children: [
       {
         label: "Rely HIS",
@@ -103,7 +103,9 @@ const DesktopNav = () => {
                 color={linkColor}
                 _hover={{
                   textDecoration: "none",
-                  color: linkHoverColor,
+                  color: "brand.900",
+                  fontWeight: "bold",
+                  transition: "all 5ms ease-in-out",
                 }}
               >
                 {navItem.label}
