@@ -9,6 +9,8 @@ import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const colors = {
   brand: {
@@ -33,6 +35,7 @@ export default function RootLayout({
           <ChakraProvider theme={theme}>
             <>
               <Header />
+              <Suspense fallback={<Loading />} />
 
               <Box pt={"60px"}>{children}</Box>
               <Footer />
