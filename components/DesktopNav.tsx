@@ -4,12 +4,12 @@ import {
   Flex,
   Stack,
   Icon,
-  Link,
   Popover,
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/next-js";
 
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
@@ -138,7 +138,7 @@ const DesktopNav = () => {
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
     <Link
-      href={href}
+      href={href!}
       role={"group"}
       display={"block"}
       p={2}
