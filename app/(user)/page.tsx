@@ -31,16 +31,23 @@ const clientquery = groq`
 } | order(_createdAt asc)
 `;
 
+const bannerquery = groq`
+*[_type=='whatsNew' ][0..2]{
+  ...,
+  
+} | order(_createdAt asc)
+`;
+
 const HomePage = async () => {
   const carousalImages = await client.fetch(query);
 
   const privateclients = await client.fetch(clientquery);
-  console.log(privateclients);
+  const bannerNew = await client.fetch(bannerquery);
 
   return (
     <Box>
       <HomeCarousal carousalImages={carousalImages} />
-      <WhatsNew />
+      <WhatsNew BANNER_NEW={bannerNew} />
       <Statistics />
 
       <Hero />

@@ -8,6 +8,7 @@ import clients from "./clients";
 import location from "./location";
 import clientCategory from "./clientCategory";
 import message from "./message";
+import whatsNew from "./whatsNew";
 
 export const schemaTypes = [
   team,
@@ -19,4 +20,5 @@ export const schemaTypes = [
   location,
   clientCategory,
   message,
+  whatsNew,
 ];

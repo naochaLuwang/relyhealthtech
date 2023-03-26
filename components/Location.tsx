@@ -32,7 +32,7 @@ const Location = ({ locations }: any) => {
                   {location.phone}
                 </p>
               </div> */}
-              <div className="flex items-center mt-3 space-x-2">
+              {/* <div className="flex items-center mt-3 space-x-2">
                 <PhoneIcon className="h-6 w-6" />
                 <p className="text-base font-medium text-secondary">
                   {location.phone}
@@ -43,7 +43,7 @@ const Location = ({ locations }: any) => {
                 <p className="text-base font-medium text-secondary">
                   {location.email}
                 </p>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

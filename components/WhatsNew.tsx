@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import Carousel from "react-elastic-carousel";
 
-const WhatsNew = () => {
+const WhatsNew = ({ BANNER_NEW }: any) => {
   const carouselRef = useRef(null);
   let resetTimeout: any;
   return (
@@ -32,8 +32,11 @@ const WhatsNew = () => {
             }, 4000); // same time
           }}
         >
-          <h1 className=" text-medium">Hello</h1>
-          <h1>There</h1>
+          {BANNER_NEW.map((banner: any) => (
+            <h1 className="text-md " key={banner._id}>
+              {banner.banner}
+            </h1>
+          ))}
         </Carousel>
       </div>
     </div>

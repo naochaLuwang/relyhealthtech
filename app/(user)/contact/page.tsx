@@ -3,6 +3,7 @@ import { Box } from "@/components/ChakraElements";
 import Location from "@/components/Location";
 import { groq } from "next-sanity";
 import { client } from "../../../lib/sanity.client";
+import Map from "@/components/Map";
 
 const query = groq`
 *[_type=='location']{
@@ -17,6 +18,7 @@ const ContactPage = async () => {
   return (
     <Box>
       <ContactForm />
+      {/* <Map /> */}
       <Location locations={locations} />
     </Box>
   );
