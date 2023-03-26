@@ -34,11 +34,11 @@ export default function RootLayout({
         <CacheProvider>
           <ChakraProvider theme={theme}>
             <>
-              <Header />
-              <Suspense fallback={<Loading />} />
-
-              <Box pt={"60px"}>{children}</Box>
-              <Footer />
+              <Suspense fallback={<Loading />}>
+                <Header />
+                <Box pt={"60px"}>{children}</Box>
+                <Footer />
+              </Suspense>
             </>
           </ChakraProvider>
         </CacheProvider>

@@ -8,8 +8,7 @@ export default function DashboardLayout({
 }) {
   return (
     <section>
-      <Suspense fallback={<Loading />} />
-      {children}
+      <Suspense fallback={<Loading />}>{children}</Suspense>
     </section>
   );
 }
