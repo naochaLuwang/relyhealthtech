@@ -12,9 +12,6 @@ const Team = ({
 }: any) => {
   return (
     <div className="bg-primary h-auto relative overflow-hidden">
-      {/* <div className="absolute -top-5 -right-10 h-40 w-40 rotate-45 border border-buttonColor py-2 px-2">
-        <div className="w-40 h-40 border border-buttonColor rotate-6"></div>
-      </div> */}
       <div className="hidden lg:block absolute w-[800px] h-[418px] -right-32 top-40 -rotate-90">
         <Image
           src={"/circuitxl.svg"}

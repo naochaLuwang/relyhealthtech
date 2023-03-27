@@ -29,6 +29,7 @@ module.exports = {
       purple100: "#e1bee7",
       fuchsia400: "#ab47bc",
       brandColor: "#4e2d80",
+      whatsNew: "#f52c05",
     },
   },
   plugins: [require("@tailwindcss/forms")],

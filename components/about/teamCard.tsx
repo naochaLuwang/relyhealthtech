@@ -2,16 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 import urlFor from "@/lib/urlFor";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import ClientSideRoute from "../ClientSideRoute";
 
 interface Team {
   name: string;
   title: string;
   profileImage: any;
+  slug: any;
 }
 
-const TeamCard = ({ name, title, profileImage }: Team) => {
+const TeamCard = ({ name, title, profileImage, slug }: Team) => {
   return (
-    <Link href={`/about/view_profile/`}>
+    <ClientSideRoute route={`/about/${slug.current}`}>
       <div className="flex flex-col   shadow-lg bg-buttonColor bg-opacity-10  py-4 lg:py-10 px-8 items-center rounded-xl cursor-pointer transition-transform duration-200 ease-in-out hover:scale-105">
         <div className="lg:h-32 lg:w-32 w-16 h-16 border-4 border-buttonColor rounded-full  border-opacity-80 shadow-md  relative ">
           <Image
@@ -35,7 +37,7 @@ const TeamCard = ({ name, title, profileImage }: Team) => {
           <FaInstagram className="text-buttonColor w-6 h-6" />
         </div>
       </div>
-    </Link>
+    </ClientSideRoute>
   );
 };
 

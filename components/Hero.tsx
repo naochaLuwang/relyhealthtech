@@ -47,11 +47,13 @@ export default function Hero() {
             color={"gray.500"}
             textAlign={{ base: "justify", md: "start" }}
           >
-            <Text as={"span"}>Rely Healthcare Technologies</Text> one of the
-            fastest growing healthcare technology company which design and
-            develop innovative health information systems and also provides IT
-            solution & services that transform the administrative and clinical
-            operations of healthcare organizations of all sizes.
+            <Text as={"span"} color="brand.600" fontWeight={"bold"}>
+              Rely Healthcare Technologies
+            </Text>{" "}
+            one of the fastest growing healthcare technology company which
+            design and develop innovative health information systems and also
+            provides IT solution & services that transform the administrative
+            and clinical operations of healthcare organizations of all sizes.
           </Text>
         </Stack>
       </Flex>

@@ -29,16 +29,17 @@ export default function FlagshipCards({
     <Center py={6}>
       <Box
         w="xs"
+        h="96"
         rounded={"3xl"}
         my={5}
         mx={[0, 5]}
         overflow={"hidden"}
         bg="white"
-        border={"1px"}
-        borderColor="black"
-        boxShadow={useColorModeValue("6px 6px 0 gray ", "6px 6px 0 cyan")}
+        borderRight={"1px solid"}
+        borderColor="brand.700"
+        boxShadow={useColorModeValue("0 6px 0 tomato  ", "6px 6px 0 cyan")}
       >
-        <Box h={"auto"} borderBottom={"1px"} borderColor="black" py={2}>
+        <Box h={"auto"} bg={"brand.700"} py={2}>
           <Heading
             textAlign={"center"}
             fontSize={{ base: "xl", md: "3xl" }}
@@ -47,25 +48,45 @@ export default function FlagshipCards({
             {title}
           </Heading>
         </Box>
-        <Box p={4} bg={"brand.700"}>
-          <Flex
-            mb={2}
-            display={"flex"}
+        <Box bg="brand.700">
+          <Box
             w="full"
-            align="center"
-            justify="center"
+            h="auto"
+            bg="white"
+            roundedTopLeft="100px"
+            py={8}
+            borderTop="4px solid"
+            borderLeft={"1px solid"}
+            borderColor={"brand.600"}
           >
-            <Image src={icon} alt="hospital" width={80} height={80} />
-          </Flex>
-
-          <Text color={"brand.900"} noOfLines={5}>
-            {description}
-          </Text>
+            <Flex
+              mb={2}
+              display={"flex"}
+              roundedTopLeft="full"
+              w="full"
+              align="center"
+              justify="center"
+            >
+              <Image src={icon} alt="hospital" width={80} height={80} />
+            </Flex>
+            <Text
+              color={"brand.900"}
+              fontSize="sm"
+              pt={4}
+              px={5}
+              textAlign="justify"
+              noOfLines={6}
+            >
+              {description}
+            </Text>
+          </Box>
         </Box>
         <Stack>
           <Flex
             px={4}
             pb={4}
+            borderLeft={"1px"}
+            borderColor="brand.600"
             alignItems="center"
             justifyContent={"end"}
             roundedBottom={"sm"}
@@ -73,8 +94,13 @@ export default function FlagshipCards({
             w="full"
             pt={2}
           >
-            <Text fontSize={"md"} fontWeight={"semibold"} mr={2}>
-              View more
+            <Text
+              fontSize={"md"}
+              color="brand.900"
+              fontWeight={"semibold"}
+              mr={2}
+            >
+              Read more
             </Text>
             <FaAngleDoubleRight />
           </Flex>
