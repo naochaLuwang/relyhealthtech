@@ -92,7 +92,6 @@ export default function FlagshipCards({
             roundedBottom={"sm"}
             cursor={"pointer"}
             w="full"
-            pt={2}
           >
             <Text
               fontSize={"md"}
@@ -102,7 +101,7 @@ export default function FlagshipCards({
             >
               Read more
             </Text>
-            <FaAngleDoubleRight />
+            <FaAngleDoubleRight color="brand.900" />
           </Flex>
         </Stack>
       </Box>

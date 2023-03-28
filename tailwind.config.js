@@ -30,7 +30,14 @@ module.exports = {
       fuchsia400: "#ab47bc",
       brandColor: "#4e2d80",
       whatsNew: "#f52c05",
+      testimonial: "#7a52a6",
+    },
+    extend: {
+      backgroundImage: {
+        hero: "url('/blur-hospital.jpg')",
+      },
     },
   },
+
   plugins: [require("@tailwindcss/forms")],
 };

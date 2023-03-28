@@ -60,7 +60,7 @@ const FlagShipProducts = () => {
           <FlagshipCards key={flagshipitem.title} {...flagshipitem} />
         ))}
       </SimpleGrid>
-      <Flex align="center" justify={"center"}>
+      {/* <Flex align="center" justify={"center"}>
         <Link
           href="/products"
           className="relative px-6 py-3 font-bold text-black group"
@@ -71,7 +71,7 @@ const FlagShipProducts = () => {
             Explore Products
           </span>
         </Link>
-      </Flex>
+      </Flex> */}
     </Box>
   );
 };

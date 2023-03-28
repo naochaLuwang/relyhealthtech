@@ -33,7 +33,10 @@ const WhatsNew = ({ BANNER_NEW }: any) => {
           }}
         >
           {BANNER_NEW.map((banner: any) => (
-            <h1 className="text-md " key={banner._id}>
+            <h1
+              className="text-md font-medium text-textPrimary "
+              key={banner._id}
+            >
               {banner.banner}
             </h1>
           ))}
