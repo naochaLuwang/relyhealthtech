@@ -31,6 +31,11 @@ module.exports = {
       brandColor: "#4e2d80",
       whatsNew: "#f52c05",
       testimonial: "#7a52a6",
+      footer: "#142627",
+      button1: "#dc2626",
+      button2: "#ef4444",
+      button3: "#b91c1c",
+      brand: "#4e2d80",
     },
     extend: {
       backgroundImage: {

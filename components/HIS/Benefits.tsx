@@ -6,7 +6,7 @@ const Benefits = () => {
     <div className="max-w-full h-auto bg-bgPrimary lg:px-20 px-10 py-20">
       <div className="flex flex-col ">
         <h1>BENEFITS</h1>
-        <h1 className="text-3xl font-bold">Key Benefits</h1>
+        <h1 className="text-3xl font-bold text-brand">Key Benefits</h1>
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-10 gap-6">
         <div className="flex flex-col">

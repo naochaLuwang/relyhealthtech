@@ -3,7 +3,7 @@
 
 import "../globals.css";
 
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
@@ -11,6 +11,7 @@ import { Box } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { Suspense } from "react";
 import Loading from "./loading";
+import FooterNew from "@/components/FooterNew";
 
 const colors = {
   brand: {
@@ -18,6 +19,7 @@ const colors = {
     800: "#343434",
     700: "#efeeee",
     600: "#f52c05",
+    500: "#D92100",
   },
 };
 
@@ -38,7 +40,8 @@ export default function RootLayout({
               <Suspense fallback={<Loading />}>
                 <Header />
                 <Box pt={"60px"}>{children}</Box>
-                <Footer />
+                {/* <Footer /> */}
+                <FooterNew />
               </Suspense>
             </>
           </ChakraProvider>

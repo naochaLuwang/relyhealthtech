@@ -29,9 +29,9 @@ const ClientTestimonial = () => {
     <Box
       w="full"
       h={"auto"}
-      py={20}
+      py={16}
       backgroundImage="url('/blur-hospital.jpg')"
-      backgroundPosition="top"
+      backgroundPosition={{ sm: "bottom", lg: "top" }}
       backgroundRepeat="no-repeat"
       backgroundSize={"cover"}
     >
@@ -40,6 +40,7 @@ const ClientTestimonial = () => {
         fontSize={"4xl"}
         fontWeight="bold"
         color={"brand.900"}
+        mb={5}
       >
         Testimonials
       </Text>
@@ -56,7 +57,7 @@ const ClientTestimonial = () => {
         customRightArrow={<CustomRightArrow />}
         customLeftArrow={<CustomLeftArrow />}
       >
-        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-secondary bg-opacity-0   justify-center   space-y-5 flex flex-col py-8 px-8 ">
+        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor bg-opacity-40 rounded-xl shadow-lg  justify-center   space-y-5 flex flex-col py-8 px-8 ">
           <div className="flex justify-between items-center flex-col lg:flex-row space-y-8 lg:space-y-0">
             <div className="lg:pl-16">
               <div className="relative ">
@@ -104,7 +105,7 @@ const ClientTestimonial = () => {
             </p>
           </div>
         </div>
-        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-secondary bg-opacity-0  justify-center   space-y-10 flex flex-col py-8 px-8">
+        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor bg-opacity-40 rounded-xl shadow-lg  justify-center   space-y-10 flex flex-col py-8 px-8">
           <div className="flex justify-between items-center flex-col lg:flex-row space-y-8 lg:space-y-0">
             <div className="lg:pl-16">
               <div className="relative ">
@@ -146,7 +147,7 @@ const ClientTestimonial = () => {
             </p>
           </div>
         </div>
-        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-secondary bg-opacity-0 justify-center  rounded-2xl flex flex-col py-8 px-8 space-y-10">
+        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor bg-opacity-40 rounded-xl shadow-lg justify-center   flex flex-col py-8 px-8 space-y-10">
           <div className="flex justify-between items-center flex-col lg:flex-row space-y-8 lg:space-y-0">
             <div className="lg:pl-16">
               <div className="relative ">

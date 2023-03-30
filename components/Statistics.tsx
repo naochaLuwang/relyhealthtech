@@ -42,7 +42,13 @@ function StatsCard(props: StatsCardProps) {
           alignContent={"center"}
           px={{ md: 2 }}
         >
-          <Image src={`/${icon}`} alt="icon" objectFit={"contain"} />
+          <Image
+            src={`/adicon/${icon}`}
+            alt="icon"
+            w={16}
+            h={16}
+            objectFit={"contain"}
+          />
         </Box>
 
         <Box pl={{ md: 4 }} px={{ base: 4 }} py={2} bg={bgc} w={"full"}>
@@ -72,31 +78,31 @@ const Statistics = () => {
         <StatsCard
           title={"Experience"}
           stat={"5+ Years"}
-          icon={"experience.png"}
+          icon={"rating.png"}
           bgc={"blue.400"}
         />
         <StatsCard
           title={"Clients"}
           stat={"200+"}
-          icon={"client.png"}
+          icon={"clients.png"}
           bgc={"green.400"}
         />
         <StatsCard
           title={"Admission Per Year"}
           stat={"250000+"}
-          icon={"admission.png"}
+          icon={"id-card.png"}
           bgc={"orange.400"}
         />
         <StatsCard
           title={"OPD Patients Per Year"}
           stat={"1250000+"}
-          icon={"experience.png"}
+          icon={"opd.png"}
           bgc={"red.300"}
         />
         <StatsCard
           title={"User Per Month"}
           stat={"275000+"}
-          icon={"experience.png"}
+          icon={"user.png"}
           bgc={"purple.400"}
         />
       </SimpleGrid>

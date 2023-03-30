@@ -81,20 +81,23 @@ const Header = () => {
           spacing={6}
           ml={6}
         >
-          <Button
+          <button className="bg-button1 hover:bg-button2 text-sm w-36 rounded-md text-buttonColor py-1 ">
+            BOOK A DEMO
+          </button>
+          {/* <Button
+            size={"sm"}
             as={"a"}
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"xs"}
             fontWeight={600}
             color={"white"}
-            bg={"brand.900"}
-            href={"#"}
+            bg={"brand.600"}
             _hover={{
-              bg: "blue.300",
+              bg: "brand.500",
             }}
           >
             BOOK A DEMO
-          </Button>
+          </Button> */}
         </Stack>
       </Flex>
 

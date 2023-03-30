@@ -8,12 +8,12 @@ const WhatsNew = ({ BANNER_NEW }: any) => {
   let resetTimeout: any;
   return (
     <div className="flex w-full h-10 border-2 border-whatsNew">
-      <div className="flex items-center justify-start bg-whatsNew w-56  border-right rounded-tr-full">
+      <div className="flex items-center justify-start bg-whatsNew lg:w-56 w-fit pr-3 lg:pr-0  border-right rounded-tr-full">
         <h1 className="py-1 px-4 font-semibold text-buttonColor">
           What&apos;s New
         </h1>
       </div>
-      <div className=" py-2 flex-1 overflow-hidden   bg-buttonColor px-4">
+      <div className=" py-2 flex-1 overflow-hidden items-center justify-center   bg-buttonColor px-4">
         <Carousel
           verticalMode
           itemsToShow={1}
@@ -34,7 +34,7 @@ const WhatsNew = ({ BANNER_NEW }: any) => {
         >
           {BANNER_NEW.map((banner: any) => (
             <h1
-              className="text-md font-medium text-textPrimary "
+              className="text-md  lg:text-md font-medium text-textPrimary "
               key={banner._id}
             >
               {banner.banner}

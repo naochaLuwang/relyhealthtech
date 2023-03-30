@@ -39,7 +39,7 @@ const Clients = ({ PRIVATE_CLIENTS }: any) => {
         Take a look at our Clients
       </Text>
 
-      <Tabs variant="unstyled" size="sm">
+      <Tabs variant="unstyled" size="sm" px={5}>
         <TabList>
           <Tab
             _selected={{ color: "white", bg: "brand.900" }}
@@ -48,7 +48,7 @@ const Clients = ({ PRIVATE_CLIENTS }: any) => {
             rounded="lg"
             px={"3"}
             py={"2"}
-            ml={"14"}
+            ml={{ lg: 14, sm: 3 }}
           >
             <Text fontWeight={"bold"}>Private Hospitals & Clinics</Text>
           </Tab>
@@ -59,7 +59,7 @@ const Clients = ({ PRIVATE_CLIENTS }: any) => {
             rounded="lg"
             px={"3"}
             py={"2"}
-            marginLeft={{ lg: 5, base: 10 }}
+            marginLeft={{ lg: 5, base: 3 }}
           >
             <Text fontWeight={"bold"}>
               Government & Private Medical Colleges
@@ -99,7 +99,7 @@ const Clients = ({ PRIVATE_CLIENTS }: any) => {
           </TabPanel>
           <TabPanel>
             <SimpleGrid
-              columns={{ base: 2, md: 5 }}
+              columns={{ base: 1, lg: 4 }}
               spacing={{ base: 2, lg: 5 }}
               pb={"20"}
             >

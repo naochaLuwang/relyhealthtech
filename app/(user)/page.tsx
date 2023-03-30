@@ -1,5 +1,18 @@
 export const metadata = {
   title: "Rely Healthcare Technologies",
+  keywords: [
+    "Best Hospital Software",
+    "Pharmacy Software",
+    "Top IT Company",
+    "Website Design & Development",
+    "Nursing Home Management Software",
+    "Diagnostic management Software",
+    "Appoinment Management System",
+    "Guwahati",
+    "Kolkata",
+  ],
+  description:
+    "Rely Healthcare Technologies is a healthcare IT technology company that designs one of best Hospital Management Software and also provides IT solution & services that transform the administrative and clinical operations of healthcare organizations of all sizes.",
 };
 
 import HomeCarousal from "@/components/HomeCarousal";
@@ -18,6 +31,9 @@ import ClientTestimonial from "@/components/ClientTestimonial";
 import WhatsNew from "@/components/WhatsNew";
 import { Suspense } from "react";
 import Loading from "./loading";
+import MobileApplication from "@/components/MobileApplication";
+import ContactHomePage from "@/components/ContactHomePage";
+import VideoSection from "@/components/VideoSection";
 
 const query = groq`
 *[_type=='carousalImage']{
@@ -57,10 +73,13 @@ const HomePage = async () => {
 
       <Hero />
       <FlagShipProducts />
+      <MobileApplication />
 
       <ClientsHome PRIVATE_CLIENTS={privateclients} />
 
       <ClientTestimonial />
+      <ContactHomePage />
+      <VideoSection />
     </Box>
   );
 };

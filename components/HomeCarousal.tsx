@@ -4,6 +4,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Box, Image } from "@chakra-ui/react";
 import urlFor from "@/lib/urlFor";
+import CustomLeftArrow from "./CustomLeftArrow";
+import CustomRightArrow from "./CustomRightArrow";
 
 const responsive = {
   desktop: {
@@ -36,6 +38,8 @@ const HomeCarousal = ({ carousalImages }: any) => {
       // customTransition="transform 3000 ease-in-out"
       // transitionDuration={3000}
       partialVisbile={true}
+      customLeftArrow={<CustomLeftArrow />}
+      customRightArrow={<CustomRightArrow />}
     >
       {carousalImages.map((image: any) => (
         <Box key={image._id}>
