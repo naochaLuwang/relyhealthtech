@@ -48,15 +48,25 @@ const VideoSection = () => {
             of an organization
           </Text>
         </Flex>
-        <Flex flexDirection={"column"} ml={10}>
-          <Flex>
-            <YouTube
-              videoId="u8zI0LreY50"
-              opts={opts}
-              onReady={onPlayerReady}
-            />
-            <Flex ml={5}>
-              <Text>Rely HIS(Hospital Management System)</Text>
+        <Flex flexDirection={"column"} ml={8}>
+          <Flex className="">
+            <Box w="fit-content" p={2} bg="white">
+              <YouTube
+                videoId="u8zI0LreY50"
+                opts={opts}
+                onReady={onPlayerReady}
+              />
+            </Box>
+
+            <Flex ml={5} direction="column">
+              <Text fontSize={"medium"} fontWeight="bold" color={"brand.900"}>
+                Rely HIS(Hospital Management System)
+              </Text>
+              <Text fontSize={"sm"} mt={2}>
+                It is a web based ERP developed using latest technologies to
+                manage working of a hospital in a paperless environment trusted
+                by esteemed clients
+              </Text>
             </Flex>
           </Flex>
         </Flex>

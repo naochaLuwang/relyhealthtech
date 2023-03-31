@@ -36,10 +36,14 @@ module.exports = {
       button2: "#ef4444",
       button3: "#b91c1c",
       brand: "#4e2d80",
+      brandbg: "#efeeee",
     },
     extend: {
       backgroundImage: {
         hero: "url('/blur-hospital.jpg')",
+      },
+      scale: {
+        "-100": "-1",
       },
     },
   },

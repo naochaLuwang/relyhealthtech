@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { HIS, HRM, LIS, RIS, PIS, AIS, GIS, Doctor } from "../../../lib/data";
+import { HIS, HRM, LIS, RIS, PIS, AIS, IVF } from "../../../lib/data";
 import ProductCard from "@/components/ProductCard";
 
 export const metadata = {
@@ -86,10 +86,7 @@ const ProductsPage = () => {
           <ProductCard {...AIS} />
         </div>
         <div className=" max-w-7xl  px-8 pb-10  mx-auto space-y-4 lg:py-8">
-          <ProductCard {...GIS} />
-        </div>
-        <div className=" max-w-7xl flex justify-end  px-8 pb-10  mx-auto space-y-5 lg:py-8">
-          <ProductCard {...Doctor} />
+          <ProductCard {...IVF} />
         </div>
       </div>
     </div>

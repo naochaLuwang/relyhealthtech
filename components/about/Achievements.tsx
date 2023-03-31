@@ -3,12 +3,12 @@ import React from "react";
 
 const Achievements = () => {
   return (
-    <div className="w-full h-auto bg-backgroundColor py-20 px-20">
-      <h1 className="text-4xl font-semibold  text-brand mb-10">
+    <div className="w-full h-auto bg-backgroundColor pt-20 pb-32 px-20">
+      <h1 className="text-4xl font-semibold  text-brand mb-10 ">
         Our <span className="text-whatsNew">Achievements</span>
       </h1>
 
-      <div className="flex">
+      <div className="flex relative">
         <div className="flex flex-col space-y-7">
           <div className="flex space-x-3">
             <Image
@@ -54,6 +54,10 @@ const Achievements = () => {
             />
             <p>We are ISO, NABL and NABH approved.</p>
           </div>
+        </div>
+
+        <div className="lg:absolute lg:block hidden -right-20 overflow-hidden  transform -scale-x-100">
+          <Image src="/success.png" alt="success" width={300} height={300} />
         </div>
       </div>
     </div>

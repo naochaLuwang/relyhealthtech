@@ -33,13 +33,13 @@ const HomeCarousal = ({ carousalImages }: any) => {
       infinite={true}
       rewindWithAnimation={true}
       autoPlaySpeed={15000}
-      arrows={true}
+      arrows={false}
       showDots={true}
       // customTransition="transform 3000 ease-in-out"
       // transitionDuration={3000}
       partialVisbile={true}
-      customLeftArrow={<CustomLeftArrow />}
-      customRightArrow={<CustomRightArrow />}
+      // customLeftArrow={<CustomLeftArrow />}
+      // customRightArrow={<CustomRightArrow />}
     >
       {carousalImages.map((image: any) => (
         <Box key={image._id}>

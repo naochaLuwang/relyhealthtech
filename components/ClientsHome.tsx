@@ -80,6 +80,17 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
                 Government & Private Medical Colleges
               </Text>
             </Tab>
+            <Tab
+              _selected={{ color: "white", bg: "brand.900" }}
+              border={"1px solid"}
+              w="fit-content"
+              rounded="lg"
+              px={"3"}
+              py={"2"}
+              marginLeft={{ lg: 5, base: 3 }}
+            >
+              <Text fontWeight={"bold"}>Diagnostic Centre</Text>
+            </Tab>
           </TabList>
 
           <TabPanels>
