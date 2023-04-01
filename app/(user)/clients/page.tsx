@@ -2,6 +2,9 @@ import Clients from "@/components/Clients";
 import { Box } from "../../../components/ChakraElements";
 import { groq } from "next-sanity";
 import { client } from "@/lib/sanity.client";
+export const metadata = {
+  title: "Clients | Rely Healthcare Technologies",
+};
 
 const clientquery = groq`
 *[_type=='clients']{

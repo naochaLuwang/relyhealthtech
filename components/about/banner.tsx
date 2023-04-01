@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const AboutBanner = () => {
   return (
-    <div className=" w-full h-auto bg-backgroundColor py-10 px-20">
-      <div className="grid grid-cols-1 lg:grid-cols-3 max-w-7xl mx-auto lg:ml-10 gap-y-5">
-        <div className="w-80 h-[27rem] shadow-lg  flex flex-col py-8 space-y-4 items-center px-8 bg-buttonColor rounded-xl">
+    <div className=" w-full h-auto bg-backgroundColor py-10 flex justify-between items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3 max-w-7xl  mx-auto  gap-y-5 lg:gap-x-8">
+        <div className="w-96 h-[27rem] shadow-lg  flex flex-col py-8 space-y-4 items-center px-8 bg-buttonColor rounded-xl">
           <h1 className="text-2xl font-semibold text-brand">OUR MISSION</h1>
           <TbTargetArrow className="h-32 w-32 text-brand" />
           <p className="text-justify ">
@@ -16,7 +16,7 @@ const AboutBanner = () => {
             and every organization in the healthcare ecosystem
           </p>
         </div>
-        <div className="w-80 h-[27rem]  flex flex-col py-8 space-y-4 items-center px-8 bg-buttonColor rounded-xl shadow-lg">
+        <div className="w-96 h-[27rem]  flex flex-col py-8 space-y-4 items-center px-8 bg-buttonColor rounded-xl shadow-lg">
           <h1 className="text-2xl font-semibold text-brand">OUR VISION</h1>
           <FaBinoculars className="h-32 w-32 text-brand" />
           <p className="text-justify ">
@@ -26,7 +26,7 @@ const AboutBanner = () => {
           </p>
         </div>
 
-        <div className="w-80 h-[27rem]  flex flex-col py-8 space-y-4 items-center px-8 bg-buttonColor rounded-xl shadow-lg">
+        <div className="w-96 h-[27rem]  flex flex-col py-8 space-y-4 items-center px-8 bg-buttonColor rounded-xl shadow-lg">
           <h1 className="text-2xl font-semibold text-brand">OUR CLIENTS</h1>
           <div className="relative h-32 w-32 flex-shrink-0">
             <Image src="/handshake.png" alt="clients" fill />

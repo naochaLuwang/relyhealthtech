@@ -48,8 +48,6 @@ const ClientCardCarousel = ({ PRIVATE_CLIENTS }: any) => {
         // customTransition="transform 3000ms  ease-in-out"
         // transitionDuration={3000}
         partialVisbile={false}
-        // customRightArrow={<ClientRightArrow />}
-        // customLeftArrow={<CustomLeftArrow />}
         renderButtonGroupOutside={true}
         customButtonGroup={<ButtonGroup />}
       >
