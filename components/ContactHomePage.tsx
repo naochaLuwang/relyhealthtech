@@ -16,7 +16,7 @@ import {
 const ContactHomePage = () => {
   return (
     <Flex
-      w={{ base: "lg", lg: "6xl" }}
+      w={"full"}
       mx="auto"
       direction={"column"}
       h="auto"

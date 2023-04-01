@@ -38,7 +38,7 @@ const VideoSection = () => {
         VIDEOS YOU MAY LIKE
       </Text>
       <Flex>
-        <Flex direction={"column"} display={{ sm: "none", lg: "flex" }}>
+        <Flex direction={"column"} display={{ base: "none", lg: "flex" }}>
           <HomeVideo />
           <Text color={"brand.900"} fontSize="xl" mt={5} fontWeight={"bold"}>
             RelyHRM (HR & Payroll Management Software)
@@ -49,7 +49,7 @@ const VideoSection = () => {
           </Text>
         </Flex>
         <Flex flexDirection={"column"} ml={{ lg: 8, sm: 0 }}>
-          <Flex flexDirection={{ sm: "column", lg: "row" }}>
+          <Flex flexDirection={{ base: "column", lg: "row" }}>
             <Box
               w="fit-content"
               p={{ lg: 2, sm: 0 }}

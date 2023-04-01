@@ -35,9 +35,15 @@ import DesktopNav from "./DesktopNav";
 // @ts-ignore
 import MobileNav from "./MobileNav";
 import Link from "next/link";
+import { useState } from "react";
 
 const Header = () => {
   const { isOpen, onToggle, onOpen, onClose } = useDisclosure();
+  const [open, setOpen] = useState(false);
+
+  const onOpenClick = () => {
+    setOpen(!open);
+  };
 
   return (
     <Box width="100%" as="header" position={"fixed"} zIndex={50}>
@@ -98,13 +104,13 @@ const Header = () => {
           ml={6}
         >
           <button
-            onClick={onOpen}
+            onClick={onOpenClick}
             className="bg-button1 hover:bg-button2 text-sm w-36 rounded-md text-buttonColor py-1 hidden lg:block "
           >
             REQUEST DEMO
           </button>
         </Stack>
-        <Modal isOpen={isOpen} onClose={onClose} isCentered size={"4xl"}>
+        <Modal isOpen={open} onClose={onClose} isCentered size={"4xl"}>
           <ModalOverlay>
             <ModalContent>
               <ModalHeader>Book Demo</ModalHeader>
