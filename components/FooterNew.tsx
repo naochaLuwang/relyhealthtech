@@ -11,9 +11,9 @@ import Image from "next/image";
 
 const FooterNew = () => {
   return (
-    <div className="w-full h-auto  flex  flex-col bg-footer py-20 px-14 justify-between space-y-5">
-      <div className="flex justify-between w-full">
-        <div className="flex flex-col space-y-10 ">
+    <div className="w-full h-auto  flex  flex-col bg-footer py-20 lg:px-14 px-8 justify-between space-y-5">
+      <div className="flex flex-col lg:flex-row justify-between w-full">
+        <div className="lg:flex flex-col space-y-10 hidden">
           <div>
             <h1 className="text-buttonColor text-2xl">OUR SOLUTIONS</h1>
           </div>
@@ -22,27 +22,27 @@ const FooterNew = () => {
             <Link href="/products/rely_his">
               <h1>Rely HIS(Hospital Information System)</h1>
             </Link>
-            <Link href="/products/rely_his">
+            <Link href="/products/rely_lis">
               <h1>Rely LIS(Laboratory Information System)</h1>
             </Link>
-            <Link href="/products/rely_his">
+            <Link href="/products/rely_hrm">
               <h1>Rely HRM(HR & Payroll Management System)</h1>
             </Link>
-            <Link href="/products/rely_his">
+            <Link href="/products/rely_ris">
               <h1>Rely RIS(Radiology Information System)</h1>
             </Link>
-            <Link href="/products/rely_his">
+            <Link href="/products/rely_pis">
               <h1>Rely PIS(Pharmacy Information System)</h1>
             </Link>
-            <Link href="/products/rely_his">
+            <Link href="/products/rely_ais">
               <h1>Rely AIS(Asset Information System)</h1>
             </Link>
-            <Link href="/products/rely_his">
+            <Link href="/products/rely_ivf">
               <h1>Rely IVF</h1>
             </Link>
           </div>
         </div>
-        <div className="flex flex-col space-y-10">
+        <div className="flex flex-col lg:space-y-10 space-y-5  lg:mt-0">
           <div>
             <h1 className="text-buttonColor text-2xl">QUICK LINKS</h1>
           </div>
@@ -50,7 +50,7 @@ const FooterNew = () => {
             <Link href="/">
               <h1>Home</h1>
             </Link>
-            <Link href="/">
+            <Link href="/services">
               <h1>Services</h1>
             </Link>
             <Link href="/products">
@@ -65,7 +65,7 @@ const FooterNew = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-10">
+        <div className="flex flex-col space-y-5 mt-5 lg:mt-0 lg:space-y-10">
           <div>
             <h1 className="text-2xl text-buttonColor">HEAD OFFICE</h1>
           </div>
@@ -85,7 +85,7 @@ const FooterNew = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-10">
+        <div className="flex flex-col space-y-5 mt-5 lg:mt-0 lg:space-y-10">
           <div>
             <h1 className="text-2xl text-buttonColor">FOLLOW US ON</h1>
           </div>

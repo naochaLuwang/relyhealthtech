@@ -16,6 +16,7 @@ interface FlagshipProduct {
   title: string;
   icon: string;
   description: string;
+  slug: string;
 }
 
 const FlagshipItems: Array<FlagshipProduct> = [
@@ -24,24 +25,28 @@ const FlagshipItems: Array<FlagshipProduct> = [
     icon: "/hospital.png",
     description:
       "Rely HIS is a world class Hospital Management Software. It is a web based ERP developed using latest technologies to manage working at a hospital in a paperless environment trusted by esteemed clients ",
+    slug: "rely_his",
   },
   {
     title: "Rely HRM",
     icon: "/resource.png",
     description:
       "Rely HRM is designed to automate the the Human Resources process of an organisation. This software computerises and integrate several HR processes like recruitment, training , payroll leave management. ",
+    slug: "rely_hrm",
   },
   {
     title: "Rely LIS",
     icon: "/microscope.png",
     description:
       "Rely LIS is a powerful clinical Laboratory Information System that seamlessly integrates with HIS, Billing, EMR, and reference labs. Its built-in interface engine simplifies the process of accessioning, coding, and reporting of laboratory results. ",
+    slug: "rely_lis",
   },
   {
     title: "Rely PIS",
     icon: "/hospital.png",
     description:
       "Rely PIS (Pharmacy Information System) is a world class pharmacy management software . It is designed for owners,  keeping their requirements in mind. It's designed to eliminate error while dispensing medicines + control over medicines stocks.",
+    slug: "rely_pis",
   },
 ];
 
@@ -60,18 +65,6 @@ const FlagShipProducts = () => {
           <FlagshipCards key={flagshipitem.title} {...flagshipitem} />
         ))}
       </SimpleGrid>
-      {/* <Flex align="center" justify={"center"}>
-        <Link
-          href="/products"
-          className="relative px-6 py-3 font-bold text-black group"
-        >
-          <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-brandColor rounded-md group-hover:translate-x-0 group-hover:translate-y-0"></span>
-          <span className="absolute inset-0 w-full h-full border-4 border-black rounded-md"></span>
-          <span className="relative text-buttonColor text-lg ">
-            Explore Products
-          </span>
-        </Link>
-      </Flex> */}
     </Box>
   );
 };

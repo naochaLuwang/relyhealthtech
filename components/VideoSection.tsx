@@ -27,7 +27,7 @@ const VideoSection = () => {
     },
   };
   return (
-    <Box w="full" h="3xl" bg={"brand.700"} py={16} px={16}>
+    <Box w="full" h="3xl" bg={"brand.700"} py={16} px={{ lg: 16, sm: 8 }}>
       <Text
         align="center"
         textColor="brand.900"
@@ -38,7 +38,7 @@ const VideoSection = () => {
         VIDEOS YOU MAY LIKE
       </Text>
       <Flex>
-        <Flex direction={"column"}>
+        <Flex direction={"column"} display={{ sm: "none", lg: "flex" }}>
           <HomeVideo />
           <Text color={"brand.900"} fontSize="xl" mt={5} fontWeight={"bold"}>
             RelyHRM (HR & Payroll Management Software)
@@ -48,9 +48,14 @@ const VideoSection = () => {
             of an organization
           </Text>
         </Flex>
-        <Flex flexDirection={"column"} ml={8}>
-          <Flex className="">
-            <Box w="fit-content" p={2} bg="white">
+        <Flex flexDirection={"column"} ml={{ lg: 8, sm: 0 }}>
+          <Flex flexDirection={{ sm: "column", lg: "row" }}>
+            <Box
+              w="fit-content"
+              p={{ lg: 2, sm: 0 }}
+              bg="white"
+              mx={{ sm: 7, lg: 0 }}
+            >
               <YouTube
                 videoId="u8zI0LreY50"
                 opts={opts}
@@ -58,7 +63,7 @@ const VideoSection = () => {
               />
             </Box>
 
-            <Flex ml={5} direction="column">
+            <Flex ml={5} direction="column" mt={{ sm: 5, lg: 0 }}>
               <Text fontSize={"medium"} fontWeight="bold" color={"brand.900"}>
                 Rely HIS(Hospital Management System)
               </Text>

@@ -63,24 +63,25 @@ const HomePage = async () => {
   const bannerNew = await client.fetch(bannerquery);
 
   return (
-    <Box>
-      <HomeCarousal carousalImages={carousalImages} />
-      <Suspense fallback={<Loading />}>
+    <Suspense fallback={<Loading />}>
+      <Box>
+        <HomeCarousal carousalImages={carousalImages} />
+
         <WhatsNew BANNER_NEW={bannerNew} />
-      </Suspense>
 
-      <Statistics />
+        <Statistics />
 
-      <Hero />
-      <FlagShipProducts />
-      <MobileApplication />
+        <Hero />
+        <FlagShipProducts />
+        <MobileApplication />
 
-      <ClientsHome PRIVATE_CLIENTS={privateclients} />
+        <ClientsHome PRIVATE_CLIENTS={privateclients} />
 
-      <ClientTestimonial />
-      <ContactHomePage />
-      <VideoSection />
-    </Box>
+        <ClientTestimonial />
+        <ContactHomePage />
+        <VideoSection />
+      </Box>
+    </Suspense>
   );
 };
 

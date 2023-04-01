@@ -13,17 +13,20 @@ import {
 
 import { FaAngleDoubleRight } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 interface FlagshipProduct {
   title: string;
   icon: string;
   description: string;
+  slug: string;
 }
 
 export default function FlagshipCards({
   title,
   icon,
   description,
+  slug,
 }: FlagshipProduct) {
   return (
     <Center py={6}>
@@ -82,27 +85,29 @@ export default function FlagshipCards({
           </Box>
         </Box>
         <Stack>
-          <Flex
-            px={4}
-            pb={4}
-            borderLeft={"1px"}
-            borderColor="brand.600"
-            alignItems="center"
-            justifyContent={"end"}
-            roundedBottom={"sm"}
-            cursor={"pointer"}
-            w="full"
-          >
-            <Text
-              fontSize={"md"}
-              color="brand.900"
-              fontWeight={"semibold"}
-              mr={2}
+          <Link href={`/products/${slug}`}>
+            <Flex
+              px={4}
+              pb={4}
+              borderLeft={"1px"}
+              borderColor="brand.600"
+              alignItems="center"
+              justifyContent={"end"}
+              roundedBottom={"sm"}
+              cursor={"pointer"}
+              w="full"
             >
-              Read more
-            </Text>
-            <FaAngleDoubleRight color="brand.900" />
-          </Flex>
+              <Text
+                fontSize={"md"}
+                color="brand.900"
+                fontWeight={"semibold"}
+                mr={2}
+              >
+                Read more
+              </Text>
+              <FaAngleDoubleRight color="brand.900" />
+            </Flex>
+          </Link>
         </Stack>
       </Box>
     </Center>

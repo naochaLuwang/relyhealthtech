@@ -81,7 +81,7 @@ const Header = () => {
           spacing={6}
           ml={6}
         >
-          <button className="bg-button1 hover:bg-button2 text-sm w-36 rounded-md text-buttonColor py-1 ">
+          <button className="bg-button1 hover:bg-button2 text-sm w-36 rounded-md text-buttonColor py-1 hidden lg:block ">
             BOOK A DEMO
           </button>
           {/* <Button

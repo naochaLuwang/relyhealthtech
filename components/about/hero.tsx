@@ -5,7 +5,7 @@ const AboutHero = () => {
   return (
     <div className="w-full py-10  h-auto ">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl font-semibold text-brand px-8">About Us</h1>
+        <h1 className="text-5xl font-semibold text-brand px-8">About Us</h1>
         <div className="flex flex-col lg:flex-row lg:mt-10 mt-5 ">
           <div className="flex flex-col space-y-5 px-8">
             <p className="text-lg">

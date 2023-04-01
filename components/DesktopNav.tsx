@@ -68,7 +68,7 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "Services",
-    href: "#",
+    href: "/services",
   },
   {
     label: "Client",
