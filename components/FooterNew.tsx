@@ -98,6 +98,9 @@ const FooterNew = () => {
       </div>
       <div className="flex">
         <Image src="/logo.jpg" alt="logo" width={100} height={100} />
+        {/* <div className="w-56 h-40 relative">
+          <Image src="/bdfvb.png" alt="regis" objectFit="cover" />
+        </div> */}
       </div>
     </div>
   );
