@@ -51,13 +51,15 @@ const ClientTestimonial = () => {
         rewindWithAnimation={true}
         autoPlaySpeed={15000}
         arrows={true}
+        showDots={true}
         // customTransition="transform 10000ms  ease-in-out"
         // transitionDuration={10000}
         partialVisbile={false}
         customRightArrow={<CustomRightArrow />}
         customLeftArrow={<CustomLeftArrow />}
+        removeArrowOnDeviceType="tablet"
       >
-        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor bg-opacity-0 rounded-xl lg:rounded-none lg:shadow-none shadow-lg  justify-center   space-y-5 flex flex-col py-8 px-8 ">
+        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor bg-opacity-70 lg:bg-opacity-0 rounded-xl lg:rounded-none lg:shadow-none shadow-lg  justify-center   space-y-5 flex flex-col py-8 px-8 ">
           <div className="flex justify-between items-center flex-col lg:flex-row space-y-8 lg:space-y-0">
             <div className="lg:pl-16">
               <div className="relative ">
@@ -105,7 +107,7 @@ const ClientTestimonial = () => {
             </p>
           </div>
         </div>
-        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor bg-opacity-0  rounded-xl lg:rounded-none shadow-lg lg:shadow-none  justify-center   space-y-10 flex flex-col py-8 px-8">
+        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor bg-opacity-80 lg:bg-opacity-0   rounded-xl lg:rounded-none shadow-lg lg:shadow-none  justify-center   space-y-10 flex flex-col py-8 px-8">
           <div className="flex justify-between items-center flex-col lg:flex-row space-y-8 lg:space-y-0">
             <div className="lg:pl-16">
               <div className="relative ">
@@ -147,7 +149,7 @@ const ClientTestimonial = () => {
             </p>
           </div>
         </div>
-        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor bg-opacity-0 lg:rounded-none lg:shadow-none rounded-xl shadow-lg justify-center   flex flex-col py-8 px-8 space-y-10">
+        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor bg-opacity-70 lg:bg-opacity-0 lg:rounded-none lg:shadow-none rounded-xl shadow-lg justify-center   flex flex-col py-8 px-8 space-y-10">
           <div className="flex justify-between items-center flex-col lg:flex-row space-y-8 lg:space-y-0">
             <div className="lg:pl-16">
               <div className="relative ">
@@ -179,7 +181,7 @@ const ClientTestimonial = () => {
               </div>
             </div>
           </div>
-          <div className="flex-col flex lg:py-2 lg:pl-8 w-fit bg-testimonial rounded-lg lg:pr-8 ">
+          <div className="flex-col flex lg:py-2 lg:pl-8 w-fit bg-testimonial rounded-lg lg:pr-8 pl-4 pr-8 py-2">
             <h1 className="lg:text-xl text-lg font-bold text-buttonColor">
               Dr. Junamoni Borgohain
             </h1>

@@ -26,7 +26,7 @@ const ProductOverview = () => {
         </div>
         <div>
           <Image
-            src="/adicon/infertility.svg"
+            src="/adicon/Infertility.svg"
             alt="lab"
             width={500}
             height={500}

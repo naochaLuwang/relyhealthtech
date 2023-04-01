@@ -3,7 +3,7 @@ import React from "react";
 
 const ProductOverview = () => {
   return (
-    <div className="w-full  lg:px-20 lg:py-20 px-8 py-10">
+    <div className="w-full relative lg:px-20 lg:py-20 px-8 py-10">
       <div className="flex items-center flex-col lg:flex-row lg:h-96 h-auto justify-between">
         <div className="flex flex-col max-w-2xl">
           <div>
@@ -38,8 +38,8 @@ const ProductOverview = () => {
             real-time decisions.
           </p>
         </div>
-        <div>
-          <Image src="/adicon/HR.svg" alt="lab" width={500} height={500} />
+        <div className="lg:absolute lg:flex right-0 -top-7 hidden">
+          <Image src="/his.png" alt="lab" width={900} height={900} />
         </div>
       </div>
     </div>
