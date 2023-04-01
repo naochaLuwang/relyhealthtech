@@ -12,6 +12,21 @@ import {
   useBreakpointValue,
   useDisclosure,
   useColorMode,
+  SimpleGrid,
+  FormControl,
+  FormLabel,
+  Input,
+  Textarea,
+} from "@chakra-ui/react";
+
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
 } from "@chakra-ui/react";
 
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
@@ -22,7 +37,8 @@ import MobileNav from "./MobileNav";
 import Link from "next/link";
 
 const Header = () => {
-  const { isOpen, onToggle } = useDisclosure();
+  const { isOpen, onToggle, onOpen, onClose } = useDisclosure();
+
   return (
     <Box width="100%" as="header" position={"fixed"} zIndex={50}>
       <Flex
@@ -81,24 +97,48 @@ const Header = () => {
           spacing={6}
           ml={6}
         >
-          <button className="bg-button1 hover:bg-button2 text-sm w-36 rounded-md text-buttonColor py-1 hidden lg:block ">
-            BOOK A DEMO
-          </button>
-          {/* <Button
-            size={"sm"}
-            as={"a"}
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"xs"}
-            fontWeight={600}
-            color={"white"}
-            bg={"brand.600"}
-            _hover={{
-              bg: "brand.500",
-            }}
+          <button
+            onClick={onOpen}
+            className="bg-button1 hover:bg-button2 text-sm w-36 rounded-md text-buttonColor py-1 hidden lg:block "
           >
-            BOOK A DEMO
-          </Button> */}
+            REQUEST DEMO
+          </button>
         </Stack>
+        <Modal isOpen={isOpen} onClose={onClose} isCentered size={"4xl"}>
+          <ModalOverlay>
+            <ModalContent>
+              <ModalHeader>Book Demo</ModalHeader>
+              <ModalCloseButton />
+              <ModalBody px={10}>
+                <SimpleGrid w="full" columns={2} gap={5}>
+                  <FormControl>
+                    <FormLabel>First Name</FormLabel>
+                    <Input type={"text"} />
+                  </FormControl>
+                  <FormControl>
+                    <FormLabel>Last Name</FormLabel>
+                    <Input type={"text"} />
+                  </FormControl>
+                  <FormControl>
+                    <FormLabel>Email</FormLabel>
+                    <Input type={"text"} />
+                  </FormControl>
+                  <FormControl>
+                    <FormLabel>Mobile No.</FormLabel>
+                    <Input type={"text"} variant="outline" rounded={"2xl"} />
+                  </FormControl>
+                </SimpleGrid>
+                <FormControl>
+                  <FormLabel>Message</FormLabel>
+                  <Textarea noOfLines={3}></Textarea>
+                </FormControl>
+                <button className="mt-5 mb-10 w-fit px-4 py-2 bg-whatsNew rounded-md text-buttonColor font-semibold">
+                  Submit
+                </button>
+              </ModalBody>
+            </ModalContent>
+          </ModalOverlay>
+        </Modal>
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
