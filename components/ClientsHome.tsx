@@ -89,13 +89,13 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
               py={"2"}
               marginLeft={{ lg: 5, base: 3 }}
             >
-              <Text fontWeight={"bold"}>Diagnostic Centre</Text>
+              <Text fontWeight={"bold"}>Diagnostic Centres</Text>
             </Tab>
           </TabList>
 
           <TabPanels>
             <TabPanel>
-              <Box pl={{ lg: 16, base: 3 }}>
+              <Box px={{ lg: 10, base: 3 }} w="full">
                 <ClientCardCarousel PRIVATE_CLIENTS={PRIVATE_CLIENTS} />
               </Box>
             </TabPanel>
