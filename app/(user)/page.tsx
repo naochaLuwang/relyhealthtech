@@ -1,4 +1,7 @@
 export const metadata = {
+  icons: {
+    icon: "/rfavicon.png",
+  },
   title: "Rely Healthcare Technologies",
   keywords: [
     "Best Hospital Software",
