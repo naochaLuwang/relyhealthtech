@@ -23,7 +23,7 @@ const Benefits = () => {
             </h1>
           </div>
 
-          <p className="text-lg text-justify mt-2">
+          <p className="text-base text-justify mt-2">
             Rely LIS features a built-in interface engine that enables seamless
             integration with HIS, Billing, EMR, and reference labs. This
             integration simplifies the process of sharing laboratory results
@@ -35,7 +35,7 @@ const Benefits = () => {
           <h1 className="text-2xl font-semibold text-justify mt-10  text-textPrimary">
             Simplify Laboratory Workflows
           </h1>
-          <p className="text-justify text-lg mt-2">
+          <p className="text-justify text-base mt-2">
             Rely LIS simplifies laboratory workflows by providing a highly
             configurable application that can be customized to fit various
             laboratory workflow models. By leveraging this feature, labs can
@@ -57,7 +57,7 @@ const Benefits = () => {
               Store Historical Results
             </h1>
           </div>
-          <p className="text-lg text-justify mt-2">
+          <p className="text-base text-justify mt-2">
             Rely LIS stores all historical laboratory results, which can be
             accessed and viewed instantly on a single screen. This feature
             provides users with a comprehensive view of patient data and helps
@@ -69,7 +69,7 @@ const Benefits = () => {
           <h1 className="text-2xl font-semibold text-justify mt-10 text-textPrimary">
             Customizable Application
           </h1>
-          <p className="text-justify text-lg mt-2">
+          <p className="text-justify text-base mt-2">
             Rely LIS is a highly configurable application that can be customized
             to fit the needs of different laboratories. The application can be
             configured to match the laboratory&apos;s workflow, making it easier

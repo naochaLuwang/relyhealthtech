@@ -13,7 +13,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Enhanced Patient Safety
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Rely PIS reduces medication dispensing errors, ensures timely
             administration, and reconciles medication on admission and
             discharge, leading to improved patient safety.
@@ -23,7 +23,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Improved Pharmacy Efficiency
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Rely PIS system automates ordering, dispensing, and inventory
             management processes, which improves the efficiency of pharmacy
             staff.
@@ -34,7 +34,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Customizable to Organizational Needs
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Rely PIS can be adapted to accommodate workflow, standards, and
             practices with less disruption and higher user adoption.
           </p>
@@ -44,7 +44,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Reduced Medication Cost
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Efficient inventory management, waste reduction, and optimized drug
             usage lead to cost savings.
           </p>
@@ -53,7 +53,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Improved communication and collaboration
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Rely PIS can facilitate communication between pharmacists,
             physicians, nurses, and other healthcare providers, leading to
             better coordination of care.
@@ -64,7 +64,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Enhanced regulatory compliance
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Rely PIS helps pharmacies stay compliant with medication safety
             regulations and standards.
           </p>
@@ -74,7 +74,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Improved patient outcomes
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             By reducing medication errors, ensuring timely medication
             administration, and optimizing medication usage, Rely PIS can
             contribute to improved patient outcomes and satisfaction.
@@ -85,7 +85,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Analytics and reporting
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             The system can provide valuable data and analytics on medication
             usage, dispensing patterns, and other key performance indicators,
             helping pharmacies make informed decisions about their operations

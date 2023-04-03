@@ -13,7 +13,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Optimized patient scheduling and workflow
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Rely RIS is designed to improve patient scheduling and workflow,
             which reduces wait times and enhances overall patient satisfaction.
             With a more efficient and streamlined scheduling process, healthcare
@@ -23,7 +23,7 @@ const Benefits = () => {
         </div>
         <div className="flex flex-col">
           <h1 className="text-xl font-semibold mb-2">Enhanced collaboration</h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Our RIS platform facilitates collaboration between radiologists and
             referring physicians. By providing real-time access to critical data
             and images, physicians can make informed decisions more quickly, and
@@ -36,7 +36,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Real-time access to critical data and analytics
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             With Rely RIS, healthcare organizations have access to real-time
             data and analytics. This enables better decision-making and process
             improvement. For example, staff can use data to identify bottlenecks
@@ -50,7 +50,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Increased staff productivity
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Rely RIS is equipped with a range of tools that help increase staff
             productivity. This includes features such as patient and image
             tracking, which streamline workflow and reduce errors. With less
@@ -64,7 +64,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Streamlined revenue cycle managemen
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Our RIS platform automates billing and reporting processes, reducing
             errors and improving financial performance. This streamlines the
             revenue cycle management process, which helps organizations manage
@@ -73,7 +73,7 @@ const Benefits = () => {
         </div>
         <div className="flex flex-col">
           <h1 className="text-xl font-semibold mb-2">Inventory management</h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Rely RIS includes inventory management tools, ensuring that adequate
             supplies are always available when needed. This helps reduce costs
             associated with ordering, storing, and managing inventory.

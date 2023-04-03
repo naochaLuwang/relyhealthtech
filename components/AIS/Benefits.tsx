@@ -13,7 +13,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Improved Productivity and Efficiency
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Our Asset Management software helps businesses improve their
             productivity and efficiency by providing a systemized approach to
             asset management. This results in reduced downtime caused by
@@ -25,7 +25,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Increased Return on Investment (ROI)
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             By using our software, businesses can make informed decisions about
             their assets, such as when to repair or replace them. This can help
             them optimize their asset usage and reduce costs, resulting in
@@ -34,7 +34,7 @@ const Benefits = () => {
         </div>
         <div className="flex flex-col">
           <h1 className="text-xl font-semibold mb-2">Centralized Platform</h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Our software provides a centralized platform for managing assets,
             which makes it easier for organizations to track and manage their
             assets efficiently.
@@ -45,7 +45,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Accurate Financial Reporting
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Our Asset Management software helps organizations improve the
             accuracy of their financial reporting by providing detailed reports
             on asset usage and performance.
@@ -56,7 +56,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Informed Decision Making
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             By using our software, businesses can make informed decisions about
             their assets based on real-time data, which helps them stay
             competitive in today&apos;s market.
@@ -67,7 +67,7 @@ const Benefits = () => {
           <h1 className="text-xl font-semibold mb-2">
             Reduced Maintenance Costs
           </h1>
-          <p className="text-lg text-justify">
+          <p className="text-base text-justify">
             Our Asset Management software helps organizations reduce maintenance
             costs by scheduling maintenance tasks and identifying opportunities
             to optimize asset usage.

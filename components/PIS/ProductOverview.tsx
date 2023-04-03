@@ -13,14 +13,14 @@ const ProductOverview = () => {
             Pharmacy Information System (PIS)
           </h1>
 
-          <p className="text-justify mt-5 text-lg">
+          <p className="text-justify mt-5 text-base">
             Introducing Rely PIS, the world-class pharmacy management software
             designed for pharmacy owners. Our software is designed to eliminate
             errors while dispensing medicines and provide complete control over
             medication stocks.
           </p>
 
-          <p className="text-justify text-lg mt-5">
+          <p className="text-justify text-base mt-5">
             Rely PIS is customizable to meet the unique requirements of your
             pharmacy, ensuring that you have a system that is tailored to your
             needs. With our automated ordering, dispensing, and inventory
@@ -28,7 +28,7 @@ const ProductOverview = () => {
             your pharmacy staff.
           </p>
 
-          <p className="text-justify text-lg mt-5">
+          <p className="text-justify text-base mt-5">
             Our software ensures that you stay compliant with medication safety
             regulations and standards, giving you the peace of mind that
             you&apos;re providing safe and effective care to your patients.

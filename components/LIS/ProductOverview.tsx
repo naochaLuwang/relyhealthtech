@@ -13,7 +13,7 @@ const ProductOverview = () => {
             Laboratory Information System (LIS)
           </h1>
 
-          <p className="text-justify mt-5 text-lg">
+          <p className="text-justify mt-5 text-base">
             Rely Laboratory Information System (LIS) is a powerful clinical
             laboratory software designed to streamline laboratory workflows,
             store historical laboratory results, and simplify the process of
@@ -22,7 +22,7 @@ const ProductOverview = () => {
             wide variety of laboratory workflow models.
           </p>
 
-          <p className="text-justify text-lg mt-5">
+          <p className="text-justify text-base mt-5">
             Rely LIS is a cloud based lab application with complete lab
             interfaces for diagnostic centre.By leveraging Rely LIS, labs can
             improve efficiency, reduce errors, and deliver accurate results.

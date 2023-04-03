@@ -3,6 +3,9 @@ import { Box } from "../../../components/ChakraElements";
 import { groq } from "next-sanity";
 import { client } from "@/lib/sanity.client";
 export const metadata = {
+  icons: {
+    icon: "/rfavicon.png",
+  },
   title: "Clients | Rely Healthcare Technologies",
 };
 

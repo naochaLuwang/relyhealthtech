@@ -11,14 +11,14 @@ import Image from "next/image";
 
 const FooterNew = () => {
   return (
-    <div className="w-full h-auto  flex  flex-col bg-footer py-20 lg:px-14 px-8 justify-between space-y-5">
+    <div className="w-full h-auto  flex  flex-col bg-textLight bg-opacity-30 py-20 lg:px-14 px-8 justify-between space-y-5">
       <div className="flex flex-col lg:flex-row justify-between w-full">
-        <div className="lg:flex flex-col space-y-10 hidden">
+        <div className="lg:flex flex-col space-y-5 hidden">
           <div>
-            <h1 className="text-buttonColor text-2xl">OUR SOLUTIONS</h1>
+            <h1 className="text-brand text-2xl font-semibold">OUR SOLUTIONS</h1>
           </div>
 
-          <div className="flex flex-col text-buttonColor space-y-3 text-base">
+          <div className="flex flex-col text-black  space-y-3 text-base">
             <Link href="/products/rely_his">
               <h1>Rely HIS(Hospital Information System)</h1>
             </Link>
@@ -42,11 +42,11 @@ const FooterNew = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col lg:space-y-10 space-y-5  lg:mt-0">
+        <div className="flex flex-col  space-y-5  lg:mt-0">
           <div>
-            <h1 className="text-buttonColor text-2xl">QUICK LINKS</h1>
+            <h1 className="text-brand text-2xl font-semibold">QUICK LINKS</h1>
           </div>
-          <div className="flex flex-col space-y-3 text-buttonColor text-base">
+          <div className="flex flex-col space-y-3 text-black text-base">
             <Link href="/">
               <h1>Home</h1>
             </Link>
@@ -65,38 +65,40 @@ const FooterNew = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-5 mt-5 lg:mt-0 lg:space-y-10">
+        <div className="flex flex-col space-y-5 mt-5 lg:mt-0 ">
           <div>
-            <h1 className="text-2xl text-buttonColor">HEAD OFFICE</h1>
+            <h1 className="text-2xl text-brand font-semibold">OUR PRESENCE</h1>
           </div>
-          <div className="flex flex-col space-y-3 text-base text-buttonColor">
+          <div className="flex flex-col space-y-3 text-base text-black">
             <div className="flex space-x-2">
-              <MapPinIcon className="h-6 w-6 flex-shrink-0 text-buttonColor" />
-              <p>259, Rg Baruah Road, Guwahati, Assam 781021</p>
+              <MapPinIcon className="h-6 w-6 flex-shrink-0 text-secondary" />
+              <p className="text-secondary">
+                259, Rg Baruah Road, Guwahati, Assam 781021
+              </p>
             </div>
             <div className="flex space-x-2">
-              <PhoneIcon className="h-6 w-6 flex-shrink-0 text-buttonColor" />
-              <p>(+91) 361-3511942</p>
+              <PhoneIcon className="h-6 w-6 flex-shrink-0 text-secondary" />
+              <p className="text-secondary">(+91) 361-3511942</p>
             </div>
             <div className="flex space-x-2">
-              <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-buttonColor" />
-              <p>info@relyhealthtech.com</p>
+              <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-secondary" />
+              <p className="text-secondary">info@relyhealthtech.com</p>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col space-y-5 mt-5 lg:mt-0 lg:space-y-10">
+        <div className="flex flex-col space-y-5 mt-5 lg:mt-0 ">
           <div>
-            <h1 className="text-2xl text-buttonColor">FOLLOW US ON</h1>
+            <h1 className="text-2xl text-brand font-semibold">FOLLOW US ON</h1>
           </div>
           <div className="flex space-x-5">
-            <BsInstagram className="text-buttonColor h-10 w-10" />
-            <BsLinkedin className="h-10 w-10 text-buttonColor" />
-            <FaFacebookSquare className="text-buttonColor h-10 w-10" />
+            <BsInstagram className="text-black h-10 w-10" />
+            <BsLinkedin className="h-10 w-10 text-black" />
+            <FaFacebookSquare className="text-black h-10 w-10" />
           </div>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex pt-5">
         <Image src="/logo.jpg" alt="logo" width={100} height={100} />
         {/* <div className="w-56 h-40 relative">
           <Image src="/bdfvb.png" alt="regis" objectFit="cover" />
