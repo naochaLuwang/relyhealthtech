@@ -45,8 +45,8 @@ const ClientCardCarousel = ({ PRIVATE_CLIENTS }: any) => {
         rewindWithAnimation={true}
         autoPlaySpeed={1000}
         arrows={false}
-        // customTransition="transform 3000ms  ease-in-out"
-        // transitionDuration={3000}
+        customTransition="transform 3000ms  ease-in-out"
+        transitionDuration={3000}
         partialVisbile={false}
         renderButtonGroupOutside={true}
         customButtonGroup={<ButtonGroup />}

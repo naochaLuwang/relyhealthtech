@@ -10,10 +10,10 @@ export const metadata = {
 const ProductsPage = () => {
   return (
     <div className="  relative">
-      <div className=" lg:max-w-7xl   lg:h-fit h-fit pb-10   mx-auto px-8   lg:py-24 flex lg:flex-row flex-col-reverse items-center ">
-        <div className="max-w-lg flex-col  lg:space-y-5">
-          <p className="text-4xl font-bold text-brand">Products</p>
-          <p className="lg:text-lg text-base font-medium text-primary text-justify leading-relaxed lg:leading-loose">
+      <div className=" lg:max-w-7xl   lg:h-screen h-fit    mx-auto px-8   lg:py-20 flex lg:flex-row flex-col-reverse items-start">
+        <div className="max-w-xl flex-col  lg:space-y-5 pt-14">
+          <p className="text-4xl font-semibold text-brand">Products</p>
+          <p className="lg:text-lg text-base  text-primary text-justify leading-relaxed lg:leading-loose">
             <span className="font-bold text-whatsNew lg:text-xl text-lg">
               Rely Healthcare Technologies
             </span>{" "}
@@ -35,8 +35,8 @@ const ProductsPage = () => {
           </Link> */}
         </div>
 
-        <div className="lg:absolute lg:top-12 relative lg:right-10 h-72 w-[27rem]  lg:h-[418px] lg:w-[800px]">
-          <Image src={"/flagship.svg"} alt="" fill objectFit="contain" />
+        <div className="lg:absolute lg:top-36 relative lg:-right-10 h-72 w-[27rem]  lg:h-[450px] lg:w-[800px]">
+          <Image src={"/Products.svg"} alt="" fill objectFit="contain" />
         </div>
       </div>
       <div

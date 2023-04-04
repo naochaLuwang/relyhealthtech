@@ -10,13 +10,13 @@ const Achievements = () => {
 
       <div className="flex relative">
         <div className="flex flex-col space-y-7">
-          <div className="flex space-x-3 ">
+          <div className="flex space-x-3 flex-shrink-0">
             <Image
               src="/arrow.png"
               alt="arrow"
               width={20}
               height={20}
-              className="flex-shrink-0"
+              className="flex grow-0"
             />
             <p className="text-xl font-medium text-brand">
               Installed our Software in Over 100+ Hospitals and 200+ Diagnostic

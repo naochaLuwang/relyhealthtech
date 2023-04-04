@@ -30,6 +30,7 @@ const ClientTestimonial = () => {
       w="full"
       h={"auto"}
       py={16}
+      px={{ base: 4 }}
       backgroundImage="url('/blur-hospital.jpg')"
       backgroundPosition={{ sm: "bottom", lg: "top" }}
       backgroundRepeat="no-repeat"
@@ -51,15 +52,15 @@ const ClientTestimonial = () => {
         rewindWithAnimation={true}
         autoPlaySpeed={15000}
         arrows={true}
-        // showDots={true}
+        showDots={true}
         // customTransition="transform 10000ms  ease-in-out"
         // transitionDuration={10000}
         partialVisbile={false}
         customRightArrow={<CustomRightArrow />}
         customLeftArrow={<CustomLeftArrow />}
-        removeArrowOnDeviceType="tablet"
+        removeArrowOnDeviceType="mobile"
       >
-        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor bg-opacity-70 lg:bg-opacity-100 rounded-xl lg:rounded-xl lg:shadow-xl shadow-lg  justify-center   space-y-5 flex flex-col py-8 px-8 ">
+        <div className="lg:max-w-6xl mx-auto  lg:h-96 h-[40rem] bg-buttonColor bg-opacity-100 lg:bg-opacity-100 rounded-xl lg:rounded-xl lg:shadow-xl shadow-lg  justify-center   space-y-5 flex flex-col py-8 px-8 ">
           <div className="flex justify-between items-center flex-col lg:flex-row space-y-8 lg:space-y-0">
             <div className="lg:pl-16">
               <div className="relative ">
@@ -77,11 +78,11 @@ const ClientTestimonial = () => {
 
             <div className="max-w-3xl lg:pr-8">
               <div className="flex flex-col space-y-5">
-                <p className="font-medium  text-base text-black text-justify">
+                <p className="lg:font-medium  lg:text-base text-sm text-black text-justify">
                   We have been using RelyHIS for more than four years and very
                   satisfied with the product.
                 </p>
-                <p className="font-medium  text-base text-black text-justify">
+                <p className="lg:font-medium  lg:text-base text-sm text-black text-justify">
                   Previously we had a software which was a nightmare to the
                   management, we faced critical issues like service rate
                   variation, application downtime, manual billing and
@@ -92,14 +93,14 @@ const ClientTestimonial = () => {
                   the product and service.
                 </p>
 
-                <p className="font-medium  text-base text-black text-justify">
+                <p className="lg:font-medium  lg:text-base text-sm text-black text-justify">
                   We are overall very satisfied with the product and service.
                 </p>
               </div>
             </div>
           </div>
           <div className="flex-col flex py-2 rounded-lg bg-testimonial  px-8  w-fit">
-            <h1 className="lg:text-xl text-lg font-bold text-buttonColor">
+            <h1 className="lg:text-xl text-base font-bold text-buttonColor">
               Dr. Pramod Kr. Shrama
             </h1>
             <p className="text-sm font-medium text-buttonColor">
@@ -107,7 +108,7 @@ const ClientTestimonial = () => {
             </p>
           </div>
         </div>
-        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor bg-opacity-80 lg:bg-opacity-100   rounded-xl lg:rounded-xl shadow-lg lg:shadow-xl  justify-center   space-y-10 flex flex-col py-8 px-8">
+        <div className="lg:max-w-6xl  mx-auto lg:h-96 h-[40rem] bg-buttonColor bg-opacity-100 lg:bg-opacity-100   rounded-xl lg:rounded-xl shadow-lg lg:shadow-xl  justify-center   space-y-10 flex flex-col py-8 px-8">
           <div className="flex justify-between items-center flex-col lg:flex-row space-y-8 lg:space-y-0">
             <div className="lg:pl-16">
               <div className="relative ">
@@ -125,14 +126,14 @@ const ClientTestimonial = () => {
 
             <div className="max-w-3xl lg:pr-8">
               <div className="flex flex-col space-y-5">
-                <p className="font-medium  text-base text-black text-justify">
+                <p className="lg:font-medium  lg:text-base text-sm text-black text-justify">
                   We are really happy & satisfied with RelyHIS hospital
                   management software and the support.The software is very user
                   friendly, easily customizable and it gives clear report of
                   hospital operations. As a result, we are able to make our
                   operatons more efficient using this software.
                 </p>
-                <p className="font-medium  text-base text-black text-justify">
+                <p className="lg:font-medium  lg:text-base text-sm text-black text-justify">
                   We truly appreciate Rely Team for customer centric approach
                   unlike many other competitors. We are proud to be associated
                   with Rely Healthcare Technologies.
@@ -141,7 +142,7 @@ const ClientTestimonial = () => {
             </div>
           </div>
           <div className="flex-col flex lg:py-2 rounded-lg lg:pl-8 bg-testimonial w-fit lg:pr-8 py-2 pl-4 pr-4">
-            <h1 className="lg:text-xl text-lg font-bold text-buttonColor">
+            <h1 className="lg:text-xl text-base font-bold text-buttonColor">
               Mr. Altaf Hussain Ahmed
             </h1>
             <p className="text-sm font-medium text-buttonColor">
@@ -149,7 +150,7 @@ const ClientTestimonial = () => {
             </p>
           </div>
         </div>
-        <div className="lg:max-w-6xl mx-auto lg:h-96 h-[44rem] bg-buttonColor bg-opacity-70 lg:bg-opacity-100 lg:rounded-xl lg:shadow-xl rounded-xl shadow-lg justify-center   flex flex-col py-8 px-8 space-y-10">
+        <div className="lg:max-w-6xl  mx-auto lg:h-96 h-[40rem] bg-buttonColor bg-opacity-100 lg:bg-opacity-100 lg:rounded-xl lg:shadow-xl rounded-xl shadow-lg justify-center   flex flex-col py-8 px-8 space-y-10">
           <div className="flex justify-between items-center flex-col lg:flex-row space-y-8 lg:space-y-0">
             <div className="lg:pl-16">
               <div className="relative ">
@@ -167,14 +168,14 @@ const ClientTestimonial = () => {
 
             <div className="max-w-3xl lg:pr-8">
               <div className="flex flex-col space-y-5">
-                <p className="font-medium  text-base text-black text-justify">
+                <p className="lg:font-medium  lg:text-base text-sm text-black text-justify">
                   If you are looking for a top class software for hospital, then
                   RelyHIS Hospital Management Software is the answer. It is very
                   user friendly and helps in controlling pilferage in the
                   hospital, which is one of the top challenges most hospitals
                   face, apart from making operations & process efficient.
                 </p>
-                <p className="font-medium  text-base text-black text-justify">
+                <p className="lg:font-medium  lg:text-base text-sm text-black text-justify">
                   Thank you so much for being our healthcare IT partner and
                   looking forward to working with you for many years to come
                 </p>
@@ -182,7 +183,7 @@ const ClientTestimonial = () => {
             </div>
           </div>
           <div className="flex-col flex lg:py-2 lg:pl-8 w-fit bg-testimonial rounded-lg lg:pr-8 pl-4 pr-8 py-2">
-            <h1 className="lg:text-xl text-lg font-bold text-buttonColor">
+            <h1 className="lg:text-xl text-base font-bold text-buttonColor">
               Dr. Junamoni Borgohain
             </h1>
             <p className="text-sm font-medium text-buttonColor">

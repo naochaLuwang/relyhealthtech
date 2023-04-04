@@ -14,7 +14,7 @@ const Overview = () => {
             with us and unlock the full potential of your business.
           </p>
         </div>
-        <div className="flex-1 lg:pl-32 lg:pb-36">
+        <div className="flex-1 lg:pl-32 lg:pb-36  lg:-mt-20">
           <Image src="/crm.svg" alt="crm" height={500} width={500} />
         </div>
       </div>

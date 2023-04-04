@@ -104,7 +104,7 @@ const DesktopNav = () => {
                   _hover={{
                     textDecoration: "none",
                     color: "brand.900",
-                    fontWeight: "bold",
+                    fontWeight: "semibold",
                     transition: "all 5ms ease-in-out",
                   }}
                 >

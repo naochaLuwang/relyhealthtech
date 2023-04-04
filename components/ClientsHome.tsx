@@ -60,7 +60,7 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
               _selected={{ color: "white", bg: "brand.900" }}
               border={"1px solid"}
               w="fit-content"
-              rounded="lg"
+              rounded="md"
               px={"3"}
               py={"2"}
               marginLeft={{ lg: 20, base: 3 }}
@@ -71,7 +71,7 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
               _selected={{ color: "white", bg: "brand.900" }}
               border={"1px solid"}
               w="fit-content"
-              rounded="lg"
+              rounded="md"
               px={"3"}
               py={"2"}
               marginLeft={{ lg: 5, base: 3 }}
@@ -84,7 +84,7 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
               _selected={{ color: "white", bg: "brand.900" }}
               border={"1px solid"}
               w="fit-content"
-              rounded="lg"
+              rounded="md"
               px={"3"}
               py={"2"}
               marginLeft={{ lg: 5, base: 3 }}

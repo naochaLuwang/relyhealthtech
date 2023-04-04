@@ -12,16 +12,24 @@ import planning from "../../public/icons/planning.json";
 const ProvidedServices = () => {
   return (
     <Box w="full" h="auto" py={20} bg="brand.700">
-      <Box maxW="7xl" mx="auto" px={{ sm: 10, lg: 0 }}>
-        <Text fontSize={"sm"}>WHAT WE DO</Text>
-        <Text fontSize={"3xl"} fontWeight="semibold" color={"brand.900"}>
+      <Box maxW="7xl" mx="auto" px={5}>
+        <Text fontSize={"sm"} paddingX={{ sm: 5, lg: 0 }}>
+          WHAT WE DO
+        </Text>
+        <Text
+          fontSize={"3xl"}
+          paddingX={{ sm: 5, lg: 0 }}
+          fontWeight="semibold"
+          color={"brand.900"}
+        >
           Our Provided Services
         </Text>
         <SimpleGrid
           columns={{ lg: 4, sm: 1 }}
-          paddingTop={{ lg: 10, sm: 5 }}
+          paddingTop={{ lg: 5, sm: 5 }}
+          paddingX={{ lg: 0, sm: 10 }}
           gap={6}
-          py="20"
+          py={{ lg: 16, sm: 10 }}
         >
           <Box w="full" h="96" boxShadow="xl" bg="brand.900" rounded="2xl">
             <Box

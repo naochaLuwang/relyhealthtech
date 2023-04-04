@@ -12,7 +12,7 @@ import { extendTheme } from "@chakra-ui/react";
 import { Suspense } from "react";
 import Loading from "./loading";
 import FooterNew from "@/components/FooterNew";
-import { Poppins } from "@next/font/google";
+import { Poppins } from "next/font/google";
 
 const colors = {
   brand: {

@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const AboutBanner = () => {
   return (
-    <div className=" w-full h-auto bg-backgroundColor py-10 flex justify-between items-center">
-      <div className="grid grid-cols-1 lg:grid-cols-3 max-w-7xl  mx-auto  gap-y-5 lg:gap-x-8">
-        <div className="w-96 h-[27rem] shadow-lg  flex flex-col py-8 space-y-4 items-center px-8 bg-buttonColor rounded-xl">
+    <div className=" w-full h-auto bg-backgroundColor py-10 flex lg:justify-between  items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3 max-w-7xl    gap-y-5 lg:gap-x-10 mx-auto  ">
+        <div className="w-96  h-[27rem] shadow-lg   flex flex-col py-8 space-y-4 items-center  px-8 bg-buttonColor rounded-xl">
           <h1 className="text-2xl font-semibold text-brand">OUR MISSION</h1>
           <TbTargetArrow className="h-32 w-32 text-brand" />
           <p className="text-justify ">
