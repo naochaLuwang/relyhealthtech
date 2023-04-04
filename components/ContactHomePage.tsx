@@ -20,17 +20,21 @@ const ContactHomePage = () => {
       mx="auto"
       direction={"column"}
       h="auto"
-      py={16}
-      px={16}
+      py={{ lg: 16, base: 10 }}
+      px={{ lg: 18, base: 8 }}
       alignItems="center"
     >
       <Box>
-        <Text fontSize={"3xl"} fontWeight="semibold" textColor={"brand.900"}>
+        <Text
+          fontSize={{ lg: "3xl", base: "2xl" }}
+          fontWeight="semibold"
+          textColor={"brand.900"}
+        >
           GET IN TOUCH WITH US
         </Text>
       </Box>
       <Box w="full" mt="10">
-        <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={10}>
+        <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={{ lg: 10, base: 4 }}>
           <FormControl isRequired>
             <FormLabel>First Name</FormLabel>
             <Input />
@@ -48,7 +52,7 @@ const ContactHomePage = () => {
             <Input />
           </FormControl>
         </SimpleGrid>
-        <Box w="full" marginTop={10}>
+        <Box w="full" marginTop={4}>
           <FormControl isRequired>
             <FormLabel>Message</FormLabel>
             <Textarea size="sm"></Textarea>

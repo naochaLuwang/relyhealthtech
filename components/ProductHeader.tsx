@@ -8,9 +8,11 @@ interface BreadCrumb {
 
 const ProductHeader = ({ name, product }: BreadCrumb) => {
   return (
-    <div className="w-full lg:h-40 h-32 bg-brandColor flex items-center lg:px-20 px-10">
+    <div className="w-full lg:h-40 h-28  bg-brandColor flex items-center lg:px-20 px-8">
       <div className="flex flex-col">
-        <h2 className="text-4xl font-semibold text-buttonColor">{name}</h2>
+        <h2 className="lg:text-4xl text-3xl font-semibold text-buttonColor">
+          {name}
+        </h2>
 
         <nav className="flex text-buttonColor mt-4" aria-label="Breadcrumb">
           <ol className="inline-flex items-center space-x-1 md:space-x-3">

@@ -11,7 +11,7 @@ const CustomLeftArrow = ({ onClick, ...rest }: any) => {
   return (
     <Button
       onClick={() => onClick()}
-      className="absolute left-20 rounded-full w-14 h-14 bg-primary bg-opacity-10"
+      className="absolute left-12 rounded-full w-14 h-14 bg-primary bg-opacity-10"
     >
       <TiChevronLeft className="h-16 w-16 text-card" />
     </Button>

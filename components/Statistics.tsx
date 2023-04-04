@@ -14,11 +14,6 @@ import {
   Image,
 } from "@chakra-ui/react";
 
-import { ReactNode } from "react";
-import { BsPerson } from "react-icons/bs";
-import { FiServer } from "react-icons/fi";
-import { GoLocation } from "react-icons/go";
-
 interface StatsCardProps {
   title: string;
   stat: string;
@@ -52,10 +47,19 @@ function StatsCard(props: StatsCardProps) {
         </Box>
 
         <Box pl={{ md: 4 }} px={{ base: 4 }} py={2} bg={bgc} w={"full"}>
-          <StatLabel fontWeight={"medium"} color={"white"} isTruncated>
+          <StatLabel
+            fontWeight={"medium"}
+            color={"white"}
+            fontSize={{ lg: "md", base: "xs" }}
+            isTruncated
+          >
             {title}
           </StatLabel>
-          <StatNumber fontSize={"2xl"} color={"yellow"} fontWeight={"medium"}>
+          <StatNumber
+            fontSize={{ lg: "2xl", base: "base" }}
+            color={"yellow"}
+            fontWeight={"medium"}
+          >
             {stat}
           </StatNumber>
         </Box>
@@ -69,7 +73,7 @@ const Statistics = () => {
     <Box maxW="full" mx={"auto"} pt={2} px={{ base: 4, md: 12 }}>
       <SimpleGrid
         columns={{ base: 2, md: 5 }}
-        spacing={{ base: 5, lg: 0 }}
+        spacing={{ base: 2, lg: 0 }}
         border={{ base: "0px", lg: "1px solid" }}
         roundedLeft="lg"
         roundedRight={"lg"}

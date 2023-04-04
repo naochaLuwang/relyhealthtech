@@ -11,14 +11,12 @@ import logoDesign from "../../public/icons/logoDesign.json";
 import planning from "../../public/icons/planning.json";
 const ProvidedServices = () => {
   return (
-    <Box w="full" h="auto" py={20} bg="brand.700">
-      <Box maxW="7xl" mx="auto" px={5}>
-        <Text fontSize={"sm"} paddingX={{ sm: 5, lg: 0 }}>
-          WHAT WE DO
-        </Text>
+    <Box w="full" h="auto" py={16} bg="brand.700">
+      <Box maxW="7xl" mx="auto" px={10}>
+        <Text fontSize={"sm"}>WHAT WE DO</Text>
         <Text
           fontSize={"3xl"}
-          paddingX={{ sm: 5, lg: 0 }}
+          paddingBottom={{ lg: 0, base: 5 }}
           fontWeight="semibold"
           color={"brand.900"}
         >
@@ -26,7 +24,7 @@ const ProvidedServices = () => {
         </Text>
         <SimpleGrid
           columns={{ lg: 4, sm: 1 }}
-          paddingTop={{ lg: 5, sm: 5 }}
+          paddingTop={{ lg: 5, sm: 10 }}
           paddingX={{ lg: 0, sm: 10 }}
           gap={6}
           py={{ lg: 16, sm: 10 }}

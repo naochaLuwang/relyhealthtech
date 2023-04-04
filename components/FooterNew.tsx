@@ -75,17 +75,17 @@ const FooterNew = () => {
           </div>
           <div className="flex flex-col space-y-3 lg:text-base text-sm text-secondary">
             <div className="flex space-x-2">
-              <MapPinIcon className="h-6 w-6 flex-shrink-0 text-secondary" />
+              {/* <MapPinIcon className="h-6 w-6 flex-shrink-0 text-secondary" /> */}
               <p className="text-secondary">
                 259, Rg Baruah Road, Guwahati, Assam 781021
               </p>
             </div>
-            <div className="flex space-x-2">
-              <PhoneIcon className="h-6 w-6 flex-shrink-0 text-secondary" />
+            <div className="flex space-x-2 items-center">
+              <PhoneIcon className="h-4 w-4 flex-shrink-0 text-secondary" />
               <p className="text-secondary">(+91) 361-3511942</p>
             </div>
-            <div className="flex space-x-2">
-              <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-secondary" />
+            <div className="flex space-x-2 items-center">
+              <EnvelopeIcon className="h-4 w-4 flex-shrink-0 text-secondary" />
               <p className="text-secondary">info@relyhealthtech.com</p>
             </div>
           </div>
@@ -104,7 +104,8 @@ const FooterNew = () => {
           </div>
         </div>
       </div>
-      <div className="flex lg:flex-row lg:relative pb-10 pt-4   justify-between flex-shrink-0 items-start ">
+
+      <div className="flex lg:flex-row lg:relative pb-10 pt-4  border-secondary  justify-between flex-shrink-0 items-start ">
         <div className="relative lg:h-20 lg:w-32 h-10 w-20 ">
           <Image
             src="/logo.png"
@@ -116,54 +117,56 @@ const FooterNew = () => {
           />
         </div>
 
-        <div className="flex">
-          <div className="lg:h-32 lg:w-44 h-12 w-16 relative">
-            <Image
-              src="/footer/icon4.png"
-              alt="iso"
-              // height={80}
-              // width={80}
-              fill
-              className="bg-transparent"
-            />
+        <div className="relative">
+          <div className="flex  lg:absolute -top-20 right-0 space-x-5">
+            <div className="lg:h-20 lg:w-20 h-10 w-10 relative">
+              <Image
+                src="/footer/icon1.png"
+                alt="iso"
+                // height={80}
+                // width={80}
+                fill
+                className="bg-transparent"
+              />
+            </div>
+
+            <div className="lg:h-20 lg:w-20 h-10 w-10 relative">
+              <Image
+                src="/footer/icon2.png"
+                alt="iso"
+                // height={80}
+                // width={80}
+                fill
+                className="bg-transparent"
+              />
+            </div>
+            <div className="lg:h-20 lg:w-20 h-10 w-10 relative">
+              <Image
+                src="/footer/icon3.png"
+                alt="iso"
+                // height={80}
+                // width={80}
+                fill
+                className="bg-transparent"
+              />
+            </div>
+            <div className="lg:h-20 lg:w-20 h-10 w-10 relative">
+              <Image
+                src="/footer/icon5.png"
+                alt="iso"
+                // height={80}
+                // width={80}
+                fill
+                className="bg-transparent"
+              />
+            </div>
           </div>
         </div>
 
-        <div className="flex lg:space-x-5 justify-between">
-          <div className="lg:h-20 lg:w-20 h-10 w-10 relative">
+        <div className="absolute right-0 -top-48">
+          <div className="lg:h-32 lg:w-44 h-12 w-16 relative">
             <Image
-              src="/footer/icon1.png"
-              alt="iso"
-              // height={80}
-              // width={80}
-              fill
-              className="bg-transparent"
-            />
-          </div>
-
-          <div className="lg:h-20 lg:w-20 h-10 w-10 relative">
-            <Image
-              src="/footer/icon2.png"
-              alt="iso"
-              // height={80}
-              // width={80}
-              fill
-              className="bg-transparent"
-            />
-          </div>
-          <div className="lg:h-20 lg:w-20 h-10 w-10 relative">
-            <Image
-              src="/footer/icon3.png"
-              alt="iso"
-              // height={80}
-              // width={80}
-              fill
-              className="bg-transparent"
-            />
-          </div>
-          <div className="lg:h-20 lg:w-20 h-10 w-10 relative">
-            <Image
-              src="/footer/icon5.png"
+              src="/footer/icon4.png"
               alt="iso"
               // height={80}
               // width={80}

@@ -7,13 +7,13 @@ const ProductOverview = () => {
       <div className="flex items-center flex-col lg:flex-row lg:h-96 h-auto justify-between">
         <div className="flex flex-col max-w-2xl">
           <div>
-            <h1 className="text-lg">Prodct Overview</h1>
+            <h1 className="lg:text-lg text-base">Product Overview</h1>
           </div>
-          <h1 className="text-4xl font-bold text-brand">
+          <h1 className="lg:text-4xl text-2xl font-bold text-brand">
             Hospital information System
           </h1>
 
-          <p className="text-justify mt-5 text-base text-secondary">
+          <p className="text-justify mt-5 lg:text-base text-sm leading-2 text-secondary">
             Rely HIS is a world class Hospital Information System & it&apos;s a
             flag-ship unmatched product from Rely Healthcare Technologies . It
             is designed keeping in mind the need of Hospital Owners & Stake
@@ -22,7 +22,7 @@ const ProductOverview = () => {
             in a paperless environment.
           </p>
 
-          <p className="text-justify text-base mt-5 text-secondary">
+          <p className="text-justify lg:text-base text-sm mt-5 text-secondary">
             Being modular in nature it easily integrates various aspects of
             hospital like Patient Registration, OPD, IPD, Billing, OPD Pharmacy
             (Drugs Distribution), Purchase and Stores. It’s ready to use feature
@@ -30,7 +30,7 @@ const ProductOverview = () => {
             large hospital, small sized hospital, or a nursing home.
           </p>
 
-          <p className="text-justify text-base mt-5 text-secondary">
+          <p className="text-justify lg:text-base text-sm mt-5 text-secondary">
             Rely HIS is the perfect healthcare IT solution. A single database is
             used to link patient demographics and medical records to insurance,
             billing, and cases information. These features make this a cutting

@@ -34,7 +34,7 @@ export default function FlagshipCards({
         w="xs"
         h="96"
         rounded={"3xl"}
-        my={5}
+        my={{ lg: 5 }}
         mx={[0, 5]}
         overflow={"hidden"}
         bg="white"

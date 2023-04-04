@@ -45,6 +45,10 @@ const Header = () => {
     setOpen(!open);
   };
 
+  const onCloseClick = () => {
+    setOpen(false);
+  };
+
   return (
     <Box width="100%" as="header" position={"fixed"} zIndex={50}>
       <Flex
@@ -110,7 +114,7 @@ const Header = () => {
             REQUEST DEMO
           </button>
         </Stack>
-        <Modal isOpen={open} onClose={onClose} isCentered size={"4xl"}>
+        <Modal isOpen={open} onClose={onCloseClick} isCentered size={"4xl"}>
           <ModalOverlay>
             <ModalContent>
               <ModalHeader>Book Demo</ModalHeader>

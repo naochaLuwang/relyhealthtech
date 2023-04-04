@@ -5,17 +5,19 @@ const AboutHero = () => {
   return (
     <div className="w-full py-10  h-auto ">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl font-semibold text-brand px-8">About Us</h1>
+        <h1 className="lg:text-5xl text-3xl font-semibold text-brand px-8">
+          About Us
+        </h1>
         <div className="flex flex-col lg:flex-row lg:mt-10 mt-5 ">
           <div className="flex flex-col space-y-5 px-8">
-            <p className="text-lg">
+            <p className="lg:text-lg text-base text-secondary">
               <span>Rely Healthcare Technologies</span> is one of the latest
               growing healthcare technology company which helps to transform the
               administrative and clinical operations for all healthcare
               organizations.
             </p>
 
-            <p className="text-lg">
+            <p className="lg:text-lg text-base text-secondary">
               Our simple yet powerful & reliable solutions easily simplify
               decision making, streamline operations, in addition to compliance
               with healthcare standards & practices as a result saving time and

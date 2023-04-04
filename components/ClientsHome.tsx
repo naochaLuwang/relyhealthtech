@@ -46,7 +46,7 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
     <Box maxW="full" bg="gray.50" py={10}>
       <Stack>
         <Heading
-          fontSize={"3xl"}
+          fontSize={{ lg: "3xl", base: "2xl" }}
           fontWeight={"medium"}
           alignSelf={"center"}
           marginBottom={10}
@@ -61,22 +61,24 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
               border={"1px solid"}
               w="fit-content"
               rounded="md"
-              px={"3"}
-              py={"2"}
-              marginLeft={{ lg: 20, base: 3 }}
+              px={2}
+              py={1}
+              marginLeft={{ lg: 20, base: 1 }}
             >
-              <Text fontWeight={"bold"}>Private Hospitals & Clinics</Text>
+              <Text fontSize={{ base: "xs", lg: "md" }} fontWeight={"bold"}>
+                Private Hospitals & Clinics
+              </Text>
             </Tab>
             <Tab
               _selected={{ color: "white", bg: "brand.900" }}
               border={"1px solid"}
               w="fit-content"
               rounded="md"
-              px={"3"}
-              py={"2"}
-              marginLeft={{ lg: 5, base: 3 }}
+              px={2}
+              py={1}
+              marginLeft={{ lg: 5, base: 1 }}
             >
-              <Text fontWeight={"bold"}>
+              <Text fontWeight={"bold"} fontSize={{ base: "xs", lg: "md" }}>
                 Government & Private Medical Colleges
               </Text>
             </Tab>
@@ -85,11 +87,13 @@ const ClientsHome = ({ PRIVATE_CLIENTS }: any) => {
               border={"1px solid"}
               w="fit-content"
               rounded="md"
-              px={"3"}
-              py={"2"}
-              marginLeft={{ lg: 5, base: 3 }}
+              px={2}
+              py={1}
+              marginLeft={{ lg: 5, base: 1 }}
             >
-              <Text fontWeight={"bold"}>Diagnostic Centres</Text>
+              <Text fontWeight={"bold"} fontSize={{ lg: "md", base: "xs" }}>
+                Diagnostic Centres
+              </Text>
             </Tab>
           </TabList>
 

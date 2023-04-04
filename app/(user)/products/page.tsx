@@ -9,11 +9,13 @@ export const metadata = {
 
 const ProductsPage = () => {
   return (
-    <div className="  relative">
-      <div className=" lg:max-w-7xl   lg:h-screen h-fit    mx-auto px-8   lg:py-20 flex lg:flex-row flex-col-reverse items-start">
-        <div className="max-w-xl flex-col  lg:space-y-5 pt-14">
-          <p className="text-4xl font-semibold text-brand">Products</p>
-          <p className="lg:text-lg text-base  text-primary text-justify leading-relaxed lg:leading-loose">
+    <div className="  relative bg-backgroundColor overflow-hidden">
+      <div className=" lg:max-w-7xl    lg:h-screen h-fit    mx-auto px-8   lg:py-20 flex lg:flex-row flex-col items-center lg:items-start justify-between">
+        <div className="max-w-xl flex-col  lg:space-y-5 space-y-2 lg:pt-14 pt-10">
+          <p className="lg:text-4xl text-3xl font-semibold text-brand">
+            Products
+          </p>
+          <p className="lg:text-lg text-sm  text-primary text-justify leading-relaxed lg:leading-loose">
             <span className="font-bold text-whatsNew lg:text-xl text-lg">
               Rely Healthcare Technologies
             </span>{" "}
@@ -25,17 +27,9 @@ const ProductsPage = () => {
             products particularly <span className="font-bold"> RelyHIS </span>
             which is an un-matched and world class Hospital Managment Software.
           </p>
-
-          {/* <Link href="#products">
-            <div className=" hidden lg:flex items-center justify-center  mt-5 py-3 px-4 w-56 cursor-pointer rounded-full bg-textGreen ">
-              <p className="text-xl font-bold text-buttonColor">
-                Explore Products
-              </p>
-            </div>
-          </Link> */}
         </div>
 
-        <div className="lg:absolute lg:top-36 relative lg:-right-10 h-72 w-[27rem]  lg:h-[450px] lg:w-[800px]">
+        <div className="lg:absolute lg:top-36 relative lg:-right-10 h-60 w-[20rem]  lg:h-[450px] lg:w-[800px]">
           <Image src={"/Products.svg"} alt="" fill objectFit="contain" />
         </div>
       </div>
@@ -47,15 +41,15 @@ const ProductsPage = () => {
           <div className="h-44 w-44 border rotate-6 border-primary"></div>
         </div>
         {/* Rely HIS */}
-        <div className=" max-w-7xl relative  px-8 pb-10 flex justify-between items-center mx-auto space-y-4 lg:py-8">
+        <div className=" max-w-7xl relative  px-8 lg:pb-10 flex justify-between items-center mx-auto space-y-4 lg:py-8">
           <ProductCard {...HIS} />
-          <div className="absolute right-0 -top-16">
+          <div className="lg:absolute right-0 -top-16 hidden lg:flex">
             <Image src="/his.png" height={700} width={700} alt="lis" />
           </div>
         </div>
         {/* Rely LIS */}
-        <div className=" max-w-7xl flex justify-between  px-8 pb-10  mx-auto space-y-5 lg:py-8">
-          <div>
+        <div className=" max-w-7xl lg:flex  justify-between  px-8   mx-auto space-y-5 lg:py-8">
+          <div className="hidden lg:flex">
             <Image
               src="/adicon/Laboratory-bro.svg"
               height={400}
@@ -66,14 +60,14 @@ const ProductsPage = () => {
           <ProductCard {...LIS} />
         </div>
         {/* Rely HRM */}
-        <div className=" max-w-7xl  px-8 pb-10 flex justify-between  mx-auto space-y-4 lg:py-8">
+        <div className=" max-w-7xl  px-8 flex justify-between  mx-auto space-y-4 lg:py-8">
           <ProductCard {...HRM} />
-          <div>
+          <div className="hidden lg:flex">
             <Image src="/adicon/HR.svg" height={400} width={400} alt="lis" />
           </div>
         </div>
-        <div className=" max-w-7xl flex justify-between  px-8 pb-10  mx-auto space-y-5 lg:py-8">
-          <div>
+        <div className=" max-w-7xl flex justify-between  px-8  mx-auto space-y-5 lg:py-8">
+          <div className="hidden lg:flex">
             <Image
               src="/adicon/Radiography-bro.svg"
               height={400}
@@ -83,9 +77,9 @@ const ProductsPage = () => {
           </div>
           <ProductCard {...RIS} />
         </div>
-        <div className=" max-w-7xl  px-8 pb-10  mx-auto space-y-4 lg:py-8 flex justify-between items-center">
+        <div className=" max-w-7xl  px-8   mx-auto space-y-4 lg:py-8 flex justify-between items-center">
           <ProductCard {...PIS} />
-          <div>
+          <div className="hidden lg:flex">
             <Image
               src="/adicon/Pharmacist-bro.svg"
               height={400}
@@ -94,8 +88,8 @@ const ProductsPage = () => {
             />
           </div>
         </div>
-        <div className=" max-w-7xl flex justify-between  px-8 pb-10  mx-auto space-y-5 lg:py-8">
-          <div>
+        <div className=" max-w-7xl flex justify-between  px-8   mx-auto space-y-5 lg:py-8">
+          <div className="hidden lg:flex">
             <Image
               src="/adicon/Infertility.svg"
               height={400}
@@ -105,7 +99,7 @@ const ProductsPage = () => {
           </div>
           <ProductCard {...IVF} />
         </div>
-        <div className=" max-w-7xl  px-8 pb-10  mx-auto space-y-4 lg:py-8">
+        <div className=" max-w-7xl  px-8   mx-auto space-y-4 lg:py-8">
           <ProductCard {...AIS} />
         </div>
       </div>

@@ -12,21 +12,26 @@ import {
 
 export default function Hero() {
   return (
-    <Stack minH={"auto"} mt={10} direction={{ base: "column", md: "row" }}>
+    <Stack
+      minH={"auto"}
+      mt={{ lg: 10, base: 0 }}
+      direction={{ base: "column", md: "row" }}
+    >
       <Flex
         py={8}
         flex={1}
         pl={{ md: 20 }}
-        px={{ base: 8 }}
+        px={{ base: 4 }}
         align={"center"}
         justify={"end"}
       >
-        <Stack spacing={6} w={"2xl"} px={{}}>
-          <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+        <Stack spacing={{ lg: 6, base: 3 }} w={"2xl"} px={{}}>
+          <Heading fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }}>
             <Text
               as={"span"}
               position={"relative"}
               color={"brand.900"}
+
               //   _after={{
               //     content: "''",
               //     width: "full",
@@ -43,7 +48,7 @@ export default function Hero() {
             <br />{" "}
           </Heading>
           <Text
-            fontSize={{ base: "md", lg: "lg" }}
+            fontSize={{ base: "sm", lg: "lg" }}
             color={"gray.500"}
             textAlign={{ base: "justify", md: "start" }}
           >

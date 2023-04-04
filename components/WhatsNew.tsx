@@ -35,7 +35,7 @@ const WhatsNew = ({ BANNER_NEW }: any) => {
         >
           {BANNER_NEW.map((banner: any) => (
             <h1
-              className="text-xs  lg:text-md font-medium text-textPrimary "
+              className="text-xs  lg:text-base font-medium text-textPrimary "
               key={banner._id}
             >
               {banner.banner}

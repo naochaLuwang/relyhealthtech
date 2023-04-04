@@ -39,29 +39,31 @@ const Clients = ({ PRIVATE_CLIENTS }: any) => {
         Take a look at our Clients
       </Text>
 
-      <Tabs variant="unstyled" size="sm" px={5}>
+      <Tabs variant="unstyled" size="sm" px={{ lg: 5, base: 2 }}>
         <TabList>
           <Tab
             _selected={{ color: "white", bg: "brand.900" }}
             border={"1px solid"}
             w="fit-content"
             rounded="lg"
-            px={"3"}
-            py={"2"}
-            ml={{ lg: 14, sm: 3 }}
+            px={2}
+            py={1}
+            ml={{ lg: 14, sm: 1 }}
           >
-            <Text fontWeight={"bold"}>Private Hospitals & Clinics</Text>
+            <Text fontWeight={"semibold"} fontSize={{ lg: "md", base: "sm" }}>
+              Private Hospitals & Clinics
+            </Text>
           </Tab>
           <Tab
             _selected={{ color: "white", bg: "brand.900" }}
             border={"1px solid"}
             w="fit-content"
             rounded="lg"
-            px={"3"}
-            py={"2"}
-            marginLeft={{ lg: 5, base: 3 }}
+            px={2}
+            py={1}
+            marginLeft={{ lg: 5, base: 1 }}
           >
-            <Text fontWeight={"bold"}>
+            <Text fontWeight={"semibold"} fontSize={{ lg: "md", base: "sm" }}>
               Government & Private Medical Colleges
             </Text>
           </Tab>
@@ -70,11 +72,13 @@ const Clients = ({ PRIVATE_CLIENTS }: any) => {
             border={"1px solid"}
             w="fit-content"
             rounded="lg"
-            px={"3"}
-            py={"2"}
-            marginLeft={{ lg: 5, base: 3 }}
+            px={2}
+            py={1}
+            marginLeft={{ lg: 5, base: 1 }}
           >
-            <Text fontWeight={"bold"}>Diagnostic Centres</Text>
+            <Text fontWeight={"semibold"} fontSize={{ lg: "md", base: "sm" }}>
+              Diagnostic Centres
+            </Text>
           </Tab>
         </TabList>
 
@@ -108,7 +112,7 @@ const Clients = ({ PRIVATE_CLIENTS }: any) => {
               ))}
             </SimpleGrid>
           </TabPanel>
-          <TabPanel>
+          <TabPanel minH={"lg"}>
             <SimpleGrid
               columns={{ base: 1, lg: 4 }}
               spacing={{ base: 2, lg: 5 }}
@@ -119,6 +123,7 @@ const Clients = ({ PRIVATE_CLIENTS }: any) => {
               ))}
             </SimpleGrid>
           </TabPanel>
+          <TabPanel minH="lg"></TabPanel>
         </TabPanels>
       </Tabs>
     </Box>

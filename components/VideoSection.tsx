@@ -49,7 +49,12 @@ const VideoSection = () => {
           </Text>
         </Flex>
         <Flex flexDirection={"column"} ml={{ lg: 8, sm: 0 }}>
-          <Flex flexDirection={{ base: "column", lg: "row" }}>
+          <Flex
+            flexDirection={{ base: "column", lg: "row" }}
+            w="full"
+            align="center"
+            justify={"center"}
+          >
             <Box
               w="fit-content"
               p={{ lg: 2, sm: 0 }}

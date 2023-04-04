@@ -8,13 +8,13 @@ interface Products {
 
 const ProductCard = ({ name, description, slug }: Products) => {
   return (
-    <div className="flex h-80 mt-10 lg:mt-0 ">
+    <div className="flex h-80  lg:mt-0 ">
       <div className="max-w-xl  flex items-center  space-y-5">
         <div className="flex-col space-y-4">
           <h1 className="lg:text-2xl text-xl font-semibold  text-textPrimary">
             {name}
           </h1>
-          <p className="lg:text-lg text-base  text-secondary text-justify leading-relaxed">
+          <p className="lg:text-lg text-sm  text-secondary text-justify leading-relaxed">
             {description}
           </p>
           <Link href={`/products/${slug}`}>
