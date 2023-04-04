@@ -5,15 +5,15 @@ const Benefits = () => {
   return (
     <div className="max-w-full h-auto bg-bgPrimary lg:px-20 px-10 py-20">
       <div className="flex flex-col ">
-        <h1>BENEFITS</h1>
-        <h1 className="text-3xl font-bold">Key Benefits</h1>
+        <h1 className="lg:text-base text-sm">BENEFITS</h1>
+        <h1 className="lg:text-3xl text-2xl font-bold">Key Benefits</h1>
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-10 gap-6">
         <div className="flex flex-col">
-          <h1 className="text-xl font-semibold mb-2">
+          <h1 className="lg:text-xl text-lg font-semibold mb-2">
             Easy and Smart Employee Management
           </h1>
-          <p className="text-base text-justify">
+          <p className="lg:text-base text-sm text-justify leading-relaxed">
             RelyHRM provides an easy-to-use and smart employee management system
             that allows organizations to manage their employees more
             efficiently. With a user-friendly interface, it is easy to navigate,
@@ -23,10 +23,10 @@ const Benefits = () => {
         </div>
 
         <div className="flex flex-col">
-          <h1 className="text-xl font-semibold mb-2">
+          <h1 className="lg:text-xl text-lg font-semibold mb-2">
             Clear MIS & Financial Reports
           </h1>
-          <p className="text-base text-justify">
+          <p className="lg:text-base text-sm text-justify leading-relaxed">
             RelyHRM provides clear MIS and financial reports, which are
             essential for decision-making. The software has been designed to
             provide financial status updates through reports that are easy to
@@ -35,8 +35,10 @@ const Benefits = () => {
           </p>
         </div>
         <div className="flex flex-col">
-          <h1 className="text-xl font-semibold mb-2">Browser-Based Software</h1>
-          <p className="text-base text-justify">
+          <h1 className="lg:text-xl text-lg font-semibold mb-2">
+            Browser-Based Software
+          </h1>
+          <p className="lg:text-base text-sm text-justify leading-relaxed">
             RelyHRM is a browser-based software, which means that there is no
             need to install the software on each client machine. This makes it
             easy to manage in case of system failures and ensures a
@@ -45,8 +47,10 @@ const Benefits = () => {
         </div>
 
         <div className="flex flex-col">
-          <h1 className="text-xl font-semibold mb-2">Role-Wise Access</h1>
-          <p className="text-base text-justify">
+          <h1 className="lg:text-xl text-lg font-semibold mb-2">
+            Role-Wise Access
+          </h1>
+          <p className="lg:text-base text-sm text-justify leading-relaxed">
             The role-wise access feature ensures that users get access to the
             software as per their role, which requires minimal training and
             faster implementation. This helps organizations to manage their HR
@@ -55,8 +59,10 @@ const Benefits = () => {
         </div>
 
         <div className="flex flex-col">
-          <h1 className="text-xl font-semibold mb-2">Reduced Complexity</h1>
-          <p className="text-base text-justify">
+          <h1 className="lg:text-xl text-lg font-semibold mb-2">
+            Reduced Complexity
+          </h1>
+          <p className="lg:text-base text-sm text-justify leading-relaxed">
             RelyHRM is designed to reduce the complexity of managing HR
             operations. With a comprehensive set of features, the software
             allows organizations to manage multiple HR functions like
@@ -67,10 +73,10 @@ const Benefits = () => {
         </div>
 
         <div className="flex flex-col">
-          <h1 className="text-xl font-semibold mb-2">
+          <h1 className="lg:text-xl text-lg font-semibold mb-2">
             World-Class Leave Management System:
           </h1>
-          <p className="text-base text-justify">
+          <p className="lg:text-base text-sm text-justify leading-relaxed">
             RelyHRM has an unmatched employee leave management system, which
             helps to manage employee leaves smoothly. The software provides an
             effective solution for tracking employee leaves and managing their

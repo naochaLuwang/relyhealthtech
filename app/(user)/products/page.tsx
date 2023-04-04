@@ -9,8 +9,8 @@ export const metadata = {
 
 const ProductsPage = () => {
   return (
-    <div className="  relative bg-backgroundColor overflow-hidden">
-      <div className=" lg:max-w-7xl    lg:h-screen h-fit    mx-auto px-8   lg:py-20 flex lg:flex-row flex-col items-center lg:items-start justify-between">
+    <div className="  relative bg-backgroundColor overflow-hidden ">
+      <div className=" lg:max-w-7xl  pb-10   lg:h-screen h-fit    mx-auto px-8   lg:py-20 flex lg:flex-row flex-col items-center lg:items-start justify-between">
         <div className="max-w-xl flex-col  lg:space-y-5 space-y-2 lg:pt-14 pt-10">
           <p className="lg:text-4xl text-3xl font-semibold text-brand">
             Products

@@ -25,7 +25,7 @@ const LisVideo = () => {
   };
   return (
     <Card bg="purple.50" w="fit-content" mx="auto">
-      <CardBody display={{ sm: "none", lg: "block" }}>
+      <CardBody display={{ base: "none", lg: "block" }}>
         <YouTube videoId="u8zI0LreY50" opts={opts} onReady={onPlayerReady} />
       </CardBody>
     </Card>

@@ -7,13 +7,13 @@ const ProductOverview = () => {
       <div className="flex items-center flex-col lg:flex-row lg:h-96 h-auto justify-between">
         <div className="flex flex-col max-w-2xl">
           <div>
-            <h1 className="text-lg">Prodct Overview</h1>
+            <h1 className="lg:text-lg text-sm">Prodct Overview</h1>
           </div>
-          <h1 className="text-4xl font-bold">
+          <h1 className="lg:text-4xl text-2xl font-bold">
             Radiology Information System (RIS)
           </h1>
 
-          <p className="text-justify mt-5 text-lg">
+          <p className="text-justify mt-5 lg:text-lg text-sm leading-relaxed">
             Introducing Rely RIS, a comprehensive platform that optimizes
             patient scheduling and workflow, improves communication between
             radiologists and referring physicians, streamlines revenue cycle

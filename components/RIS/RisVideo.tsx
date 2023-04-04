@@ -25,7 +25,7 @@ const RisVideo = () => {
   };
   return (
     <Card bg="purple.50" w="fit-content" mx="auto">
-      <CardBody display={{ sm: "none", lg: "block" }}>
+      <CardBody display={{ base: "none", lg: "block" }}>
         <YouTube videoId="SlOdDXMNqwo" opts={opts} onReady={onPlayerReady} />
       </CardBody>
     </Card>

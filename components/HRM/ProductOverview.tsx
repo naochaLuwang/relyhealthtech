@@ -3,17 +3,17 @@ import React from "react";
 
 const ProductOverview = () => {
   return (
-    <div className="w-full  lg:px-20 lg:py-20 px-8 py-8">
+    <div className="w-full  lg:px-20 lg:py-20 px-8 py-6">
       <div className="flex items-center flex-col lg:flex-row lg:h-96 h-auto justify-between">
         <div className="flex flex-col max-w-2xl">
           <div>
-            <h1 className="text-lg">Prodct Overview</h1>
+            <h1 className="lg:text-lg text-sm">Product Overview</h1>
           </div>
-          <h1 className="lg:text-4xl text-3xl font-bold">
+          <h1 className="lg:text-4xl text-2xl font-bold">
             HR & Payroll Management System(HRM)
           </h1>
 
-          <p className="text-justify mt-5 text-lg">
+          <p className="text-justify mt-5 lg:text-lg text-sm">
             RelyHRM is a software solution that automates and integrates several
             Human Resources processes into a single package. This HR Management
             System includes recruitment, training, payroll, leave management,
@@ -24,7 +24,7 @@ const ProductOverview = () => {
             data.
           </p>
 
-          <p className="text-justify text-lg mt-5">
+          <p className="text-justify lg:text-lg text-sm mt-5">
             The software&apos;s centralized database allows HR managers to
             monitor and manage various employee data points, such as performance
             records, training histories, and payroll information. This data can

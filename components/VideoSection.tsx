@@ -11,8 +11,8 @@ const VideoSection = () => {
   };
 
   const opts: YouTubeProps["opts"] = {
-    height: "135",
-    width: "285",
+    height: "180",
+    width: "360",
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -68,11 +68,42 @@ const VideoSection = () => {
               />
             </Box>
 
-            <Flex ml={5} direction="column" mt={{ sm: 5, lg: 0 }}>
+            <Flex px={5} direction="column" mt={{ base: 5, lg: 0 }}>
               <Text fontSize={"medium"} fontWeight="bold" color={"brand.900"}>
                 Rely HIS(Hospital Management System)
               </Text>
-              <Text fontSize={"sm"} mt={2}>
+              <Text fontSize={"xs"} mt={2}>
+                It is a web based ERP developed using latest technologies to
+                manage working of a hospital in a paperless environment trusted
+                by esteemed clients
+              </Text>
+            </Flex>
+          </Flex>
+          <Flex
+            flexDirection={{ base: "column", lg: "row" }}
+            w="full"
+            align="center"
+            justify={"center"}
+            mt={{ lg: 3, base: 5 }}
+          >
+            <Box
+              w="fit-content"
+              p={{ lg: 2, sm: 0 }}
+              bg="white"
+              mx={{ sm: 7, lg: 0 }}
+            >
+              <YouTube
+                videoId="u8zI0LreY50"
+                opts={opts}
+                onReady={onPlayerReady}
+              />
+            </Box>
+
+            <Flex px={5} direction="column" mt={{ base: 5, lg: 0 }}>
+              <Text fontSize={"medium"} fontWeight="bold" color={"brand.900"}>
+                Rely HIS(Hospital Management System)
+              </Text>
+              <Text fontSize={"xs"} mt={2}>
                 It is a web based ERP developed using latest technologies to
                 manage working of a hospital in a paperless environment trusted
                 by esteemed clients

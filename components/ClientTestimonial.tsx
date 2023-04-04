@@ -60,14 +60,14 @@ const ClientTestimonial = () => {
         customLeftArrow={<CustomLeftArrow />}
         removeArrowOnDeviceType="mobile"
       >
-        <div className="lg:max-w-6xl mx-auto  lg:h-96 h-[40rem] bg-buttonColor bg-opacity-100 lg:bg-opacity-100 rounded-xl lg:rounded-xl lg:shadow-xl shadow-lg  justify-center   space-y-5 flex flex-col py-8 px-8 ">
-          <div className="flex justify-between items-center flex-col lg:flex-row space-y-8 lg:space-y-0">
+        <div className="lg:max-w-6xl mx-auto py-20  lg:h-96 h-[40rem] bg-buttonColor bg-opacity-100 lg:bg-opacity-100 rounded-xl lg:rounded-xl lg:shadow-xl shadow-lg  justify-center   space-y-5 flex flex-col lg:py-8 px-8 ">
+          <div className="flex justify-between items-center  flex-col lg:flex-row space-y-8 lg:space-y-0">
             <div className="lg:pl-16">
               <div className="relative ">
                 <div className="w-44 h-44 bg-gradient-to-tr from-fuchsia400 to-purple100 absolute rounded-full  -left-6 -top-4 z-20"></div>
                 <div className="w-40 h-40 bg-gradient-to-bl from-fuchsia400  to-purple100 absolute rounded-full  top-5 left-1 z-10"></div>
                 <Image
-                  className="border-0 rounded-full flex-shrink-0  relative z-30"
+                  className="border-0 rounded-full flex-shrink-0   relative z-30"
                   src="https://relyhealthtech.com/gallery/testimony/admin_202001140657344574_mpwguvko.jpg"
                   alt=""
                   width={150}
