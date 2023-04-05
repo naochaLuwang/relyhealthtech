@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Text,
   Box,
@@ -11,7 +13,10 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 
-import { ChevronRightIcon } from "@chakra-ui/icons";
+import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
+
+import { useState } from "react";
+import { braceExpand } from "minimatch";
 
 interface NavItem {
   label: string;
@@ -21,6 +26,10 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
+  {
+    label: "Home",
+    href: "/",
+  },
   {
     label: "About Us",
     href: "/about",
@@ -78,16 +87,17 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Contact Us",
     href: "/contact",
   },
-  {
-    label: "People",
-    href: "#",
-  },
+  // {
+  //   label: "People",
+  //   href: "#",
+  // },
 ];
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
   const linkHoverColor = useColorModeValue("gray.800", "white");
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
+  const [active, setActive] = useState("");
 
   return (
     <Stack direction={"row"} spacing={4}>
@@ -96,20 +106,39 @@ const DesktopNav = () => {
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link href={navItem.href ?? "#"}>
-                <Text
-                  p={2}
+                <Flex
+                  px={4}
+                  py={1}
                   fontSize={"md"}
                   fontWeight={500}
                   color={linkColor}
+                  onClick={() => setActive(navItem.label)}
                   _hover={{
                     textDecoration: "none",
                     color: "brand.900",
                     fontWeight: "semibold",
                     transition: "all 5ms ease-in-out",
+                    bg: "gray.50",
+                    rounded: "lg",
                   }}
                 >
-                  {navItem.label}
-                </Text>
+                  <Text
+                    color={active == navItem.label ? "brand.900" : "gray.700"}
+                    fontWeight={active == navItem.label ? "semibold" : "base"}
+                  >
+                    {navItem.label}
+                  </Text>
+                  <Box
+                    w={navItem.label == "Product" ? 3 : 0}
+                    h={navItem.label == "Product" ? 3 : 0}
+                  >
+                    {navItem.label == "Product" ? (
+                      <ChevronDownIcon className="h-6 w-6 hover:rotate-180" />
+                    ) : (
+                      ""
+                    )}
+                  </Box>
+                </Flex>
               </Link>
             </PopoverTrigger>
 

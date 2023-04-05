@@ -8,6 +8,7 @@ import Link from "next/link";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsLinkedin, BsInstagram } from "react-icons/bs";
 import Image from "next/image";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const FooterNew = () => {
   return (
@@ -20,25 +21,46 @@ const FooterNew = () => {
 
           <div className="flex flex-col text-black  space-y-3 text-base">
             <Link href="/products/rely_his">
-              <h1 className="">Rely HIS(Hospital Information System)</h1>
+              <div className="flex items-center ">
+                <ChevronRightIcon className="h-6 w-6" />
+                <h1 className="">Rely HIS(Hospital Information System)</h1>
+              </div>
             </Link>
             <Link href="/products/rely_lis">
-              <h1>Rely LIS(Laboratory Information System)</h1>
+              <div className="flex items-center ">
+                <ChevronRightIcon className="h-6 w-6" />
+                <h1>Rely LIS(Laboratory Information System)</h1>
+              </div>
             </Link>
             <Link href="/products/rely_hrm">
-              <h1>Rely HRM(HR & Payroll Management System)</h1>
+              <div className="flex items-center group">
+                <ChevronRightIcon className="h-6 w-6" />
+                <h1>Rely HRM(HR & Payroll Management System)</h1>
+              </div>
             </Link>
             <Link href="/products/rely_ris">
-              <h1>Rely RIS(Radiology Information System)</h1>
+              <div className="flex items-center ">
+                <ChevronRightIcon className="h-6 w-6" />
+                <h1>Rely RIS(Radiology Information System)</h1>
+              </div>
             </Link>
             <Link href="/products/rely_pis">
-              <h1>Rely PIS(Pharmacy Information System)</h1>
+              <div className="flex items-center ">
+                <ChevronRightIcon className="h-6 w-6" />
+                <h1>Rely PIS(Pharmacy Information System)</h1>
+              </div>
             </Link>
             <Link href="/products/rely_ais">
-              <h1>Rely AIS(Asset Information System)</h1>
+              <div className="flex items-center ">
+                <ChevronRightIcon className="h-6 w-6" />
+                <h1>Rely AIS(Asset Information System)</h1>
+              </div>
             </Link>
             <Link href="/products/rely_ivf">
-              <h1>Rely IVF</h1>
+              <div className="flex items-center ">
+                <ChevronRightIcon className="h-6 w-6" />
+                <h1>Rely IVF</h1>
+              </div>
             </Link>
           </div>
         </div>
@@ -74,15 +96,15 @@ const FooterNew = () => {
             </h1>
           </div>
           <div className="flex flex-col space-y-3 lg:text-base text-sm text-secondary">
-            <div className="flex space-x-2">
-              {/* <MapPinIcon className="h-6 w-6 flex-shrink-0 text-secondary" /> */}
+            <div className="flex space-x-2 items-center">
+              <MapPinIcon className="h-4 w-4 flex-shrink-0 text-secondary" />
               <p className="text-secondary">
-                259, Rg Baruah Road, Guwahati, Assam 781021
+                Bangalore | Gurgaon | Mumbai | Guwahati
               </p>
             </div>
             <div className="flex space-x-2 items-center">
               <PhoneIcon className="h-4 w-4 flex-shrink-0 text-secondary" />
-              <p className="text-secondary">(+91) 361-3511942</p>
+              <p className="text-secondary">1800 572 9323</p>
             </div>
             <div className="flex space-x-2 items-center">
               <EnvelopeIcon className="h-4 w-4 flex-shrink-0 text-secondary" />
