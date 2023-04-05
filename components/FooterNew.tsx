@@ -21,45 +21,59 @@ const FooterNew = () => {
 
           <div className="flex flex-col text-black  space-y-3 text-base">
             <Link href="/products/rely_his">
-              <div className="flex items-center ">
+              <div className="flex items-center group">
                 <ChevronRightIcon className="h-6 w-6" />
-                <h1 className="">Rely HIS(Hospital Information System)</h1>
+                <h1 className="group-hover:font-semibold transition-all duration-100 ease-in-out text-secondary">
+                  Rely HIS(Hospital Information System)
+                </h1>
               </div>
             </Link>
             <Link href="/products/rely_lis">
-              <div className="flex items-center ">
+              <div className="flex items-center group">
                 <ChevronRightIcon className="h-6 w-6" />
-                <h1>Rely LIS(Laboratory Information System)</h1>
+                <h1 className="group-hover:font-semibold transition-all duration-100 ease-in-out text-secondary">
+                  Rely LIS(Laboratory Information System)
+                </h1>
               </div>
             </Link>
             <Link href="/products/rely_hrm">
               <div className="flex items-center group">
                 <ChevronRightIcon className="h-6 w-6" />
-                <h1>Rely HRM(HR & Payroll Management System)</h1>
+                <h1 className="group-hover:font-semibold transition-all duration-100 ease-in-out text-secondary">
+                  Rely HRM(HR & Payroll Management System)
+                </h1>
               </div>
             </Link>
             <Link href="/products/rely_ris">
-              <div className="flex items-center ">
+              <div className="flex items-center group">
                 <ChevronRightIcon className="h-6 w-6" />
-                <h1>Rely RIS(Radiology Information System)</h1>
+                <h1 className="group-hover:font-semibold transition-all duration-100 ease-in-out text-secondary">
+                  Rely RIS(Radiology Information System)
+                </h1>
               </div>
             </Link>
             <Link href="/products/rely_pis">
-              <div className="flex items-center ">
+              <div className="flex items-center group">
                 <ChevronRightIcon className="h-6 w-6" />
-                <h1>Rely PIS(Pharmacy Information System)</h1>
+                <h1 className="group-hover:font-semibold transition-all duration-100 ease-in-out text-secondary">
+                  Rely PIS(Pharmacy Information System)
+                </h1>
               </div>
             </Link>
             <Link href="/products/rely_ais">
-              <div className="flex items-center ">
+              <div className="flex items-center group">
                 <ChevronRightIcon className="h-6 w-6" />
-                <h1>Rely AIS(Asset Information System)</h1>
+                <h1 className="group-hover:font-semibold transition-all duration-100 ease-in-out text-secondary">
+                  Rely AIS(Asset Information System)
+                </h1>
               </div>
             </Link>
             <Link href="/products/rely_ivf">
-              <div className="flex items-center ">
+              <div className="flex items-center group">
                 <ChevronRightIcon className="h-6 w-6" />
-                <h1>Rely IVF</h1>
+                <h1 className="group-hover:font-semibold transition-all duration-100 ease-in-out text-secondary">
+                  Rely IVF
+                </h1>
               </div>
             </Link>
           </div>

@@ -26,6 +26,8 @@ const ContactForm = () => {
 
   const toast = useToast();
 
+  console.log(formData);
+
   const handleInputChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -37,8 +39,29 @@ const ContactForm = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setLoading(true);
-    postMessage(formData, setFormData, toast, setLoading);
+    try {
+      if (
+        !formData.firstName ||
+        !formData.lastName ||
+        !formData.email ||
+        !formData.phone ||
+        !formData.message
+      ) {
+        setLoading(false);
+        toast({
+          title: "Invalid Credentials",
+          description: "Please enter all the required fields",
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+        });
+      } else {
+        setLoading(true);
+        postMessage(formData, setFormData, toast, setLoading);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

@@ -37,7 +37,7 @@ const HomeCarousal = ({ carousalImages }: any) => {
       showDots={true}
       // customTransition="transform 3000 ease-in-out"
       // transitionDuration={3000}
-      partialVisbile={true}
+      // partialVisbile={true}
       // customLeftArrow={<CustomLeftArrow />}
       // customRightArrow={<CustomRightArrow />}
     >

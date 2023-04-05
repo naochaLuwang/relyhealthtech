@@ -25,6 +25,7 @@ const postMessage = async (
               lastName: data.lastName,
               email: data.email,
               phone: data.phone,
+              message: data.message,
             },
           },
         ],

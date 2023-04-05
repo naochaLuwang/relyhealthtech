@@ -7,6 +7,14 @@ export const metadata = {
   icons: {
     icon: "/rfavicon.png",
   },
+  description:
+    "Rely designs one of the best Hospital, Clinic, Nursing School and College website",
+
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
 };
 
 const ServicesPage = () => {

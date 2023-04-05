@@ -25,6 +25,11 @@ export default defineType({
       title: "Phone",
       type: "string",
     }),
+    defineField({
+      name: "message",
+      title: "Message",
+      type: "string",
+    }),
   ],
   preview: {
     select: {
