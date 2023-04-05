@@ -2,6 +2,13 @@ import ProductOverview from "@/components/PIS/ProductOverview";
 import Benefits from "@/components/PIS/Benefits";
 import Modules from "@/components/PIS/Modules";
 
+export const metadata = {
+  title: "Rely PIS | Rely Healthcare Technologies",
+  icons: {
+    icon: "/rfavicon.png",
+  },
+};
+
 const PISpage = () => {
   return (
     <div>

@@ -3,6 +3,13 @@ import Benefits from "@/components/HIS/Benefits";
 import Modules from "@/components/HIS/Modules";
 import ProductOverview from "@/components/HIS/ProductOverview";
 
+export const metadata = {
+  title: "Rely HIS | Rely Healthcare Technologies",
+  icons: {
+    icon: "/rfavicon.png",
+  },
+};
+
 const HISpage = () => {
   return (
     <div>

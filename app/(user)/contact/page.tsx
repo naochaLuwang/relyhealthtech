@@ -3,7 +3,13 @@ import { Box } from "@/components/ChakraElements";
 import Location from "@/components/Location";
 import { groq } from "next-sanity";
 import { client } from "../../../lib/sanity.client";
-import Map from "@/components/Map";
+
+export const metadata = {
+  title: "Contact Us | Rely Healthcare Technologies",
+  icons: {
+    icon: "/rfavicon.png",
+  },
+};
 
 const query = groq`
 *[_type=='location']{

@@ -2,6 +2,13 @@ import ProductOverview from "@/components/IVF/ProductOverview";
 import Benefits from "@/components/IVF/Benefits";
 import Modules from "@/components/IVF/Modules";
 
+export const metadata = {
+  title: "Rely IVF | Rely Healthcare Technologies",
+  icons: {
+    icon: "/rfavicon.png",
+  },
+};
+
 const IVFpage = () => {
   return (
     <div>

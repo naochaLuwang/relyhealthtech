@@ -7,6 +7,13 @@ import Modules from "@/components/LIS/Modules";
 import ProductOverview from "@/components/LIS/ProductOverview";
 import React from "react";
 
+export const metadata = {
+  title: "Rely LIS | Rely Healthcare Technologies",
+  icons: {
+    icon: "/rfavicon.png",
+  },
+};
+
 const LISPage = () => {
   return (
     <div>

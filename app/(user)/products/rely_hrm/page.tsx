@@ -2,6 +2,13 @@ import ProductOverview from "@/components/HRM/ProductOverview";
 import Benefits from "@/components/HRM/Benefits";
 import Modules from "@/components/HRM/Modules";
 
+export const metadata = {
+  title: "Rely HRM | Rely Healthcare Technologies",
+  icons: {
+    icon: "/rfavicon.png",
+  },
+};
+
 const HRMPage = () => {
   return (
     <div>

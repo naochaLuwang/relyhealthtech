@@ -5,6 +5,9 @@ import ProductCard from "@/components/ProductCard";
 
 export const metadata = {
   title: "Products | Rely Healthcare Technologies",
+  icons: {
+    icon: "/rfavicon.png",
+  },
 };
 
 const ProductsPage = () => {

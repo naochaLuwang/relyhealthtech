@@ -4,6 +4,13 @@ import Modules from "@/components/RIS/Modules";
 import ProductOverview from "@/components/RIS/ProductOverview";
 import RisVideo from "@/components/RIS/RisVideo";
 
+export const metadata = {
+  title: "Rely RIS | Rely Healthcare Technologies",
+  icons: {
+    icon: "/rfavicon.png",
+  },
+};
+
 const PISpage = () => {
   return (
     <div>
