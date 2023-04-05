@@ -36,10 +36,60 @@ import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import Link from "next/link";
 import { useState } from "react";
+import { Message } from "@/typings";
+import postMessage from "@/lib/postMessage";
+import { useToast } from "@chakra-ui/react";
 
 const Header = () => {
   const { isOpen, onToggle, onOpen, onClose } = useDisclosure();
   const [open, setOpen] = useState(false);
+  const [formData, setFormData] = useState<Message>({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const toast = useToast();
+
+  const handleInputChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    try {
+      if (
+        !formData.firstName ||
+        !formData.lastName ||
+        !formData.email ||
+        !formData.phone ||
+        !formData.message
+      ) {
+        setLoading(false);
+        toast({
+          title: "Invalid Credentials",
+          description: "Please enter all the required fields",
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+        });
+      } else {
+        setLoading(true);
+        postMessage(formData, setFormData, toast, setLoading);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const onOpenClick = () => {
     setOpen(!open);
@@ -120,31 +170,61 @@ const Header = () => {
               <ModalHeader>Book Demo</ModalHeader>
               <ModalCloseButton />
               <ModalBody px={10}>
-                <SimpleGrid w="full" columns={2} gap={5}>
+                <form onSubmit={handleSubmit}>
+                  <SimpleGrid w="full" columns={2} gap={5}>
+                    <FormControl>
+                      <FormLabel>First Name</FormLabel>
+                      <Input
+                        type={"text"}
+                        name="firstName"
+                        onChange={handleInputChange}
+                        value={formData.firstName}
+                      />
+                    </FormControl>
+                    <FormControl>
+                      <FormLabel>Last Name</FormLabel>
+                      <Input
+                        type={"text"}
+                        name="lastName"
+                        onChange={handleInputChange}
+                        value={formData.lastName}
+                      />
+                    </FormControl>
+                    <FormControl>
+                      <FormLabel>Email</FormLabel>
+                      <Input
+                        type={"email"}
+                        name="email"
+                        onChange={handleInputChange}
+                        value={formData.email}
+                      />
+                    </FormControl>
+                    <FormControl>
+                      <FormLabel>Mobile No.</FormLabel>
+                      <Input
+                        type={"text"}
+                        name="phone"
+                        onChange={handleInputChange}
+                        value={formData.phone}
+                      />
+                    </FormControl>
+                  </SimpleGrid>
                   <FormControl>
-                    <FormLabel>First Name</FormLabel>
-                    <Input type={"text"} />
+                    <FormLabel>Message</FormLabel>
+                    <Textarea
+                      noOfLines={3}
+                      name="message"
+                      onChange={handleInputChange}
+                      value={formData.message}
+                    ></Textarea>
                   </FormControl>
-                  <FormControl>
-                    <FormLabel>Last Name</FormLabel>
-                    <Input type={"text"} />
-                  </FormControl>
-                  <FormControl>
-                    <FormLabel>Email</FormLabel>
-                    <Input type={"text"} />
-                  </FormControl>
-                  <FormControl>
-                    <FormLabel>Mobile No.</FormLabel>
-                    <Input type={"text"} variant="outline" rounded={"2xl"} />
-                  </FormControl>
-                </SimpleGrid>
-                <FormControl>
-                  <FormLabel>Message</FormLabel>
-                  <Textarea noOfLines={3}></Textarea>
-                </FormControl>
-                <button className="mt-5 mb-10 w-fit px-4 py-2 bg-whatsNew rounded-md text-buttonColor font-semibold">
-                  Submit
-                </button>
+                  <button
+                    className="mt-5 mb-10 w-fit px-4 py-2 bg-whatsNew rounded-md text-buttonColor font-semibold"
+                    type="submit"
+                  >
+                    {loading ? "Submitting..." : "Submit"}
+                  </button>
+                </form>
               </ModalBody>
             </ModalContent>
           </ModalOverlay>

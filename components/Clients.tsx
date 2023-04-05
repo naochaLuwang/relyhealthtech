@@ -22,17 +22,21 @@ interface Clients {
   image: string;
 }
 
-const GOVERNMENT_CLIENTS: Array<Clients> = [
-  {
-    name: "Jorhat Medical College",
-    image: "/JMC.jpeg",
-  },
-  {
-    name: "Sanaka",
-    image: "/sanaka.png",
-  },
-];
-const Clients = ({ PRIVATE_CLIENTS }: any) => {
+// const GOVERNMENT_CLIENTS: Array<Clients> = [
+//   {
+//     name: "Jorhat Medical College",
+//     image: "/JMC.jpeg",
+//   },
+//   {
+//     name: "Sanaka",
+//     image: "/sanaka.png",
+//   },
+// ];
+const Clients = ({
+  PRIVATE_CLIENTS,
+  DIAGNOSTIC_CLIENTS,
+  GOVERNMENT_CLIENTS,
+}: any) => {
   return (
     <Box maxW="7xl" pt={10} mx="auto">
       <Text align={"center"} fontSize="3xl" mb={"10"} fontWeight={"bold"}>
@@ -112,18 +116,64 @@ const Clients = ({ PRIVATE_CLIENTS }: any) => {
               ))}
             </SimpleGrid>
           </TabPanel>
-          <TabPanel minH={"lg"}>
-            <SimpleGrid
-              columns={{ base: 1, lg: 4 }}
-              spacing={{ base: 2, lg: 5 }}
-              pb={"20"}
-            >
+          <TabPanel minH="lg">
+            <SimpleGrid columns={{ base: 1, lg: 4 }}>
               {GOVERNMENT_CLIENTS.map((client: any) => (
-                <ClientCard key={client.name} {...client} />
+                <Flex key={client.name} direction={"column"}>
+                  <Center py={6}>
+                    <Card
+                      maxW="sm"
+                      variant={"elevated"}
+                      rounded="2xl"
+                      boxShadow={"xl "}
+                      border="1px solid"
+                      borderColor={"gray.200"}
+                    >
+                      <CardBody>
+                        <Image
+                          src={urlFor(client.clientImage).url()}
+                          alt="card image"
+                          w={200}
+                          h={140}
+                          objectFit={"contain"}
+                        />
+                      </CardBody>
+                    </Card>
+                  </Center>
+                  <Text align="center">{client.name}</Text>
+                </Flex>
               ))}
             </SimpleGrid>
           </TabPanel>
-          <TabPanel minH="lg"></TabPanel>
+          <TabPanel minH="lg">
+            <SimpleGrid columns={{ base: 1, lg: 4 }}>
+              {DIAGNOSTIC_CLIENTS.map((client: any) => (
+                <Flex key={client.name} direction={"column"}>
+                  <Center py={6}>
+                    <Card
+                      maxW="sm"
+                      variant={"elevated"}
+                      rounded="2xl"
+                      boxShadow={"xl "}
+                      border="1px solid"
+                      borderColor={"gray.200"}
+                    >
+                      <CardBody>
+                        <Image
+                          src={urlFor(client.clientImage).url()}
+                          alt="card image"
+                          w={200}
+                          h={140}
+                          objectFit={"contain"}
+                        />
+                      </CardBody>
+                    </Card>
+                  </Center>
+                  <Text align="center">{client.name}</Text>
+                </Flex>
+              ))}
+            </SimpleGrid>
+          </TabPanel>
         </TabPanels>
       </Tabs>
     </Box>

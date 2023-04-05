@@ -3,8 +3,10 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import HomeVideo from "./HomeVideo";
 
 import YouTube, { YouTubeProps } from "react-youtube";
+import { useState } from "react";
 
 const VideoSection = () => {
+  const [videoId, setVideoId] = useState("nLrx8DwIFQ8");
   const onPlayerReady: YouTubeProps["onReady"] = (event) => {
     // access to player in all event handlers via event.target
     event.target.pauseVideo();
@@ -39,7 +41,7 @@ const VideoSection = () => {
       </Text>
       <Flex>
         <Flex direction={"column"} display={{ base: "none", lg: "flex" }}>
-          <HomeVideo />
+          <HomeVideo videoId={videoId} />
           <Text color={"brand.900"} fontSize="xl" mt={5} fontWeight={"bold"}>
             RelyHRM (HR & Payroll Management Software)
           </Text>
@@ -85,6 +87,7 @@ const VideoSection = () => {
             align="center"
             justify={"center"}
             mt={{ lg: 3, base: 5 }}
+            onClick={() => setVideoId("u8zI0LreY50")}
           >
             <Box
               w="fit-content"

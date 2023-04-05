@@ -34,7 +34,7 @@ export default defineType({
   preview: {
     select: {
       title: "firstName",
-      media: "image",
+      message: "message",
     },
   },
 });

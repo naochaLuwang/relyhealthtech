@@ -10,16 +10,37 @@ export const metadata = {
 };
 
 const clientquery = groq`
-*[_type=='clients']{
+*[_type=='clients' && clientCategory->name == "Private"]{
   ...,
   
 } | order(_createdAt asc)
 `;
+
+const diagnosticclientquery = groq`
+*[_type=='clients' && clientCategory->name == "Diagnostic"]{
+  ...,
+  
+} | order(_createdAt asc)
+`;
+
+const governmentclientquery = groq`
+*[_type=='clients' && clientCategory->name == "Government"]{
+  ...,
+  
+} | order(_createdAt asc)
+`;
+
 const ClientPage = async () => {
   const privateclients = await client.fetch(clientquery);
+  const diagnosticClients = await client.fetch(diagnosticclientquery);
+  const governmentClients = await client.fetch(governmentclientquery);
   return (
     <Box maxW="full">
-      <Clients PRIVATE_CLIENTS={privateclients} />
+      <Clients
+        PRIVATE_CLIENTS={privateclients}
+        DIAGNOSTIC_CLIENTS={diagnosticClients}
+        GOVERNMENT_CLIENTS={governmentClients}
+      />
     </Box>
   );
 };

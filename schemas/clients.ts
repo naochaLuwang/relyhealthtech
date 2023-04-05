@@ -11,8 +11,8 @@ export default defineType({
       type: "string",
     }),
     defineField({
-      name: "category",
-      title: "Category",
+      name: "clientCategory",
+      title: "Client Category",
       type: "reference",
       to: { type: "clientCategory" },
     }),

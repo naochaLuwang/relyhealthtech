@@ -2,7 +2,7 @@
 import { Card, CardBody } from "@chakra-ui/react";
 import YouTube, { YouTubeProps } from "react-youtube";
 
-const HomeVideo = () => {
+const HomeVideo = ({ videoId }: any) => {
   const onPlayerReady: YouTubeProps["onReady"] = (event) => {
     // access to player in all event handlers via event.target
     event.target.pauseVideo();
@@ -27,7 +27,7 @@ const HomeVideo = () => {
   return (
     <Card bg="purple.50" w="fit-content" mx="auto">
       <CardBody display={{ sm: "none", lg: "block" }}>
-        <YouTube videoId="nLrx8DwIFQ8" opts={opts} onReady={onPlayerReady} />
+        <YouTube videoId={videoId} opts={opts} onReady={onPlayerReady} />
       </CardBody>
     </Card>
   );

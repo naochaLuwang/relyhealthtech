@@ -26,8 +26,6 @@ const ContactForm = () => {
 
   const toast = useToast();
 
-  console.log(formData);
-
   const handleInputChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
