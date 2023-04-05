@@ -88,7 +88,7 @@ const ContactForm = () => {
                 <div className="flex mt-7 space-x-2 items-center">
                   <PhoneIcon className="h-6 w-6 text-cardCorner" />
                   <p className="text-buttonColor text-sm font-medium">
-                    9900039245
+                    +91 1800 572 9323
                   </p>
                 </div>
                 <div className="flex mt-7 space-x-2 items-center">

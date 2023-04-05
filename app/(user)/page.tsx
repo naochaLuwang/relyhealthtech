@@ -46,7 +46,7 @@ const query = groq`
 `;
 
 const clientquery = groq`
-*[_type=='clients' ]{
+*[_type=='clients' && clientCategory->name == "Private" ]{
   ...,
   
 } | order(_createdAt asc)
@@ -59,11 +59,27 @@ const bannerquery = groq`
 } | order(_createdAt asc)
 `;
 
+const diagnosticclientquery = groq`
+*[_type=='clients' && clientCategory->name == "Diagnostic"]{
+  ...,
+  
+} | order(_createdAt asc)
+`;
+
+const governmentclientquery = groq`
+*[_type=='clients' && clientCategory->name == "Government"]{
+  ...,
+  
+} | order(_createdAt asc)
+`;
+
 const HomePage = async () => {
   const carousalImages = await client.fetch(query);
 
   const privateclients = await client.fetch(clientquery);
   const bannerNew = await client.fetch(bannerquery);
+  const diagnosticClients = await client.fetch(diagnosticclientquery);
+  const governmentClients = await client.fetch(governmentclientquery);
 
   return (
     <Suspense fallback={<Loading />}>
@@ -78,7 +94,11 @@ const HomePage = async () => {
         <FlagShipProducts />
         <MobileApplication />
 
-        <ClientsHome PRIVATE_CLIENTS={privateclients} />
+        <ClientsHome
+          PRIVATE_CLIENTS={privateclients}
+          DIAGNOSTIC_CLIENTS={diagnosticClients}
+          GOVERNMENT_CLIENTS={governmentClients}
+        />
 
         <ClientTestimonial />
         <ContactHomePage />

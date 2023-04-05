@@ -8,20 +8,33 @@ const Location = ({ locations }: any) => {
     <div className="bg-buttonColor h-auto">
       <div className="max-w-7xl mx-auto py-8 lg:py-16 px-8 relative ">
         <div className="hidden lg:block lg:absolute lg:h-[50rem] lg:w-[70rem] lg:-top-20  lg:opacity-20">
-          <Image src={"/map.svg"} alt="" layout="fill" objectFit="contain" />
+          <Image
+            src={"/map.svg"}
+            alt=""
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        </div>
+        <div className="mb-5">
+          <h1 className="text-3xl font-semibold text-textPrimary">
+            OUR PRESENCE
+          </h1>
         </div>
         <div className="grid lg:grid-cols-3 gap-10 z-20">
           {locations.map((location: any) => (
-            <div key={location._id} className="flex flex-col ">
-              <h1 className="text-2xl font-bold text-primary">
+            <div
+              key={location._id}
+              className="flex flex-col bg-primary w-fit h-56 px-10 items-center py-10 rounded-md shadow-lg bg-opacity-10"
+            >
+              <h1 className="text-2xl font-bold text-textPrimary">
                 {location.city}
               </h1>
               <p className="text-lg font-medium text-secondary">
                 Rely Healthcare Technologies
               </p>
               <div className="flex items-start mt-3  space-x-2">
-                <MapPinIcon className="h-6 w-6 flex-shrink-0" />
-                <p className="text-base font-medium text-secondary">
+                {/* <MapPinIcon className="h-6 w-6 flex-shrink-0" /> */}
+                <p className="text-sm font-medium text-secondary">
                   {location.addressLine1} {location.addressLine2}{" "}
                   {location.addressLine3}
                 </p>

@@ -16,22 +16,12 @@ import {
   TabPanel,
   Flex,
 } from "@chakra-ui/react";
-import ClientCard from "./ClientCard";
+
 interface Clients {
   name: string;
   image: string;
 }
 
-// const GOVERNMENT_CLIENTS: Array<Clients> = [
-//   {
-//     name: "Jorhat Medical College",
-//     image: "/JMC.jpeg",
-//   },
-//   {
-//     name: "Sanaka",
-//     image: "/sanaka.png",
-//   },
-// ];
 const Clients = ({
   PRIVATE_CLIENTS,
   DIAGNOSTIC_CLIENTS,

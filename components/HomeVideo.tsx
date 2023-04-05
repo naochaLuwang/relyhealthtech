@@ -14,7 +14,7 @@ const HomeVideo = ({ videoId }: any) => {
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
-      autoplay: 0,
+      autoplay: videoId != "nLrx8DwIFQ8" ? 1 : 0,
       showInfo: 0,
       controls: 0,
       autoHide: 0,
