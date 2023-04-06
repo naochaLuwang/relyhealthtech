@@ -99,6 +99,7 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
+  { label: "Home", href: "/" },
   {
     label: "About Us",
     href: "/about",
@@ -151,10 +152,10 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Contact Us",
     href: "/contact",
   },
-  {
-    label: "People",
-    href: "#",
-  },
+  // {
+  //   label: "People",
+  //   href: "#",
+  // },
 ];
 
 export default MobileNav;
