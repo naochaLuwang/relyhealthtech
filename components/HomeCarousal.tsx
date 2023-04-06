@@ -46,7 +46,7 @@ const HomeCarousal = ({ carousalImages }: any) => {
         <Box
           key={image._id}
           w={"full"}
-          h={{ sm: "56", lg: "96" }}
+          h={{ base: "56", lg: "96" }}
           position="relative"
         >
           <Image

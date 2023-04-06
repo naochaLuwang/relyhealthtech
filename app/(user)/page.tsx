@@ -85,7 +85,9 @@ const HomePage = async () => {
   return (
     <Suspense fallback={<Loading />}>
       <Box>
-        <HomeCarousal carousalImages={carousalImages} />
+        <Suspense fallback={<p>Loading ....</p>}>
+          <HomeCarousal carousalImages={carousalImages} />
+        </Suspense>
 
         <WhatsNew BANNER_NEW={bannerNew} />
 
