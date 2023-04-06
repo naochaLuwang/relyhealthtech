@@ -67,13 +67,7 @@ const Header = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
-      if (
-        !formData.firstName ||
-        !formData.lastName ||
-        !formData.email ||
-        !formData.phone ||
-        !formData.message
-      ) {
+      if (!formData.firstName || !formData.phone || !formData.message) {
         setLoading(false);
         toast({
           title: "Invalid Credentials",
@@ -167,12 +161,12 @@ const Header = () => {
         <Modal isOpen={open} onClose={onCloseClick} isCentered size={"4xl"}>
           <ModalOverlay>
             <ModalContent>
-              <ModalHeader>Book Demo</ModalHeader>
+              <ModalHeader>Book a Demo</ModalHeader>
               <ModalCloseButton />
               <ModalBody px={10}>
                 <form onSubmit={handleSubmit}>
                   <SimpleGrid w="full" columns={2} gap={5}>
-                    <FormControl>
+                    <FormControl isRequired>
                       <FormLabel>First Name</FormLabel>
                       <Input
                         type={"text"}
@@ -199,17 +193,18 @@ const Header = () => {
                         value={formData.email}
                       />
                     </FormControl>
-                    <FormControl>
+                    <FormControl isRequired>
                       <FormLabel>Mobile No.</FormLabel>
                       <Input
                         type={"text"}
                         name="phone"
                         onChange={handleInputChange}
                         value={formData.phone}
+                        rounded="lg"
                       />
                     </FormControl>
                   </SimpleGrid>
-                  <FormControl>
+                  <FormControl isRequired mt="5">
                     <FormLabel>Message</FormLabel>
                     <Textarea
                       noOfLines={3}

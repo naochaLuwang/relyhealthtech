@@ -45,13 +45,7 @@ const ContactForm = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
-      if (
-        !formData.firstName ||
-        !formData.lastName ||
-        !formData.email ||
-        !formData.phone ||
-        !formData.message
-      ) {
+      if (!formData.firstName || !formData.phone || !formData.message) {
         setLoading(false);
         toast({
           title: "Invalid Credentials",
@@ -104,26 +98,36 @@ const ContactForm = () => {
                     info@relyhealthtech.com
                   </p>
                 </div>
-                <div className="flex mt-7 space-x-2 items-center mr-3">
-                  <MapPinIcon className="h-8 w-8  text-cardCorner " />
+                <div className="flex mt-7 space-x-2 items-start mr-3">
+                  <MapPinIcon className="h-6 w-6  text-cardCorner flex-shrink-0" />
                   <p className="text-buttonColor text-sm font-medium ">
-                    Gurgaon
+                    Level 6,Wing B,Two Horizon Center Golf Course Road Sector
+                    43, Gurgaon- 122002
                   </p>
                 </div>
                 <div className="flex items-center space-x-2 mt-24">
-                  <Link href="https://www.facebook.com/relyhealthcare2020">
+                  <Link
+                    href="https://www.facebook.com/relyhealthcare2020"
+                    target="_blank"
+                  >
                     <div className="w-10 h-10 p-2 hover:bg-cardCorner cursor-pointer text-buttonColor flex items-center justify-center rounded-full ">
                       <FaFacebookF />
                     </div>
                   </Link>
 
-                  <Link href="https://www.instagram.com/rely_healthtech/">
+                  <Link
+                    href="https://www.instagram.com/rely_healthtech/"
+                    target="_blank"
+                  >
                     <div className="w-10 h-10 p-2  hover:bg-cardCorner cursor-pointer text-buttonColor flex items-center justify-center rounded-full ">
                       <FaInstagramSquare />
                     </div>
                   </Link>
 
-                  <Link href="https://www.linkedin.com/company/rely-healthcare-technologies/?original_referer=">
+                  <Link
+                    href="https://www.linkedin.com/company/rely-healthcare-technologies/?original_referer="
+                    target="_blank"
+                  >
                     <div className="w-10 h-10 p-2 hover:bg-cardCorner cursor-pointer text-buttonColor flex items-center justify-center rounded-full ">
                       <FaLinkedin />
                     </div>
@@ -159,7 +163,6 @@ const ContactForm = () => {
                         >
                           Last Name
                         </label>
-                        <p className="text-lg text-textPrimary font-bold">*</p>
                       </div>
                       <input
                         name="lastName"
@@ -179,7 +182,6 @@ const ContactForm = () => {
                         >
                           Mail
                         </label>
-                        <p className="text-lg text-textPrimary font-bold">*</p>
                       </div>
                       <input
                         name="email"
@@ -209,7 +211,11 @@ const ContactForm = () => {
                     </div>
                   </div>
 
-                  <h1 className="text-base font-medium mt-2 ">Message</h1>
+                  <div className="flex space-x-2 ">
+                    <h1 className="text-base font-medium mt-2 ">Message</h1>
+                    <p className="text-lg text-textPrimary font-bold mt-2">*</p>
+                  </div>
+
                   <textarea
                     value={formData.message}
                     onChange={handleInputChange}

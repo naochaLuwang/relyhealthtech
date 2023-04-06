@@ -43,13 +43,7 @@ const ContactHomePage = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
-      if (
-        !formData.firstName ||
-        !formData.lastName ||
-        !formData.email ||
-        !formData.phone ||
-        !formData.message
-      ) {
+      if (!formData.firstName || !formData.phone || !formData.message) {
         setLoading(false);
         toast({
           title: "Invalid Credentials",
@@ -100,7 +94,7 @@ const ContactHomePage = () => {
                 value={formData.firstName}
               />
             </FormControl>
-            <FormControl isRequired>
+            <FormControl>
               <FormLabel>Last Name</FormLabel>
               <Input
                 type="text"
@@ -109,7 +103,7 @@ const ContactHomePage = () => {
                 value={formData.lastName}
               />
             </FormControl>
-            <FormControl isRequired>
+            <FormControl>
               <FormLabel>Email</FormLabel>
               <Input
                 type="text"

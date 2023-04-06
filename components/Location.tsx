@@ -32,7 +32,7 @@ const Location = ({ locations }: any) => {
               <p className="text-lg font-medium text-secondary">
                 Rely Healthcare Technologies
               </p>
-              <div className="flex items-start mt-3  space-x-2">
+              <div className="flex items-start mt-3  space-x-2 text-center">
                 {/* <MapPinIcon className="h-6 w-6 flex-shrink-0" /> */}
                 <p className="text-sm font-medium text-textPrimary">
                   {location.addressLine1} {location.addressLine2}{" "}

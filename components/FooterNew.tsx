@@ -134,15 +134,24 @@ const FooterNew = () => {
             </h1>
           </div>
           <div className="flex space-x-5 cursor-pointer">
-            <Link href="https://www.instagram.com/rely_healthtech/">
+            <Link
+              href="https://www.instagram.com/rely_healthtech/"
+              target="_blank"
+            >
               <BsInstagram className="text-black lg:h-10 lg:w-10 h-6 w-6 cursor-pointer" />
             </Link>
 
-            <Link href="https://www.linkedin.com/company/rely-healthcare-technologies/?original_referer=">
+            <Link
+              href="https://www.linkedin.com/company/rely-healthcare-technologies/?original_referer="
+              target="_blank"
+            >
               <BsLinkedin className="lg:h-10 lg:w-10 h-6 w-6 text-black cursor-pointer" />
             </Link>
 
-            <Link href="https://www.facebook.com/relyhealthcare2020">
+            <Link
+              href="https://www.facebook.com/relyhealthcare2020"
+              target="_blank"
+            >
               <FaFacebookSquare className="text-black h-6 w-6 lg:h-10 lg:w-10 cursor-pointer" />
             </Link>
           </div>
