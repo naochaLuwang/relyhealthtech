@@ -34,16 +34,18 @@ const Modules = () => {
             }}
           >
             <Box as="span" flex="1" textAlign="left">
-              Patient Administration
+              Inventory
             </Box>
             <AccordionIcon />
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
           <UnorderedList pl={4}>
-            <ListItem>Patient Registration</ListItem>
-            <ListItem>Appoinment</ListItem>
-            <ListItem>Patient Sticker</ListItem>
+            <ListItem>Receipts</ListItem>
+            <ListItem>Issues</ListItem>
+            <ListItem>Returns</ListItem>
+            <ListItem>Other Transaction</ListItem>
+            <ListItem>Reports</ListItem>
           </UnorderedList>
         </AccordionPanel>
       </AccordionItem>
@@ -58,15 +60,19 @@ const Modules = () => {
             }}
           >
             <Box as="span" flex="1" textAlign="left">
-              Billing
+              OP Pharmacy
             </Box>
             <AccordionIcon />
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
           <UnorderedList pl={4}>
-            <ListItem>Cash</ListItem>
-            <ListItem>Credit</ListItem>
+            <ListItem>OP sale (Cash/Credit)</ListItem>
+            <ListItem>OP sale as per prescription</ListItem>
+            <ListItem>Medicine dispatch</ListItem>
+            <ListItem>Receipts</ListItem>
+            <ListItem>Returns</ListItem>
+            <ListItem>Other Transactions</ListItem>
           </UnorderedList>
         </AccordionPanel>
       </AccordionItem>
@@ -81,46 +87,26 @@ const Modules = () => {
             }}
           >
             <Box as="span" flex="1" textAlign="left">
-              Phlebotomy
+              IP Pharmacy
             </Box>
             <AccordionIcon />
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
           <UnorderedList pl={4}>
-            <ListItem>Queue Management</ListItem>
-            <ListItem>Sample Collection & ID Generation</ListItem>
-            <ListItem>Barcode Label Printing</ListItem>
-            <ListItem>Sample Dispatch</ListItem>
+            <ListItem>Indent / Indent on ROL</ListItem>
+            <ListItem>Receipts</ListItem>
+            <ListItem>Returns</ListItem>
+            <ListItem>
+              Issue to patient (As per type of request) & Bill Update
+            </ListItem>
+            <ListItem>Return from Patient & Bill Update</ListItem>
+            <ListItem>Medicine Dispatch</ListItem>
+            <ListItem>Reports</ListItem>
           </UnorderedList>
         </AccordionPanel>
       </AccordionItem>
-      <AccordionItem>
-        <h2>
-          <AccordionButton
-            _expanded={{
-              bg: "purple.50",
-              color: "purple.900",
-              fontWeight: "bold",
-            }}
-          >
-            <Box as="span" flex="1" textAlign="left">
-              LIS
-            </Box>
-            <AccordionIcon />
-          </AccordionButton>
-        </h2>
-        <AccordionPanel pb={4}>
-          <UnorderedList pl={4}>
-            <ListItem>Sample Acknowledgement / Rejection</ListItem>
-            <ListItem>Result Entry / Lab result from devices</ListItem>
-            <ListItem>Report Finalization</ListItem>
-            <ListItem>Report Printing</ListItem>
-            <ListItem>Report Dispatch</ListItem>
-            <ListItem>LIS Dashboard</ListItem>
-          </UnorderedList>
-        </AccordionPanel>
-      </AccordionItem>
+
       <AccordionItem>
         <h2>
           <AccordionButton
@@ -139,7 +125,7 @@ const Modules = () => {
         <AccordionPanel pb={4}>
           <UnorderedList pl={4}>
             <ListItem>Daily Collection Report</ListItem>
-            <ListItem>Doctor Commission Report</ListItem>
+
             <ListItem>MIS Reports</ListItem>
             <ListItem>Graphical Reports</ListItem>
           </UnorderedList>
@@ -163,34 +149,10 @@ const Modules = () => {
         <AccordionPanel pb={4}>
           <UnorderedList pl={4}>
             <ListItem>Role Wise User Management</ListItem>
-            <ListItem>Rate Master</ListItem>
-            <ListItem>LIS Setup</ListItem>
+            <ListItem>Item Master</ListItem>
+            <ListItem>PIS Setup</ListItem>
             <ListItem>Package Management</ListItem>
             <ListItem>Software Management</ListItem>
-          </UnorderedList>
-        </AccordionPanel>
-      </AccordionItem>
-      <AccordionItem>
-        <h2>
-          <AccordionButton
-            _expanded={{
-              bg: "purple.50",
-              color: "purple.900",
-              fontWeight: "bold",
-            }}
-          >
-            <Box as="span" flex="1" textAlign="left">
-              Interfaces & Integration
-            </Box>
-            <AccordionIcon />
-          </AccordionButton>
-        </h2>
-        <AccordionPanel pb={4}>
-          <UnorderedList pl={4}>
-            <ListItem>Interfaces (Unidirectional & Biirectional)</ListItem>
-            <ListItem>Patient Portal / Result uploaded on website</ListItem>
-            <ListItem>e-mails</ListItem>
-            <ListItem>SMS for various events</ListItem>
           </UnorderedList>
         </AccordionPanel>
       </AccordionItem>
