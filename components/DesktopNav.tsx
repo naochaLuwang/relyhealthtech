@@ -36,7 +36,7 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "Product",
-    href: "/products",
+    href: "#",
     children: [
       {
         label: "Rely HIS",

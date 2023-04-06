@@ -1,28 +1,17 @@
 "use client";
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
-import HomeVideo from "./HomeVideo";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 import YouTube, { YouTubeProps } from "react-youtube";
-import { useState } from "react";
-import Link from "next/link";
 
-const VideoSection = () => {
-  const [videoId, setVideoId] = useState("nLrx8DwIFQ8");
-  const [videoTitle, setVideoTitle] = useState(
-    "RelyHRM (HR & Payroll Management Software)"
-  );
-
-  const [videoDescription, setVideoDescription] = useState(
-    "RelyHRM software is designed to automate the Human resources process of an organization"
-  );
+const VideoSectionMobile = () => {
   const onPlayerReady: YouTubeProps["onReady"] = (event) => {
     // access to player in all event handlers via event.target
     event.target.pauseVideo();
   };
 
   const opts: YouTubeProps["opts"] = {
-    height: "100",
-    width: "200",
+    height: "210",
+    width: "380",
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -39,11 +28,11 @@ const VideoSection = () => {
   return (
     <Box
       w="full"
-      h="3xl"
+      h="auto"
       bg={"brand.700"}
       py={16}
       px={{ lg: 16, sm: 8 }}
-      display={{ base: "none", lg: "block" }}
+      display={{ base: "block", lg: "none" }}
     >
       <Text
         align="center"
@@ -55,27 +44,12 @@ const VideoSection = () => {
         VIDEOS YOU MAY LIKE
       </Text>
       <Flex>
-        <Flex direction={"column"} display={{ base: "none", lg: "flex" }}>
-          <HomeVideo videoId={videoId} />
-          <Text color={"brand.900"} fontSize="xl" mt={5} fontWeight={"bold"}>
-            {videoTitle}
-          </Text>
-          <Text mt={2}>{videoDescription}</Text>
-        </Flex>
         <Flex flexDirection={"column"} ml={{ lg: 8, sm: 0 }}>
           <Flex
             flexDirection={{ base: "column", lg: "row" }}
             w="full"
             align="center"
             justify={"center"}
-            cursor="pointer"
-            onClick={() => {
-              setVideoId("SlOdDXMNqwo");
-              setVideoTitle("Rely HIS integration with PACs and RIS");
-              setVideoDescription(
-                "It is a web based ERP developed using latest technologies to manage working of a hospital in a paperless environment trusted by esteemed clients"
-              );
-            }}
           >
             <Box
               w="fit-content"
@@ -106,15 +80,7 @@ const VideoSection = () => {
             w="full"
             align="center"
             justify={"center"}
-            cursor="pointer"
             mt={{ lg: 3, base: 5 }}
-            onClick={() => {
-              setVideoId("u8zI0LreY50");
-              setVideoTitle("Rely HIS integration with LIS");
-              setVideoDescription(
-                "It is a web based ERP developed using latest technologies to manage working of a hospital in a paperless environment trusted by esteemed clients"
-              );
-            }}
           >
             <Box
               w="fit-content"
@@ -140,18 +106,10 @@ const VideoSection = () => {
               </Text>
             </Flex>
           </Flex>
-
-          <Link
-            href="https://www.youtube.com/@relyhealthcaretechnologies6441/videos"
-            target="_blank"
-            className="mt-10 bg-brand text-buttonColor shadow-md rounded-3xl text-base font-medium w-fit py-2 px-4 "
-          >
-            See More
-          </Link>
         </Flex>
       </Flex>
     </Box>
   );
 };
 
-export default VideoSection;
+export default VideoSectionMobile;

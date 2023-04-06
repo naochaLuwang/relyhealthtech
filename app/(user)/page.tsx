@@ -37,6 +37,7 @@ import Loading from "./loading";
 import MobileApplication from "@/components/MobileApplication";
 import ContactHomePage from "@/components/ContactHomePage";
 import VideoSection from "@/components/VideoSection";
+import VideoSectionMobile from "@/components/VideoSectionMobile";
 
 const query = groq`
 *[_type=='carousalImage']{
@@ -103,6 +104,7 @@ const HomePage = async () => {
         <ClientTestimonial />
         <ContactHomePage />
         <VideoSection />
+        <VideoSectionMobile />
       </Box>
     </Suspense>
   );
