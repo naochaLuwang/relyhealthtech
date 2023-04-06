@@ -14,6 +14,8 @@ export default function Hero() {
   return (
     <Stack
       minH={"auto"}
+      w={"full"}
+      mx="auto"
       mt={{ lg: 10, base: 0 }}
       direction={{ base: "column", md: "row" }}
     >
@@ -26,7 +28,7 @@ export default function Hero() {
         justify={"end"}
       >
         <Stack spacing={{ lg: 6, base: 3 }} w={"2xl"} px={{}}>
-          <Heading fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }}>
+          <Heading fontSize={{ base: "2xl", md: "3xl", lg: "3xl" }}>
             <Text
               as={"span"}
               position={"relative"}
@@ -52,7 +54,7 @@ export default function Hero() {
             color={"gray.500"}
             textAlign={{ base: "justify", md: "start" }}
           >
-            <Text as={"span"} color="brand.600" fontWeight={"bold"}>
+            <Text as={"span"} color="brand.900" fontWeight={"bold"}>
               Rely Healthcare Technologies
             </Text>{" "}
             one of the fastest growing healthcare technology company which

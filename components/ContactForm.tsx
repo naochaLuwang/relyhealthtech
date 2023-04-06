@@ -7,11 +7,18 @@ import {
 
 import { useToast } from "@chakra-ui/react";
 
-import { FaFacebookF, FaTwitter, FaLinkedin, FaMobile } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedin,
+  FaMobile,
+  FaInstagramSquare,
+} from "react-icons/fa";
 
 import { useState } from "react";
 import { Message } from "@/typings";
 import postMessage from "@/lib/postMessage";
+import Link from "next/link";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState<Message>({
@@ -97,23 +104,30 @@ const ContactForm = () => {
                     info@relyhealthtech.com
                   </p>
                 </div>
-                <div className="flex mt-7 space-x-2 items-center">
-                  <MapPinIcon className="h-10 w-10 text-cardCorner" />
-                  <p className="text-buttonColor text-sm font-medium">
-                    259, Rg Baruah Road,Guwahati, Assam 781021
+                <div className="flex mt-7 space-x-2 items-center mr-3">
+                  <MapPinIcon className="h-8 w-8  text-cardCorner " />
+                  <p className="text-buttonColor text-sm font-medium ">
+                    Gurgaon
                   </p>
                 </div>
                 <div className="flex items-center space-x-2 mt-24">
-                  <div className="w-10 h-10 p-2 hover:bg-cardCorner cursor-pointer text-buttonColor flex items-center justify-center rounded-full ">
-                    <FaFacebookF />
-                  </div>
-                  <div className="w-10 h-10 p-2  hover:bg-cardCorner cursor-pointer text-buttonColor flex items-center justify-center rounded-full ">
-                    <FaTwitter />
-                  </div>
+                  <Link href="https://www.facebook.com/relyhealthcare2020">
+                    <div className="w-10 h-10 p-2 hover:bg-cardCorner cursor-pointer text-buttonColor flex items-center justify-center rounded-full ">
+                      <FaFacebookF />
+                    </div>
+                  </Link>
 
-                  <div className="w-10 h-10 p-2 hover:bg-cardCorner cursor-pointer text-buttonColor flex items-center justify-center rounded-full ">
-                    <FaLinkedin />
-                  </div>
+                  <Link href="https://www.instagram.com/rely_healthtech/">
+                    <div className="w-10 h-10 p-2  hover:bg-cardCorner cursor-pointer text-buttonColor flex items-center justify-center rounded-full ">
+                      <FaInstagramSquare />
+                    </div>
+                  </Link>
+
+                  <Link href="https://www.linkedin.com/company/rely-healthcare-technologies/?original_referer=">
+                    <div className="w-10 h-10 p-2 hover:bg-cardCorner cursor-pointer text-buttonColor flex items-center justify-center rounded-full ">
+                      <FaLinkedin />
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div className="p-8 max-w-sm lg:max-w-4xl">

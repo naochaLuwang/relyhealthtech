@@ -2,7 +2,8 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Box, Image } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import Image from "next/image";
 import urlFor from "@/lib/urlFor";
 import CustomLeftArrow from "./CustomLeftArrow";
 import CustomRightArrow from "./CustomRightArrow";
@@ -42,8 +43,17 @@ const HomeCarousal = ({ carousalImages }: any) => {
       // customRightArrow={<CustomRightArrow />}
     >
       {carousalImages.map((image: any) => (
-        <Box key={image._id}>
-          <Image src={urlFor(image.bannerImage).url()} alt="banner Image" />
+        <Box
+          key={image._id}
+          w={"full"}
+          h={{ sm: "56", lg: "96" }}
+          position="relative"
+        >
+          <Image
+            src={urlFor(image.bannerImage).url()}
+            fill
+            alt="banner Image"
+          />
         </Box>
       ))}
     </Carousel>

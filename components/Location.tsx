@@ -24,9 +24,9 @@ const Location = ({ locations }: any) => {
           {locations.map((location: any) => (
             <div
               key={location._id}
-              className="flex flex-col bg-primary w-fit h-56 px-10 items-center py-10 rounded-md shadow-lg bg-opacity-10"
+              className="flex flex-col bg-buttonColor w-fit h-56 px-10 items-center py-10 rounded-md shadow-lg bg-opacity-80"
             >
-              <h1 className="text-2xl font-bold text-textPrimary">
+              <h1 className="text-2xl font-bold text-textPrimary border-b-2">
                 {location.city}
               </h1>
               <p className="text-lg font-medium text-secondary">
@@ -34,7 +34,7 @@ const Location = ({ locations }: any) => {
               </p>
               <div className="flex items-start mt-3  space-x-2">
                 {/* <MapPinIcon className="h-6 w-6 flex-shrink-0" /> */}
-                <p className="text-sm font-medium text-secondary">
+                <p className="text-sm font-medium text-textPrimary">
                   {location.addressLine1} {location.addressLine2}{" "}
                   {location.addressLine3}
                 </p>
@@ -60,7 +60,7 @@ const Location = ({ locations }: any) => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col mt-20">
+        {/* <div className="flex flex-col mt-20">
           <h1 className="text-xl font-bold text-primary">
             Company Bank Details
           </h1>
@@ -83,7 +83,7 @@ const Location = ({ locations }: any) => {
             <p className="font-bold">IFSC Code</p>
             <p>HDFC0000399</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

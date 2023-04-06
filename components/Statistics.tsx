@@ -57,7 +57,7 @@ function StatsCard(props: StatsCardProps) {
           </StatLabel>
           <StatNumber
             fontSize={{ lg: "2xl", base: "base" }}
-            color={"yellow"}
+            color={"white"}
             fontWeight={"medium"}
           >
             {stat}
@@ -83,31 +83,31 @@ const Statistics = () => {
           title={"Experience"}
           stat={"5+ Years"}
           icon={"rating.png"}
-          bgc={"brand.900"}
+          bgc={"blue.400"}
         />
         <StatsCard
           title={"Clients"}
           stat={"200+"}
           icon={"clients.png"}
-          bgc={"brand.900"}
+          bgc={"green.400"}
         />
         <StatsCard
           title={"Admission Per Year"}
           stat={"250000+"}
           icon={"id-card.png"}
-          bgc={"brand.900"}
+          bgc={"orange.400"}
         />
         <StatsCard
           title={"OPD Patients Per Year"}
           stat={"1250000+"}
           icon={"opd.png"}
-          bgc={"brand.900"}
+          bgc={"red.400"}
         />
         <StatsCard
           title={"User Per Month"}
           stat={"275000+"}
           icon={"user.png"}
-          bgc={"brand.900"}
+          bgc={"purple.400"}
         />
       </SimpleGrid>
     </Box>

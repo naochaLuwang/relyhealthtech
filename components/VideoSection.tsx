@@ -20,8 +20,8 @@ const VideoSection = () => {
   };
 
   const opts: YouTubeProps["opts"] = {
-    height: "180",
-    width: "360",
+    height: "100",
+    width: "200",
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -83,7 +83,7 @@ const VideoSection = () => {
 
             <Flex px={5} direction="column" mt={{ base: 5, lg: 0 }}>
               <Text fontSize={"medium"} fontWeight="bold" color={"brand.900"}>
-                Rely HIS(Hospital Management System)
+                Rely RIS(Radiology Information System)
               </Text>
               <Text fontSize={"xs"} mt={2}>
                 It is a web based ERP developed using latest technologies to
@@ -121,7 +121,7 @@ const VideoSection = () => {
 
             <Flex px={5} direction="column" mt={{ base: 5, lg: 0 }}>
               <Text fontSize={"medium"} fontWeight="bold" color={"brand.900"}>
-                Rely HIS(Hospital Management System)
+                Rely LIS(Laboratory Information System)
               </Text>
               <Text fontSize={"xs"} mt={2}>
                 It is a web based ERP developed using latest technologies to
