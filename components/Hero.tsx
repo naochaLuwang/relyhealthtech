@@ -24,35 +24,33 @@ const Hero = () => {
           <br />
           for more than 5 years.
         </p>
-        <Slide direction="up" cascade damping={0.2}>
-          <p className="lg:text-base text-sm  leading-relaxed mt-5">
-            We are a leading company with 5 years of experience in the
-            healthcare domain, specializing in providing management information
-            systems for hospitals, medical colleges, clinics, diagnostic
-            centers, and pharmacy chains. Our solutions are completely
-            web/browser-based and can be hosted on the cloud, offering
-            flexibility and accessibility to users from anywhere and at any
-            time.
-          </p>
-          <p className="lg:text-base text-sm  leading-relaxed mt-5">
-            With a strong presence in cities across India, we have successfully
-            implemented our HIS solutions in a wide range of healthcare
-            facilities, from hospitals with 20 beds to those with 1800 beds. Our
-            innovative approach includes the development of add-on modules such
-            as Web-based Electronic Medical Records, Patient Portal, SMS/Email
-            Connectivity, Online Lab Results, and a recently launched Mobile
-            Application for Doctors & Patients.
-          </p>
 
-          <p className="lg:text-base  leading-relaxed mt-5">
-            Clients can choose between on-premises or cloud solutions based on
-            their organizational needs, as we strive to cater to diverse
-            requirements. Our focus on staying updated with the latest
-            technological advancements and our commitment to providing excellent
-            service have earned us a reputation as a trusted and reliable
-            provider of HIS solutions in the healthcare industry.
-          </p>
-        </Slide>
+        <p className="lg:text-base text-sm  leading-relaxed mt-5">
+          We are a leading company with 5 years of experience in the healthcare
+          domain, specializing in providing management information systems for
+          hospitals, medical colleges, clinics, diagnostic centers, and pharmacy
+          chains. Our solutions are completely web/browser-based and can be
+          hosted on the cloud, offering flexibility and accessibility to users
+          from anywhere and at any time.
+        </p>
+        <p className="lg:text-base text-sm  leading-relaxed mt-5">
+          With a strong presence in cities across India, we have successfully
+          implemented our HIS solutions in a wide range of healthcare
+          facilities, from hospitals with 20 beds to those with 1800 beds. Our
+          innovative approach includes the development of add-on modules such as
+          Web-based Electronic Medical Records, Patient Portal, SMS/Email
+          Connectivity, Online Lab Results, and a recently launched Mobile
+          Application for Doctors & Patients.
+        </p>
+
+        <p className="lg:text-base  leading-relaxed mt-5">
+          Clients can choose between on-premises or cloud solutions based on
+          their organizational needs, as we strive to cater to diverse
+          requirements. Our focus on staying updated with the latest
+          technological advancements and our commitment to providing excellent
+          service have earned us a reputation as a trusted and reliable provider
+          of HIS solutions in the healthcare industry.
+        </p>
       </div>
 
       <div>

@@ -83,32 +83,30 @@ const HomePage = async () => {
   const governmentClients = await client.fetch(governmentclientquery);
 
   return (
-    <Suspense fallback={<Loading />}>
-      <Box>
-        <Suspense fallback={<p>Loading ....</p>}>
-          <HomeCarousal carousalImages={carousalImages} />
-        </Suspense>
+    <Box>
+      <Suspense fallback={<p>Loading ....</p>}>
+        <HomeCarousal carousalImages={carousalImages} />
+      </Suspense>
 
-        <WhatsNew BANNER_NEW={bannerNew} />
+      <WhatsNew BANNER_NEW={bannerNew} />
 
-        <Statistics />
+      <Statistics />
 
-        <Hero />
-        <FlagShipProducts />
-        <MobileApplication />
+      <Hero />
+      <FlagShipProducts />
+      <MobileApplication />
 
-        <ClientsHome
-          PRIVATE_CLIENTS={privateclients}
-          DIAGNOSTIC_CLIENTS={diagnosticClients}
-          GOVERNMENT_CLIENTS={governmentClients}
-        />
+      <ClientsHome
+        PRIVATE_CLIENTS={privateclients}
+        DIAGNOSTIC_CLIENTS={diagnosticClients}
+        GOVERNMENT_CLIENTS={governmentClients}
+      />
 
-        <ClientTestimonial />
-        <ContactHomePage />
-        <VideoSection />
-        <VideoSectionMobile />
-      </Box>
-    </Suspense>
+      <ClientTestimonial />
+      <ContactHomePage />
+      <VideoSection />
+      <VideoSectionMobile />
+    </Box>
   );
 };
 
