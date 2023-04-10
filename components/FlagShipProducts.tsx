@@ -10,7 +10,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import FlagshipCards from "./FlagshipCards";
-import Link from "next/link";
+import Fade from "react-awesome-reveal";
 
 interface FlagshipProduct {
   title: string;
@@ -56,10 +56,15 @@ const FlagShipProducts = () => {
   const step2 = useColorModeValue("500", "400");
   const step3 = useColorModeValue("300", "500");
   return (
-    <Box maxW="8xl" mx="auto" py={{ lg: 16, base: 10 }} px={8}>
+    <Box maxW="8xl" mx="auto" py={{ lg: 16, base: 10 }} px={10}>
+      <Flex align={"center"} gap={2} pl={5}>
+        <Box w={12} h={2} bg="brand.900" rounded={"2xl"}></Box>
+        <Text color="brand.900">WHAT WE DO</Text>
+      </Flex>
       <Heading pl={{ lg: 6 }} fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}>
-        <Text color={"brand.900"}>OUR FLAGSHIP PRODUCTS</Text>
+        <Text color={"black"}>OUR FLAGSHIP PRODUCTS</Text>
       </Heading>
+
       <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ lg: 6, base: 2 }}>
         {FlagshipItems.map((flagshipitem) => (
           <FlagshipCards key={flagshipitem.title} {...flagshipitem} />

@@ -155,7 +155,7 @@ const Header = () => {
             onClick={onOpenClick}
             className="bg-button1 hover:bg-button2 text-sm w-36 rounded-md text-buttonColor py-1 hidden lg:block "
           >
-            REQUEST DEMO
+            BOOK DEMO
           </button>
         </Stack>
         <Modal isOpen={open} onClose={onCloseClick} isCentered size={"4xl"}>
