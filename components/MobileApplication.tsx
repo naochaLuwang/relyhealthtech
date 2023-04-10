@@ -1,5 +1,6 @@
 "use client";
 import { Box, Image } from "@chakra-ui/react";
+import { Fade } from "react-awesome-reveal";
 
 const MobileApplication = () => {
   return (

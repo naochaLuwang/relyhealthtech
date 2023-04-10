@@ -10,7 +10,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import FlagshipCards from "./FlagshipCards";
-import Fade from "react-awesome-reveal";
+import Fade, { Slide } from "react-awesome-reveal";
 
 interface FlagshipProduct {
   title: string;
@@ -67,7 +67,15 @@ const FlagShipProducts = () => {
 
       <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ lg: 6, base: 2 }}>
         {FlagshipItems.map((flagshipitem) => (
-          <FlagshipCards key={flagshipitem.title} {...flagshipitem} />
+          <Slide
+            key={flagshipitem.title}
+            direction="right"
+            cascade
+            triggerOnce
+            damping={0.5}
+          >
+            <FlagshipCards {...flagshipitem} />
+          </Slide>
         ))}
       </SimpleGrid>
     </Box>

@@ -24,7 +24,7 @@ const Hero = () => {
           <br />
           for more than 5 years.
         </p>
-        <Slide direction="up" triggerOnce>
+        <Slide direction="up" cascade damping={0.2}>
           <p className="lg:text-base text-sm  leading-relaxed mt-5">
             We are a leading company with 5 years of experience in the
             healthcare domain, specializing in providing management information
