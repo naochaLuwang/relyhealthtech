@@ -161,7 +161,7 @@ const Header = () => {
         <Modal isOpen={open} onClose={onCloseClick} isCentered size={"4xl"}>
           <ModalOverlay>
             <ModalContent>
-              <ModalHeader>Book a Demo</ModalHeader>
+              <ModalHeader px={10}>Book a Demo</ModalHeader>
               <ModalCloseButton />
               <ModalBody px={10}>
                 <form onSubmit={handleSubmit}>

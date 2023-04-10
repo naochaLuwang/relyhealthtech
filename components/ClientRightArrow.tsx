@@ -12,14 +12,14 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }: any) => {
         className="absolute w-fit -top-32 -left-12"
         onClick={() => previous()}
       >
-        <TiChevronLeft className="h-10 w-10" />
+        <TiChevronLeft className="h-8 w-8" />
       </button>
 
       <button
         className="absolute w-fit -top-32 -right-12"
         onClick={() => next()}
       >
-        <TiChevronRight className="h-10 w-10" />
+        <TiChevronRight className="h-8 w-8" />
       </button>
     </div>
   );
