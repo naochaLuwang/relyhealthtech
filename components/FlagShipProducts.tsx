@@ -42,11 +42,11 @@ const FlagshipItems: Array<FlagshipProduct> = [
     slug: "rely_lis",
   },
   {
-    title: "Rely PIS",
+    title: "Rely IVF",
     icon: "/hospital.png",
     description:
-      "Rely PIS (Pharmacy Information System) is a world class pharmacy management software . It is designed for owners,  keeping their requirements in mind. It's designed to eliminate error while dispensing medicines + control over medicines stocks.",
-    slug: "rely_pis",
+      " Rely IVF is a comprehensive software solution that has been designed to simplify the management of infertility-related processes in healthcare organizations. It is an all-in-one package that enables healthcare professionals to easily manage various infertility management tasks from a single platform.",
+    slug: "rely_ivf",
   },
 ];
 
@@ -57,7 +57,7 @@ const FlagShipProducts = () => {
   const step3 = useColorModeValue("300", "500");
   return (
     <Box maxW="8xl" mx="auto" py={{ lg: 16, base: 10 }} px={10}>
-      <Flex align={"center"} gap={2} pl={5}>
+      <Flex align={"center"} gap={2} pl={{ lg: 5, base: 0 }}>
         <Box w={12} h={2} bg="brand.900" rounded={"2xl"}></Box>
         <Text color="brand.900">WHAT WE DO</Text>
       </Flex>

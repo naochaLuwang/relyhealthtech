@@ -83,31 +83,31 @@ const Statistics = () => {
           title={"Experience"}
           stat={"5+ Years"}
           icon={"rating.png"}
-          bgc={"blue.400"}
+          bgc={"stats.900"}
         />
         <StatsCard
           title={"Clients"}
           stat={"200+"}
           icon={"clients.png"}
-          bgc={"green.400"}
+          bgc={"stats.800"}
         />
         <StatsCard
           title={"Admission Per Year"}
           stat={"250000+"}
           icon={"id-card.png"}
-          bgc={"orange.400"}
+          bgc={"stats.700"}
         />
         <StatsCard
           title={"OPD Patients Per Year"}
           stat={"1250000+"}
           icon={"opd.png"}
-          bgc={"red.400"}
+          bgc={"stats.600"}
         />
         <StatsCard
           title={"User Per Month"}
           stat={"275000+"}
           icon={"user.png"}
-          bgc={"purple.400"}
+          bgc={"stats.500"}
         />
       </SimpleGrid>
     </Box>

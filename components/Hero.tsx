@@ -5,25 +5,27 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
-    <div className="max-w-7xl mx-auto min-h-screen flex   items-center gap-5">
+    <div className="max-w-7xl mx-auto min-h-screen flex flex-col lg:flex-row py-10 lg:py-0 px-8 lg:px-0   items-center gap-5">
       <div className="flex flex-col max-w-2xl ">
         <Slide direction="down">
           <div className="flex items-center gap-2">
-            <div className="w-12 h-2 rounded-xl bg-logo"></div>
+            <div className="lg:w-12 w-8 h-1 lg:h-2 rounded-xl bg-logo"></div>
 
-            <h1 className="text-lg font-light text-textPrimary">WHO WE ARE</h1>
+            <h1 className="lg:text-lg text-base font-light text-textPrimary">
+              WHO WE ARE
+            </h1>
           </div>
         </Slide>
 
-        <p className="text-4xl font-semibold leading-tight">
+        <p className="lg:text-4xl text-2xl font-semibold leading-tight">
           <span className="text-brandColor">
             Specialized in Healthcare IT Solutons
           </span>{" "}
           <br />
           for more than 5 years.
         </p>
-        <Slide direction="up" cascade>
-          <p className="text-base  leading-relaxed mt-5">
+        <Slide direction="up" triggerOnce>
+          <p className="lg:text-base text-sm  leading-relaxed mt-5">
             We are a leading company with 5 years of experience in the
             healthcare domain, specializing in providing management information
             systems for hospitals, medical colleges, clinics, diagnostic
@@ -32,7 +34,7 @@ const Hero = () => {
             flexibility and accessibility to users from anywhere and at any
             time.
           </p>
-          <p className="text-base  leading-relaxed mt-5">
+          <p className="lg:text-base text-sm  leading-relaxed mt-5">
             With a strong presence in cities across India, we have successfully
             implemented our HIS solutions in a wide range of healthcare
             facilities, from hospitals with 20 beds to those with 1800 beds. Our
@@ -42,7 +44,7 @@ const Hero = () => {
             Application for Doctors & Patients.
           </p>
 
-          <p className="text-base  leading-relaxed mt-5">
+          <p className="lg:text-base  leading-relaxed mt-5">
             Clients can choose between on-premises or cloud solutions based on
             their organizational needs, as we strive to cater to diverse
             requirements. Our focus on staying updated with the latest
@@ -52,6 +54,7 @@ const Hero = () => {
           </p>
         </Slide>
       </div>
+
       <div>
         <Image src="/home.svg" alt="home" width={600} height={600} />
       </div>

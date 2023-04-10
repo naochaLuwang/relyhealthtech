@@ -153,9 +153,9 @@ const Header = () => {
         >
           <button
             onClick={onOpenClick}
-            className="bg-button1 hover:bg-button2 text-sm w-36 rounded-md text-buttonColor py-1 hidden lg:block "
+            className="bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out text-sm w-36 rounded-md text-buttonColor py-2 font-semibold hidden lg:block "
           >
-            BOOK DEMO
+            BOOK A DEMO
           </button>
         </Stack>
         <Modal isOpen={open} onClose={onCloseClick} isCentered size={"4xl"}>
