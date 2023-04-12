@@ -43,7 +43,7 @@ const FlagshipItems: Array<FlagshipProduct> = [
   },
   {
     title: "Rely IVF",
-    icon: "/hospital.png",
+    icon: "/RelyIVF.png",
     description:
       " Rely IVF is a comprehensive software solution that has been designed to simplify the management of infertility-related processes in healthcare organizations. It is an all-in-one package that enables healthcare professionals to easily manage various infertility management tasks from a single platform.",
     slug: "rely_ivf",
