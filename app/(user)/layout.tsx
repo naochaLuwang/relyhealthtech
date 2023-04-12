@@ -57,7 +57,7 @@ export default function RootLayout({
               </Suspense>
               {/* <Footer /> */}
               <FooterNew />
-              <div className="h-10 w-10 bg-primary fixed right-0 bottom-10"></div>
+              {/* <div className="h-10 w-10 bg-primary fixed right-0 bottom-10"></div> */}
             </div>
           </ChakraProvider>
         </CacheProvider>
