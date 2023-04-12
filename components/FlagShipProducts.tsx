@@ -10,7 +10,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import FlagshipCards from "./FlagshipCards";
-import Fade, { Slide } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 interface FlagshipProduct {
   title: string;
@@ -57,27 +57,26 @@ const FlagShipProducts = () => {
   const step3 = useColorModeValue("300", "500");
   return (
     <Box maxW="8xl" mx="auto" py={{ lg: 16, base: 10 }} px={10}>
-      <Flex align={"center"} gap={2} pl={{ lg: 5, base: 0 }}>
-        <Box w={12} h={2} bg="brand.900" rounded={"2xl"}></Box>
-        <Text color="brand.900">WHAT WE DO</Text>
-      </Flex>
-      <Heading pl={{ lg: 6 }} fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}>
-        <Text color={"black"}>OUR FLAGSHIP PRODUCTS</Text>
-      </Heading>
+      <Fade direction="left">
+        <Flex align={"center"} gap={2} pl={{ lg: 5, base: 0 }}>
+          <Box w={12} h={1} bg="brand.900" rounded={"2xl"}></Box>
+          <Text color="brand.900">WHAT WE DO</Text>
+        </Flex>
+      </Fade>
 
-      <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ lg: 6, base: 2 }}>
-        {FlagshipItems.map((flagshipitem) => (
-          <Slide
-            key={flagshipitem.title}
-            direction="right"
-            cascade
-            triggerOnce
-            damping={0.5}
-          >
-            <FlagshipCards {...flagshipitem} />
-          </Slide>
-        ))}
-      </SimpleGrid>
+      <Fade direction="down">
+        <Heading pl={{ lg: 6 }} fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}>
+          <Text color={"black"}>OUR FLAGSHIP PRODUCTS</Text>
+        </Heading>
+      </Fade>
+
+      <Fade direction="right">
+        <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ lg: 6, base: 2 }}>
+          {FlagshipItems.map((flagshipitem) => (
+            <FlagshipCards key={flagshipitem.title} {...flagshipitem} />
+          ))}
+        </SimpleGrid>
+      </Fade>
     </Box>
   );
 };

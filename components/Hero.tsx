@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="flex flex-col max-w-2xl ">
         <Slide direction="down">
           <div className="flex items-center gap-2">
-            <div className="lg:w-12 w-8 h-1 lg:h-2 rounded-xl bg-logo"></div>
+            <div className="lg:w-12 w-8 h-1 lg:h-1 rounded-xl bg-logo"></div>
 
             <h1 className="lg:text-lg text-base font-light text-textPrimary">
               WHO WE ARE
@@ -25,37 +25,47 @@ const Hero = () => {
           for more than 5 years.
         </p>
 
-        <p className="lg:text-base text-sm  leading-relaxed mt-5">
-          We are a leading company with 5 years of experience in the healthcare
-          domain, specializing in providing management information systems for
-          hospitals, medical colleges, clinics, diagnostic centers, and pharmacy
-          chains. Our solutions are completely web/browser-based and can be
-          hosted on the cloud, offering flexibility and accessibility to users
-          from anywhere and at any time.
-        </p>
-        <p className="lg:text-base text-sm  leading-relaxed mt-5">
-          With a strong presence in cities across India, we have successfully
-          implemented our HIS solutions in a wide range of healthcare
-          facilities, from hospitals with 20 beds to those with 1800 beds. Our
-          innovative approach includes the development of add-on modules such as
-          Web-based Electronic Medical Records, Patient Portal, SMS/Email
-          Connectivity, Online Lab Results, and a recently launched Mobile
-          Application for Doctors & Patients.
-        </p>
+        <Fade direction="up" triggerOnce>
+          <p className="lg:text-base text-sm  leading-relaxed mt-5">
+            We are a leading company with 5 years of experience in the
+            healthcare domain, specializing in providing management information
+            systems for hospitals, medical colleges, clinics, diagnostic
+            centers, and pharmacy chains. Our solutions are completely
+            web/browser-based and can be hosted on the cloud, offering
+            flexibility and accessibility to users from anywhere and at any
+            time.
+          </p>
+        </Fade>
 
-        <p className="lg:text-base  leading-relaxed mt-5">
-          Clients can choose between on-premises or cloud solutions based on
-          their organizational needs, as we strive to cater to diverse
-          requirements. Our focus on staying updated with the latest
-          technological advancements and our commitment to providing excellent
-          service have earned us a reputation as a trusted and reliable provider
-          of HIS solutions in the healthcare industry.
-        </p>
+        <Fade direction="up" triggerOnce>
+          <p className="lg:text-base text-sm  leading-relaxed mt-5">
+            With a strong presence in cities across India, we have successfully
+            implemented our HIS solutions in a wide range of healthcare
+            facilities, from hospitals with 20 beds to those with 1800 beds. Our
+            innovative approach includes the development of add-on modules such
+            as Web-based Electronic Medical Records, Patient Portal, SMS/Email
+            Connectivity, Online Lab Results, and a recently launched Mobile
+            Application for Doctors & Patients.
+          </p>
+        </Fade>
+
+        <Fade direction="up" triggerOnce>
+          <p className="lg:text-base  leading-relaxed mt-5">
+            Clients can choose between on-premises or cloud solutions based on
+            their organizational needs, as we strive to cater to diverse
+            requirements. Our focus on staying updated with the latest
+            technological advancements and our commitment to providing excellent
+            service have earned us a reputation as a trusted and reliable
+            provider of HIS solutions in the healthcare industry.
+          </p>
+        </Fade>
       </div>
 
-      <div>
-        <Image src="/home.svg" alt="home" width={600} height={600} />
-      </div>
+      <Fade direction="right" triggerOnce>
+        <div>
+          <Image src="/home.svg" alt="home" width={600} height={600} />
+        </div>
+      </Fade>
     </div>
   );
 };
