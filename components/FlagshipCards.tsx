@@ -14,7 +14,7 @@ import {
 import { FaAngleDoubleRight } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
-import { Slide } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 interface FlagshipProduct {
   title: string;

@@ -9,6 +9,7 @@ import location from "./location";
 import clientCategory from "./clientCategory";
 import message from "./message";
 import whatsNew from "./whatsNew";
+import carousalMobile from "./carousalMobile";
 
 export const schemaTypes = [
   team,
@@ -21,4 +22,5 @@ export const schemaTypes = [
   clientCategory,
   message,
   whatsNew,
+  carousalMobile,
 ];

@@ -5,6 +5,7 @@ import HomeVideo from "./HomeVideo";
 import YouTube, { YouTubeProps } from "react-youtube";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const VideoSection = () => {
   const [videoId, setVideoId] = useState("nLrx8DwIFQ8");
@@ -83,10 +84,11 @@ const VideoSection = () => {
               bg="white"
               mx={{ sm: 7, lg: 0 }}
             >
-              <YouTube
-                videoId="u8zI0LreY50"
-                opts={opts}
-                onReady={onPlayerReady}
+              <Image
+                src="/thumb1.jpeg"
+                width={380}
+                height={200}
+                alt="Thumbnail 1"
               />
             </Box>
 
@@ -122,10 +124,11 @@ const VideoSection = () => {
               bg="white"
               mx={{ sm: 7, lg: 0 }}
             >
-              <YouTube
-                videoId="u8zI0LreY50"
-                opts={opts}
-                onReady={onPlayerReady}
+              <Image
+                src="/thumb2.jpeg"
+                width={380}
+                height={200}
+                alt="Thumbnail 1"
               />
             </Box>
 

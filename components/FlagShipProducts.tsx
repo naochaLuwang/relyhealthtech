@@ -70,13 +70,19 @@ const FlagShipProducts = () => {
         </Heading>
       </Fade>
 
-      <Fade direction="right">
-        <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ lg: 6, base: 2 }}>
-          {FlagshipItems.map((flagshipitem) => (
-            <FlagshipCards key={flagshipitem.title} {...flagshipitem} />
-          ))}
-        </SimpleGrid>
-      </Fade>
+      <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ lg: 6, base: 2 }}>
+        {FlagshipItems.map((flagshipitem) => (
+          <Fade
+            key={flagshipitem.title}
+            direction="right"
+            cascade={true}
+            damping={10}
+            delay={10}
+          >
+            <FlagshipCards {...flagshipitem} />
+          </Fade>
+        ))}
+      </SimpleGrid>
     </Box>
   );
 };

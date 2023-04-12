@@ -38,9 +38,18 @@ import MobileApplication from "@/components/MobileApplication";
 import ContactHomePage from "@/components/ContactHomePage";
 import VideoSection from "@/components/VideoSection";
 import VideoSectionMobile from "@/components/VideoSectionMobile";
+import HomeCarousalMobile from "@/components/HomeCarousalMobile";
+import carousalMobile from "@/schemas/carousalMobile";
 
 const query = groq`
 *[_type=='carousalImage']{
+  ...,
+  
+} | order(_createdAt asc)
+`;
+
+const carousalQuery = groq`
+*[_type=='carousalMobile']{
   ...,
   
 } | order(_createdAt asc)
@@ -76,6 +85,7 @@ const governmentclientquery = groq`
 
 const HomePage = async () => {
   const carousalImages = await client.fetch(query);
+  const carousalMobile = await client.fetch(carousalQuery);
 
   const privateclients = await client.fetch(clientquery);
   const bannerNew = await client.fetch(bannerquery);
@@ -86,6 +96,7 @@ const HomePage = async () => {
     <Box>
       <Suspense fallback={<p>Loading ....</p>}>
         <HomeCarousal carousalImages={carousalImages} />
+        <HomeCarousalMobile carousalImages={carousalMobile} />
       </Suspense>
 
       <WhatsNew BANNER_NEW={bannerNew} />

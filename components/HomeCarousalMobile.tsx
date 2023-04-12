@@ -26,9 +26,9 @@ const responsive = {
   },
 };
 
-const HomeCarousal = ({ carousalImages }: any) => {
+const HomeCarousalMobile = ({ carousalImages }: any) => {
   return (
-    <Box display={{ base: "none", lg: "block" }}>
+    <Box display={{ base: "block", lg: "none" }}>
       <Carousel
         responsive={responsive}
         autoPlay={true}
@@ -62,4 +62,4 @@ const HomeCarousal = ({ carousalImages }: any) => {
   );
 };
 
-export default HomeCarousal;
+export default HomeCarousalMobile;
