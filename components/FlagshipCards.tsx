@@ -41,7 +41,7 @@ export default function FlagshipCards({
         bg="white"
         borderRight={"1px solid"}
         borderColor="brand.700"
-        boxShadow={useColorModeValue("0 6px 0 tomato  ", "6px 6px 0 cyan")}
+        boxShadow="0 6px 0 green"
       >
         <Box h={"auto"} bg={"brand.700"} py={2}>
           <Heading
@@ -61,7 +61,7 @@ export default function FlagshipCards({
             py={8}
             borderTop="4px solid"
             borderLeft={"1px solid"}
-            borderColor={"brand.600"}
+            borderColor={"brand.400"}
           >
             <Flex
               mb={2}
@@ -89,14 +89,16 @@ export default function FlagshipCards({
           <Link href={`/products/${slug}`}>
             <Flex
               px={4}
+              pt={1}
               pb={4}
               borderLeft={"1px"}
-              borderColor="brand.600"
+              borderColor="brand.400"
               alignItems="center"
               justifyContent={"end"}
               roundedBottom={"sm"}
               cursor={"pointer"}
               w="full"
+              bg="brand.700"
             >
               <Text
                 fontSize={"md"}
