@@ -43,7 +43,7 @@ const query = groq`
 *[_type=='carousalImage']{
   ...,
   
-} | order(_createdAt desc)
+} | order(_createdAt asc)
 `;
 
 const clientquery = groq`

@@ -158,3 +158,5 @@ const ClientsHome = ({
 };
 
 export default ClientsHome;
+
+export const revalidate = 60;
