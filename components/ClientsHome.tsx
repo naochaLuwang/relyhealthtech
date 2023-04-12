@@ -28,7 +28,7 @@ const ClientsHome = ({
   DIAGNOSTIC_CLIENTS,
 }: any) => {
   return (
-    <Box maxW="full" bg="gray.50" py={10}>
+    <Box maxW="full" bg="gray.50" py={16}>
       <Stack>
         <Heading
           fontSize={{ lg: "3xl", base: "2xl" }}

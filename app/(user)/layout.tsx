@@ -50,13 +50,14 @@ export default function RootLayout({
       <body className="poppins.className">
         <CacheProvider>
           <ChakraProvider theme={theme}>
-            <div>
+            <div className="w-full h-auto relative">
               <Header />
               <Suspense fallback={<Loading />}>
                 <Box pt={"60px"}>{children}</Box>
               </Suspense>
               {/* <Footer /> */}
               <FooterNew />
+              <div className="h-10 w-10 bg-primary fixed right-0 bottom-10"></div>
             </div>
           </ChakraProvider>
         </CacheProvider>
