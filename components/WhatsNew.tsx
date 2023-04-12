@@ -48,3 +48,5 @@ const WhatsNew = ({ BANNER_NEW }: any) => {
 };
 
 export default WhatsNew;
+
+export const revalidate = 60;

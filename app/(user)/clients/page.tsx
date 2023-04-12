@@ -46,3 +46,5 @@ const ClientPage = async () => {
 };
 
 export default ClientPage;
+
+export const revalidate = 60;
