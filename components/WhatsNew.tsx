@@ -7,7 +7,7 @@ const WhatsNew = ({ BANNER_NEW }: any) => {
   const carouselRef = useRef(null);
   let resetTimeout: any;
   return (
-    <div className="flex w-full h-10 border-2 border-[#6ebf4b]">
+    <div className="flex w-full h-12 lg:h-10 border-2 border-[#6ebf4b]">
       <div className="flex items-center justify-start relative bg-[#6ebf4b] lg:w-56 w-fit pr-3 lg:pr-0  border-right ">
         <h1 className="py-1 px-4 font-semibold text-buttonColor">
           What&apos;s New
@@ -35,7 +35,7 @@ const WhatsNew = ({ BANNER_NEW }: any) => {
         >
           {BANNER_NEW.map((banner: any) => (
             <h1
-              className="text-xs  lg:text-base font-medium text-textPrimary "
+              className="text-xs py-2 lg:py-0 lg:text-base font-medium text-textPrimary "
               key={banner._id}
             >
               {banner.banner}

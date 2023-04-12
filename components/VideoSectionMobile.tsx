@@ -1,5 +1,6 @@
 "use client";
 import { Box, Flex, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 import YouTube, { YouTubeProps } from "react-youtube";
 
@@ -43,7 +44,7 @@ const VideoSectionMobile = () => {
       >
         VIDEOS YOU MAY LIKE
       </Text>
-      <Flex>
+      <Flex flexDirection={"column"} align="center">
         <Flex flexDirection={"column"} ml={{ lg: 8, sm: 0 }}>
           <Flex
             flexDirection={{ base: "column", lg: "row" }}
@@ -58,7 +59,7 @@ const VideoSectionMobile = () => {
               mx={{ sm: 7, lg: 0 }}
             >
               <YouTube
-                videoId="u8zI0LreY50"
+                videoId="SlOdDXMNqwo"
                 opts={opts}
                 onReady={onPlayerReady}
               />
@@ -107,6 +108,13 @@ const VideoSectionMobile = () => {
             </Flex>
           </Flex>
         </Flex>
+        <Link
+          href="https://www.youtube.com/@relyhealthcaretechnologies6441/videos"
+          target="_blank"
+          className="mt-10 bg-brand text-buttonColor shadow-md rounded-3xl text-base font-medium w-fit py-2 px-4 "
+        >
+          See More
+        </Link>
       </Flex>
     </Box>
   );

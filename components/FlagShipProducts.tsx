@@ -75,7 +75,6 @@ const FlagShipProducts = () => {
           <Fade
             key={flagshipitem.title}
             direction="right"
-            cascade={true}
             damping={10}
             delay={10}
           >

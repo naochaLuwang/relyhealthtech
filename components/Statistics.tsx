@@ -46,7 +46,14 @@ function StatsCard(props: StatsCardProps) {
           />
         </Box>
 
-        <Box pl={{ md: 4 }} px={{ base: 4 }} py={2} bg={bgc} w={"full"}>
+        <Box
+          pl={{ md: 4 }}
+          px={{ base: 4 }}
+          py={2}
+          bg={bgc}
+          w={"full"}
+          rounded={{ base: "lg", lg: "none" }}
+        >
           <StatLabel
             fontWeight={"medium"}
             color={"white"}
