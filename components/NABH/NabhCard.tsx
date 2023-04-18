@@ -7,6 +7,21 @@ const NabhCard = ({ article }: any) => {
     return name.replace(/\s+/g, "_");
   };
 
+  const formatDate = (dateString: any) => {
+    // Parse the input date string to a JavaScript Date object
+    const date = new Date(dateString);
+
+    // Extract the day, month, and year from the date object
+    const day = date.getDate().toString().padStart(2, "0");
+    const month = (date.getMonth() + 1).toString().padStart(2, "0");
+    const year = date.getFullYear().toString();
+
+    // Format the date in "DD/MM/YYYY" format
+    const formattedDate = `${day}/${month}/${year}`;
+
+    return formattedDate;
+  };
+
   return (
     <div className="flex flex-col items-center w-full px-3 pt-5 pb-10 mt-5 space-x-6 rounded-lg shadow-lg h-96 bg-buttonColor">
       <div className="w-full ">
@@ -24,7 +39,9 @@ const NabhCard = ({ article }: any) => {
         <h1 className="h-20 text-xl font-semibold text-textPrimary">
           {article.eventName}
         </h1>
-        <p className="mt-2 text-sm font-light text-secondary">Published on:</p>
+        <p className="mt-2 text-sm font-light text-secondary">
+          Published on: {formatDate(article.eventDate)}
+        </p>
 
         <Link
           href={`view-NABH-check?id=${article.eventID}&${generateSlug(
