@@ -156,6 +156,10 @@ const NAV_ITEMS: Array<NavItem> = [
   //   label: "People",
   //   href: "#",
   // },
+  {
+    label: "NABH Checklist",
+    href: "/nabh_checklist",
+  },
 ];
 
 export default MobileNav;

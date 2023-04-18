@@ -4,7 +4,11 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["relyhealthtech.com", "cdn.sanity.io"],
+    domains: [
+      "relyhealthtech.com",
+      "cdn.sanity.io",
+      "admin.relyhealthtech.com",
+    ],
   },
 };
 

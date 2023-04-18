@@ -12,7 +12,7 @@ import { extendTheme } from "@chakra-ui/react";
 import { Suspense } from "react";
 import Loading from "./loading";
 import FooterNew from "@/components/FooterNew";
-import { Poppins } from "next/font/google";
+import { Nunito } from "next/font/google";
 
 const colors = {
   brand: {
@@ -34,9 +34,9 @@ const colors = {
 
 const theme = extendTheme({ colors });
 
-const poppins = Poppins({
+const nunito = Nunito({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export default function RootLayout({
@@ -47,17 +47,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className="poppins.className">
+      <body className="nunito.className">
         <CacheProvider>
           <ChakraProvider theme={theme}>
-            <div className="w-full h-auto relative">
+            <div className="relative w-full h-auto">
               <Header />
               <Suspense fallback={<Loading />}>
                 <Box pt={"60px"}>{children}</Box>
               </Suspense>
               {/* <Footer /> */}
               <FooterNew />
-              {/* <div className="h-10 w-10 bg-primary fixed right-0 bottom-10"></div> */}
+              {/* <div className="fixed right-0 w-10 h-10 bg-primary bottom-10"></div> */}
             </div>
           </ChakraProvider>
         </CacheProvider>

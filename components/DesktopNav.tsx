@@ -91,6 +91,10 @@ const NAV_ITEMS: Array<NavItem> = [
   //   label: "People",
   //   href: "#",
   // },
+  {
+    label: "NABH Checklist",
+    href: "/nabh_checklist",
+  },
 ];
 
 const DesktopNav = () => {
@@ -133,7 +137,7 @@ const DesktopNav = () => {
                     h={navItem.label == "Product" ? 3 : 0}
                   >
                     {navItem.label == "Product" ? (
-                      <ChevronDownIcon className="h-6 w-6 hover:rotate-180" />
+                      <ChevronDownIcon className="w-6 h-6 hover:rotate-180" />
                     ) : (
                       ""
                     )}
