@@ -3,7 +3,10 @@ import Link from "next/link";
 import React from "react";
 
 const NabhCard = ({ article }: any) => {
-  const id = 1;
+  const generateSlug = (name: string) => {
+    return name.replace(/\s+/g, "_");
+  };
+
   return (
     <div className="flex flex-col items-center w-full px-3 pt-5 pb-10 mt-5 space-x-6 rounded-lg shadow-lg h-96 bg-buttonColor">
       <div className="w-full ">
@@ -23,7 +26,11 @@ const NabhCard = ({ article }: any) => {
         </h1>
         <p className="mt-2 text-sm font-light text-secondary">Published on:</p>
 
-        <Link href={`view-NABH-check?id=${article.eventID}&hello`}>
+        <Link
+          href={`view-NABH-check?id=${article.eventID}&${generateSlug(
+            article.eventName
+          )}`}
+        >
           <p className="relative inline-flex items-center justify-start py-2 pl-4 pr-12 mt-5 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
             <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-textPrimary group-hover:h-full"></span>
             <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
