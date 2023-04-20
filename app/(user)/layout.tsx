@@ -9,7 +9,6 @@ import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
-import { Suspense } from "react";
 
 import FooterNew from "@/components/FooterNew";
 import { Nunito } from "next/font/google";
