@@ -52,6 +52,15 @@ const ContactHomePage = () => {
           duration: 9000,
           isClosable: true,
         });
+      } else if (formData.phone.length < 10) {
+        setLoading(false);
+        toast({
+          title: "Invalid Mobile Number",
+          description: "Please enter valid mobile number",
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+        });
       } else {
         setLoading(true);
         postMessage(formData, setFormData, toast, setLoading);
@@ -119,6 +128,7 @@ const ContactHomePage = () => {
                 onChange={handleInputChange}
                 name="phone"
                 value={formData.phone}
+                maxLength={10}
               />
             </FormControl>
           </SimpleGrid>
@@ -135,11 +145,11 @@ const ContactHomePage = () => {
           </Box>
           <button
             type="submit"
-            className="relative inline-block px-6 py-3 mt-5 text-white font-medium bg-button1 rounded-md focus:outline-none  hover:bg-button3 transition-all duration-300"
+            className="relative inline-block px-6 py-3 mt-5 font-medium text-white transition-all duration-300 rounded-md bg-button1 focus:outline-none hover:bg-button3"
           >
             <span className="relative">
-              <span className="absolute inset-0 bg-white rounded-md opacity-0 transition-opacity"></span>
-              <span className="absolute inset-0 bg-buttonColor bg-opacity-10 rounded-md transform scale-0 transition-transform"></span>
+              <span className="absolute inset-0 transition-opacity bg-white rounded-md opacity-0"></span>
+              <span className="absolute inset-0 transition-transform transform scale-0 rounded-md bg-buttonColor bg-opacity-10"></span>
               <span className="relative z-10 text-buttonColor">
                 {loading ? "Submitting" : "Submit"}
               </span>
