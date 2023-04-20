@@ -38,7 +38,7 @@ const Team = ({
       </div>
 
       {/* Advisor team */}
-      <div className="flex items-center justify-center max-w-6xl mx-auto mt-5 lg:mt-5 lg:pt-6 lg:pb-3">
+      <div className="flex items-center justify-start max-w-6xl mx-auto mt-5 lg:mt-5 lg:pt-6 lg:pb-3">
         <h1 className="text-xl font-bold lg:text-3xl text-primary">Advisors</h1>
       </div>
       <div className="max-w-6xl px-20 mx-auto lg:px-0 mt-7 ">
@@ -50,7 +50,7 @@ const Team = ({
       </div>
 
       {/* Management team */}
-      <div className="flex items-center justify-center max-w-6xl mx-auto mt-5 lg:pt-6 lg:pb-3">
+      <div className="flex items-center justify-start max-w-6xl mx-auto mt-5 lg:pt-6 lg:pb-3">
         <h1 className="text-xl font-bold lg:text-3xl text-primary">
           Management Team
         </h1>
@@ -64,7 +64,7 @@ const Team = ({
       </div>
 
       {/* Technology team */}
-      <div className="flex items-center justify-center max-w-6xl mx-auto mt-5 lg:pt-6 lg:pb-3">
+      <div className="flex items-center justify-start max-w-6xl mx-auto mt-5 lg:pt-6 lg:pb-3">
         <h1 className="text-xl font-bold lg:text-3xl text-primary">
           Technology Team
         </h1>

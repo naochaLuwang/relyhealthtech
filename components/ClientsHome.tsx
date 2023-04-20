@@ -26,6 +26,7 @@ const ClientsHome = ({
   PRIVATE_CLIENTS,
   GOVERNMENT_CLIENTS,
   DIAGNOSTIC_CLIENTS,
+  IVF_CLIENTS,
 }: any) => {
   return (
     <Box maxW="full" bg="gray.50" py={16}>
@@ -80,12 +81,25 @@ const ClientsHome = ({
                 Diagnostic Centres
               </Text>
             </Tab>
+            <Tab
+              _selected={{ color: "white", bg: "brand.900" }}
+              border={"1px solid"}
+              w="fit-content"
+              rounded="md"
+              px={2}
+              py={1}
+              marginLeft={{ lg: 5, base: 1 }}
+            >
+              <Text fontWeight={"bold"} fontSize={{ lg: "md", base: "xs" }}>
+                IVF Clinics
+              </Text>
+            </Tab>
           </TabList>
 
           <TabPanels>
             <TabPanel>
               <Box px={{ lg: 10, base: 3 }} w="full">
-                <ClientCardCarousel PRIVATE_CLIENTS={PRIVATE_CLIENTS} />
+                <ClientCardCarousel CLIENTS={PRIVATE_CLIENTS} />
               </Box>
             </TabPanel>
             <TabPanel>
@@ -120,35 +134,46 @@ const ClientsHome = ({
               </SimpleGrid>
             </TabPanel>
             <TabPanel>
-              <SimpleGrid
-                columns={{ base: 2, md: 5 }}
-                spacing={{ base: 2, lg: 0 }}
-                pl={{ lg: 16, base: 2 }}
-                px={{ base: 3 }}
-              >
-                {DIAGNOSTIC_CLIENTS.map((client: any) => (
-                  <Center py={6} key={client.name}>
-                    <Card
-                      maxW="sm"
-                      variant={"elevated"}
-                      rounded="2xl"
-                      boxShadow={"xl "}
-                      border="1px solid"
-                      borderColor={"gray.200"}
-                    >
-                      <CardBody>
-                        <Image
-                          src={urlFor(client.clientImage).url()}
-                          alt="card image"
-                          w={200}
-                          h={140}
-                          objectFit={"contain"}
-                        />
-                      </CardBody>
-                    </Card>
-                  </Center>
-                ))}
-              </SimpleGrid>
+              <Box px={{ lg: 10, base: 3 }} w="full">
+                <ClientCardCarousel CLIENTS={DIAGNOSTIC_CLIENTS} />
+              </Box>
+            </TabPanel>
+            <TabPanel>
+              <Box px={{ lg: 10, base: 3 }} w="full">
+                {IVF_CLIENTS.length > 5 ? (
+                  <ClientCardCarousel CLIENTS={IVF_CLIENTS} />
+                ) : (
+                  <SimpleGrid
+                    columns={{ base: 2, md: 5 }}
+                    spacing={{ base: 2, lg: 0 }}
+                    pl={{ lg: 16, base: 2 }}
+                    px={{ base: 3 }}
+                  >
+                    {IVF_CLIENTS.map((client: any) => (
+                      <Center py={6} key={client.name}>
+                        <Card
+                          maxW="sm"
+                          variant={"elevated"}
+                          rounded="2xl"
+                          boxShadow={"xl "}
+                          border="1px solid"
+                          borderColor={"gray.200"}
+                        >
+                          <CardBody>
+                            <Image
+                              src={urlFor(client.clientImage).url()}
+                              alt="card image"
+                              w={200}
+                              h={140}
+                              objectFit={"contain"}
+                            />
+                          </CardBody>
+                        </Card>
+                      </Center>
+                    ))}
+                  </SimpleGrid>
+                )}
+              </Box>
             </TabPanel>
           </TabPanels>
         </Tabs>

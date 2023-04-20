@@ -5,19 +5,19 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
-    <div className="max-w-7xl mx-auto min-h-screen flex flex-col lg:flex-row py-10 lg:py-0 px-8 lg:px-0   items-center gap-5">
+    <div className="flex flex-col items-center min-h-screen gap-5 px-8 py-10 mx-auto max-w-7xl lg:flex-row lg:py-0 lg:px-0">
       <div className="flex flex-col max-w-2xl ">
         <Slide direction="down">
           <div className="flex items-center gap-2">
-            <div className="lg:w-12 w-8 h-1 lg:h-1 rounded-xl bg-logo"></div>
+            <div className="w-8 h-1 lg:w-12 lg:h-1 rounded-xl bg-logo"></div>
 
-            <h1 className="lg:text-lg text-base font-light text-textPrimary">
-              WHO WE ARE
+            <h1 className="text-base font-light lg:text-lg text-textPrimary">
+              ABOUT RELY
             </h1>
           </div>
         </Slide>
 
-        <p className="lg:text-4xl text-2xl font-semibold leading-tight">
+        <p className="text-2xl font-semibold leading-tight lg:text-4xl">
           <span className="text-brandColor">
             Specialized in Healthcare IT Solutons
           </span>{" "}
@@ -26,8 +26,8 @@ const Hero = () => {
         </p>
 
         <Fade direction="up" triggerOnce>
-          <p className="lg:text-base text-sm  leading-relaxed mt-5">
-            We are a leading company with 5 years of experience in the
+          <p className="mt-5 text-sm leading-relaxed lg:text-base">
+            We are a leading company with more than 5 years of experience in the
             healthcare domain, specializing in providing management information
             systems for hospitals, medical colleges, clinics, diagnostic
             centers, and pharmacy chains. Our solutions are completely
@@ -38,10 +38,10 @@ const Hero = () => {
         </Fade>
 
         <Fade direction="up" triggerOnce>
-          <p className="lg:text-base text-sm  leading-relaxed mt-5">
+          <p className="mt-5 text-sm leading-relaxed lg:text-base">
             With a strong presence in cities across India, we have successfully
             implemented our HIS solutions in a wide range of healthcare
-            facilities, from hospitals with 20 beds to those with 1800 beds. Our
+            facilities, from hospitals with 20 beds to those with 1000 beds. Our
             innovative approach includes the development of add-on modules such
             as Web-based Electronic Medical Records, Patient Portal, SMS/Email
             Connectivity, Online Lab Results, and a recently launched Mobile
@@ -50,7 +50,7 @@ const Hero = () => {
         </Fade>
 
         <Fade direction="up" triggerOnce>
-          <p className="lg:text-base  leading-relaxed mt-5">
+          <p className="mt-5 leading-relaxed lg:text-base">
             Clients can choose between on-premises or cloud solutions based on
             their organizational needs, as we strive to cater to diverse
             requirements. Our focus on staying updated with the latest

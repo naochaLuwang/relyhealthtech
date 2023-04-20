@@ -2,7 +2,8 @@ export const metadata = {
   icons: {
     icon: "/rfavicon.png",
   },
-  title: "Rely Healthcare Technologies",
+  title:
+    "Rely Healthcare Technologies | Best Hospital Pharmacy Diagnostic Software | Top IT healthcare solutions",
   keywords: [
     "Best Hospital Software",
     "Pharmacy Software",
@@ -15,7 +16,7 @@ export const metadata = {
     "Kolkata",
   ],
   description:
-    "Rely Healthcare Technologies is a healthcare IT technology company that designs one of best Hospital Management Software and also provides IT solution & services that transform the administrative and clinical operations of healthcare organizations of all sizes.",
+    "Rely Healthcare Technologies is a healthcare IT technology company that designs one of best Hospital Management Software and also provides IT solution &amp; services that transform the administrative and clinical operations of healthcare organizations of all sizes.",
 };
 import HomeCarousal from "@/components/HomeCarousal";
 // @ts-ignore
@@ -65,6 +66,12 @@ const governmentclientquery = groq`
   ...,
 } | order(_createdAt asc)
 `;
+
+const ivfclientquery = groq`
+*[_type=='clients' && clientCategory->name == "Ivfclinic"]{
+  ...,
+} | order(_createdAt asc)
+`;
 const HomePage = async () => {
   const carousalImages = await client.fetch(query);
   const carousalMobile = await client.fetch(carousalQuery);
@@ -72,12 +79,11 @@ const HomePage = async () => {
   const bannerNew = await client.fetch(bannerquery);
   const diagnosticClients = await client.fetch(diagnosticclientquery);
   const governmentClients = await client.fetch(governmentclientquery);
+  const ivfClients = await client.fetch(ivfclientquery);
   return (
     <Box>
-      <Suspense fallback={<p>Loading ....</p>}>
-        <HomeCarousal carousalImages={carousalImages} />
-        <HomeCarousalMobile carousalImages={carousalMobile} />
-      </Suspense>
+      <HomeCarousal carousalImages={carousalImages} />
+      <HomeCarousalMobile carousalImages={carousalMobile} />{" "}
       <WhatsNew BANNER_NEW={bannerNew} />
       <Statistics />
       <Hero />
@@ -87,6 +93,7 @@ const HomePage = async () => {
         PRIVATE_CLIENTS={privateclients}
         DIAGNOSTIC_CLIENTS={diagnosticClients}
         GOVERNMENT_CLIENTS={governmentClients}
+        IVF_CLIENTS={ivfClients}
       />
       <ClientTestimonial />
       <ContactHomePage />

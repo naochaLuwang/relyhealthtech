@@ -111,7 +111,7 @@ const DesktopNav = () => {
             <PopoverTrigger>
               <Link href={navItem.href ?? "#"}>
                 <Flex
-                  px={4}
+                  px={3}
                   py={1}
                   fontSize={"md"}
                   fontWeight={500}

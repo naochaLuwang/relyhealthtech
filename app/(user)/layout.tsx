@@ -52,9 +52,9 @@ export default function RootLayout({
           <ChakraProvider theme={theme}>
             <div className="relative w-full h-auto">
               <Header />
-              <Suspense fallback={<Loading />}>
-                <Box pt={"60px"}>{children}</Box>
-              </Suspense>
+              {/* <Suspense fallback={<Loading />}> */}
+              <Box pt={"60px"}>{children}</Box>
+              {/* </Suspense> */}
               {/* <Footer /> */}
               <FooterNew />
               {/* <div className="fixed right-0 w-10 h-10 bg-primary bottom-10"></div> */}

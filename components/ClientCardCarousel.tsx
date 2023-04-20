@@ -35,7 +35,7 @@ import CustomLeftArrow from "./CustomLeftArrow";
 import CustomRightArrow from "./CustomRightArrow";
 import ButtonGroup from "./ClientRightArrow";
 
-const ClientCardCarousel = ({ PRIVATE_CLIENTS }: any) => {
+const ClientCardCarousel = ({ CLIENTS }: any) => {
   return (
     <Box w="full" px={10}>
       <Carousel
@@ -51,7 +51,7 @@ const ClientCardCarousel = ({ PRIVATE_CLIENTS }: any) => {
         renderButtonGroupOutside={true}
         customButtonGroup={<ButtonGroup />}
       >
-        {PRIVATE_CLIENTS.map((client: any) => (
+        {CLIENTS.map((client: any) => (
           <Center py={6} key={client.name} mr={{ base: 2 }}>
             <Card
               maxW="sm"
@@ -66,6 +66,7 @@ const ClientCardCarousel = ({ PRIVATE_CLIENTS }: any) => {
                   w={200}
                   h={140}
                   objectFit={"contain"}
+                  loading="eager"
                 />
               </CardBody>
             </Card>
@@ -86,9 +87,9 @@ const clientLeftArrow = ({ onClick, ...rest }: any) => {
   return (
     <Button
       onClick={() => onClick()}
-      className="absolute right-20 rounded-full w-14 h-14  bg-primary bg-opacity-10"
+      className="absolute rounded-full right-20 w-14 h-14 bg-primary bg-opacity-10"
     >
-      <TiChevronLeft className="h-16 w-16 text-card " />
+      <TiChevronLeft className="w-16 h-16 text-card " />
     </Button>
   );
 };

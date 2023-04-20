@@ -12,10 +12,10 @@ export const metadata = {
     "Rely Healthcare Technologies is a healthcare IT technology company that designs one of best Hospital Management Software and also provides IT solution & services that transform the administrative and clinical operations of healthcare organizations of all sizes.",
 };
 
+const apiUrl = process.env.CMS_API_URL!;
+
 const getAllNabh = async () => {
-  const responseData = await fetch(
-    "http://website.relyth.com/RelyHome/Event?AuthCode=1&CategoryID=2&EventID=0"
-  );
+  const responseData = await fetch(apiUrl);
 
   const response = await responseData.json();
 

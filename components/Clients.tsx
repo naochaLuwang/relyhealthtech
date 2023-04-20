@@ -26,6 +26,7 @@ const Clients = ({
   PRIVATE_CLIENTS,
   DIAGNOSTIC_CLIENTS,
   GOVERNMENT_CLIENTS,
+  IVF_CLIENTS,
 }: any) => {
   return (
     <Box maxW="7xl" pt={10} mx="auto">
@@ -72,6 +73,19 @@ const Clients = ({
           >
             <Text fontWeight={"semibold"} fontSize={{ lg: "md", base: "sm" }}>
               Diagnostic Centres
+            </Text>
+          </Tab>
+          <Tab
+            _selected={{ color: "white", bg: "brand.900" }}
+            border={"1px solid"}
+            w="fit-content"
+            rounded="lg"
+            px={2}
+            py={1}
+            marginLeft={{ lg: 5, base: 1 }}
+          >
+            <Text fontWeight={"semibold"} fontSize={{ lg: "md", base: "sm" }}>
+              IVF Clinics
             </Text>
           </Tab>
         </TabList>
@@ -138,6 +152,36 @@ const Clients = ({
           <TabPanel minH="lg">
             <SimpleGrid columns={{ base: 1, lg: 4 }}>
               {DIAGNOSTIC_CLIENTS.map((client: any) => (
+                <Flex key={client.name} direction={"column"}>
+                  <Center py={6}>
+                    <Card
+                      maxW="sm"
+                      variant={"elevated"}
+                      rounded="2xl"
+                      boxShadow={"xl "}
+                      border="1px solid"
+                      borderColor={"gray.200"}
+                    >
+                      <CardBody>
+                        <Image
+                          src={urlFor(client.clientImage).url()}
+                          alt="card image"
+                          w={200}
+                          h={140}
+                          objectFit={"contain"}
+                        />
+                      </CardBody>
+                    </Card>
+                  </Center>
+                  <Text align="center">{client.name}</Text>
+                </Flex>
+              ))}
+            </SimpleGrid>
+          </TabPanel>
+
+          <TabPanel minH="lg">
+            <SimpleGrid columns={{ base: 1, lg: 4 }}>
+              {IVF_CLIENTS.map((client: any) => (
                 <Flex key={client.name} direction={"column"}>
                   <Center py={6}>
                     <Card
