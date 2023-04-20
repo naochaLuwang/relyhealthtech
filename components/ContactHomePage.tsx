@@ -128,7 +128,7 @@ const ContactHomePage = () => {
                 onChange={handleInputChange}
                 name="phone"
                 value={formData.phone}
-                maxLength={10}
+                maxLength={15}
               />
             </FormControl>
           </SimpleGrid>

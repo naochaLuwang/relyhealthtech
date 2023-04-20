@@ -76,6 +76,15 @@ const Header = () => {
           duration: 9000,
           isClosable: true,
         });
+      } else if (formData.phone.length < 10) {
+        setLoading(false);
+        toast({
+          title: "Invalid Credentials",
+          description: "Please enter valid mobile number",
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+        });
       } else {
         setLoading(true);
         postMessage(formData, setFormData, toast, setLoading);
@@ -201,6 +210,7 @@ const Header = () => {
                         onChange={handleInputChange}
                         value={formData.phone}
                         rounded="lg"
+                        maxLength={15}
                       />
                     </FormControl>
                   </SimpleGrid>
@@ -214,7 +224,7 @@ const Header = () => {
                     ></Textarea>
                   </FormControl>
                   <button
-                    className="mt-5 mb-10 w-fit px-4 py-2 bg-whatsNew rounded-md text-buttonColor font-semibold"
+                    className="px-4 py-2 mt-5 mb-10 font-semibold rounded-md w-fit bg-whatsNew text-buttonColor"
                     type="submit"
                   >
                     {loading ? "Submitting..." : "Submit"}
