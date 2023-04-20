@@ -3,21 +3,21 @@ import Image from "next/image";
 
 const AboutHero = () => {
   return (
-    <div className="w-full py-10  h-auto ">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="lg:text-5xl text-3xl font-semibold text-brand px-8">
+    <div className="w-full h-auto py-10 ">
+      <div className="mx-auto max-w-7xl">
+        <h1 className="px-8 text-3xl font-semibold lg:text-5xl text-brand">
           About Us
         </h1>
-        <div className="flex flex-col lg:flex-row lg:mt-10 mt-5 ">
-          <div className="flex flex-col space-y-5 px-8">
-            <p className="lg:text-lg text-base text-secondary">
-              <span>Rely Healthcare Technologies</span> is one of the latest
+        <div className="flex flex-col mt-5 lg:flex-row lg:mt-10 ">
+          <div className="flex flex-col px-8 space-y-5">
+            <p className="text-base lg:text-lg text-secondary">
+              <span>Rely Healthcare Technologies</span> is one of the fastest
               growing healthcare technology company which helps to transform the
               administrative and clinical operations for all healthcare
               organizations.
             </p>
 
-            <p className="lg:text-lg text-base text-secondary">
+            <p className="text-base lg:text-lg text-secondary">
               Our simple yet powerful & reliable solutions easily simplify
               decision making, streamline operations, in addition to compliance
               with healthcare standards & practices as a result saving time and
