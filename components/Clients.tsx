@@ -31,7 +31,7 @@ const Clients = ({
   return (
     <Box maxW="7xl" pt={10} mx="auto">
       <Text align={"center"} fontSize="3xl" mb={"10"} fontWeight={"bold"}>
-        Take a look at our Clients
+        Our Happiest Clients
       </Text>
 
       <Tabs variant="unstyled" size="sm" px={{ lg: 5, base: 2 }}>
