@@ -15,6 +15,8 @@ import { Nunito } from "next/font/google";
 import { Suspense } from "react";
 import Loading from "./loading";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import Head from "next/head";
+import Script from "next/script";
 
 const colors = {
   brand: {
@@ -49,7 +51,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <GoogleAnalytics GA_MEASUREMENT_ID="G-X1H2FP7QL6" />
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-X1H2FP7QL6`}
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+                window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X1H2FP7QL6');
+                `,
+        }}
+      />
       <body className="nunito.className">
         <CacheProvider>
           <ChakraProvider theme={theme}>
