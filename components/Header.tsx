@@ -162,7 +162,7 @@ const Header = () => {
         >
           <button
             onClick={onOpenClick}
-            className="bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-sm text-xs lg:w-36 w-fit px-2 lg:px-0 rounded-md text-buttonColor lg:py-2 py-1 font-semibold  block "
+            className="bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-sm text-xs lg:w-36 w-fit px-3 lg:px-0 rounded-md text-buttonColor lg:py-2 py-1 font-semibold  block "
           >
             BOOK A DEMO
           </button>
@@ -172,7 +172,7 @@ const Header = () => {
           isOpen={open}
           onClose={onCloseClick}
           isCentered
-          size={{ base: "xs", lg: "4xl" }}
+          size={{ base: "sm", lg: "4xl" }}
         >
           <ModalOverlay>
             <ModalContent>
@@ -230,7 +230,7 @@ const Header = () => {
                     ></Textarea>
                   </FormControl>
                   <button
-                    className="px-4 py-2 mt-5 mb-10 font-semibold rounded-md w-fit bg-whatsNew text-buttonColor"
+                    className="w-full px-4 py-2 mt-5 mb-10 font-semibold rounded-md lg:w-fit bg-whatsNew text-buttonColor"
                     type="submit"
                   >
                     {loading ? "Submitting..." : "Submit"}

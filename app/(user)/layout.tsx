@@ -14,6 +14,7 @@ import FooterNew from "@/components/FooterNew";
 import { Nunito } from "next/font/google";
 import { Suspense } from "react";
 import Loading from "./loading";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const colors = {
   brand: {
@@ -48,6 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
+      <GoogleAnalytics GA_MEASUREMENT_ID="UA-27852855-8" />
       <body className="nunito.className">
         <CacheProvider>
           <ChakraProvider theme={theme}>

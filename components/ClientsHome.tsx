@@ -128,35 +128,44 @@ const ClientsHome = ({
             <TabPanel>
               {activeTab === 1 && (
                 <>
-                  <SimpleGrid
-                    columns={{ base: 2, md: 5 }}
-                    spacing={{ base: 2, lg: 0 }}
-                    pl={{ lg: 16, base: 2 }}
-                    px={{ base: "16" }}
+                  <Box display={{ base: "none", lg: "block" }}>
+                    <SimpleGrid
+                      columns={{ base: 2, md: 5 }}
+                      spacing={{ base: 2, lg: 0 }}
+                      pl={{ lg: 16, base: 2 }}
+                      px={{ base: "16" }}
+                    >
+                      {GOVERNMENT_CLIENTS.map((client: any) => (
+                        <Center py={6} key={client.name}>
+                          <Card
+                            maxW="sm"
+                            variant={"elevated"}
+                            rounded="2xl"
+                            boxShadow={"xl "}
+                            border="1px solid"
+                            borderColor={"gray.200"}
+                          >
+                            <CardBody>
+                              <Image
+                                src={urlFor(client.clientImage).url()}
+                                alt="card image"
+                                w={200}
+                                h={140}
+                                objectFit={"contain"}
+                              />
+                            </CardBody>
+                          </Card>
+                        </Center>
+                      ))}
+                    </SimpleGrid>
+                  </Box>
+                  <Box
+                    px={{ lg: 0, base: 3 }}
+                    w="full"
+                    display={{ base: "block", lg: "hidden" }}
                   >
-                    {GOVERNMENT_CLIENTS.map((client: any) => (
-                      <Center py={6} key={client.name}>
-                        <Card
-                          maxW="sm"
-                          variant={"elevated"}
-                          rounded="2xl"
-                          boxShadow={"xl "}
-                          border="1px solid"
-                          borderColor={"gray.200"}
-                        >
-                          <CardBody>
-                            <Image
-                              src={urlFor(client.clientImage).url()}
-                              alt="card image"
-                              w={200}
-                              h={140}
-                              objectFit={"contain"}
-                            />
-                          </CardBody>
-                        </Card>
-                      </Center>
-                    ))}
-                  </SimpleGrid>
+                    <ClientCardMarquee CLIENTS={GOVERNMENT_CLIENTS} />
+                  </Box>
                 </>
               )}
             </TabPanel>

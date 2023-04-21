@@ -29,7 +29,7 @@ const Clients = ({
   IVF_CLIENTS,
 }: any) => {
   return (
-    <Box maxW="7xl" pt={10} mx="auto">
+    <Box maxW="7xl" pt={10} mx="auto" pb={10}>
       <Text align={"center"} fontSize="3xl" mb={"10"} fontWeight={"bold"}>
         Our Happiest Clients
       </Text>
@@ -120,7 +120,7 @@ const Clients = ({
               ))}
             </SimpleGrid>
           </TabPanel>
-          <TabPanel minH="lg">
+          <TabPanel minH="xl">
             <SimpleGrid columns={{ base: 1, lg: 4 }}>
               {GOVERNMENT_CLIENTS.map((client: any) => (
                 <Flex key={client.name} direction={"column"}>
@@ -149,7 +149,7 @@ const Clients = ({
               ))}
             </SimpleGrid>
           </TabPanel>
-          <TabPanel minH="lg">
+          <TabPanel minH="xl">
             <SimpleGrid columns={{ base: 1, lg: 4 }}>
               {DIAGNOSTIC_CLIENTS.map((client: any) => (
                 <Flex key={client.name} direction={"column"}>
@@ -179,7 +179,7 @@ const Clients = ({
             </SimpleGrid>
           </TabPanel>
 
-          <TabPanel minH="lg">
+          <TabPanel minH="xl">
             <SimpleGrid columns={{ base: 1, lg: 4 }}>
               {IVF_CLIENTS.map((client: any) => (
                 <Flex key={client.name} direction={"column"}>

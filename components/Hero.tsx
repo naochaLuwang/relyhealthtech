@@ -5,7 +5,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen gap-5 px-8 py-10 mx-auto max-w-7xl lg:flex-row lg:py-0 lg:px-0">
+    <div className="flex flex-col items-center w-full min-h-screen gap-5 px-8 py-10 lg:flex-row lg:py-0 lg:px-16">
       <div className="flex flex-col max-w-2xl ">
         <Slide direction="down">
           <div className="flex items-center gap-2">

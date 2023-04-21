@@ -145,7 +145,7 @@ const ContactHomePage = () => {
           </Box>
           <button
             type="submit"
-            className="relative inline-block px-6 py-3 mt-5 font-medium text-white transition-all duration-300 rounded-md bg-button1 focus:outline-none hover:bg-button3"
+            className="relative inline-block w-full px-6 py-3 mt-5 font-medium text-white transition-all duration-300 rounded-md lg:w-fit bg-button1 focus:outline-none hover:bg-button3"
           >
             <span className="relative">
               <span className="absolute inset-0 transition-opacity bg-white rounded-md opacity-0"></span>
