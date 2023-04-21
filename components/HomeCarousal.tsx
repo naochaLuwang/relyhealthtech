@@ -33,7 +33,7 @@ const HomeCarousal = ({ carousalImages }: any) => {
         autoPlay={true}
         infinite={true}
         rewindWithAnimation={true}
-        autoPlaySpeed={15000}
+        autoPlaySpeed={10000}
         arrows={true}
         showDots={true}
         // customTransition="transform 3000 ease-in-out"

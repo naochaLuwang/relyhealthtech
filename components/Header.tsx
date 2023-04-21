@@ -162,19 +162,25 @@ const Header = () => {
         >
           <button
             onClick={onOpenClick}
-            className="bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out text-sm w-36 rounded-md text-buttonColor py-2 font-semibold hidden lg:block "
+            className="bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-sm text-xs lg:w-36 w-fit px-2 lg:px-0 rounded-md text-buttonColor lg:py-2 py-1 font-semibold  block "
           >
             BOOK A DEMO
           </button>
         </Stack>
-        <Modal isOpen={open} onClose={onCloseClick} isCentered size={"4xl"}>
+
+        <Modal
+          isOpen={open}
+          onClose={onCloseClick}
+          isCentered
+          size={{ base: "xs", lg: "4xl" }}
+        >
           <ModalOverlay>
             <ModalContent>
               <ModalHeader px={10}>Book a Demo</ModalHeader>
               <ModalCloseButton />
               <ModalBody px={10}>
                 <form onSubmit={handleSubmit}>
-                  <SimpleGrid w="full" columns={2} gap={5}>
+                  <SimpleGrid w="full" columns={{ base: 1, lg: 2 }} gap={5}>
                     <FormControl isRequired>
                       <FormLabel>First Name</FormLabel>
                       <Input

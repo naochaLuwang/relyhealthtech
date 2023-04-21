@@ -51,10 +51,6 @@ const FlagshipItems: Array<FlagshipProduct> = [
 ];
 
 const FlagShipProducts = () => {
-  const scheme = "purple";
-  const step1 = useColorModeValue("900", "300");
-  const step2 = useColorModeValue("500", "400");
-  const step3 = useColorModeValue("300", "500");
   return (
     <Box maxW="8xl" mx="auto" py={{ lg: 16, base: 10 }} px={10}>
       <Fade direction="left">
@@ -70,7 +66,11 @@ const FlagShipProducts = () => {
         </Heading>
       </Fade>
 
-      <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ lg: 6, base: 2 }}>
+      <SimpleGrid
+        columns={{ base: 1, md: 4 }}
+        spacing={{ lg: 6, base: 2 }}
+        display={{ base: "none", lg: "grid" }}
+      >
         {FlagshipItems.map((flagshipitem) => (
           <Fade
             key={flagshipitem.title}
@@ -80,6 +80,15 @@ const FlagShipProducts = () => {
           >
             <FlagshipCards {...flagshipitem} />
           </Fade>
+        ))}
+      </SimpleGrid>
+      <SimpleGrid
+        columns={{ base: 1, md: 4 }}
+        spacing={{ lg: 6, base: 2 }}
+        display={{ base: "grid", lg: "none" }}
+      >
+        {FlagshipItems.map((flagshipitem) => (
+          <FlagshipCards key={flagshipitem.title} {...flagshipitem} />
         ))}
       </SimpleGrid>
     </Box>

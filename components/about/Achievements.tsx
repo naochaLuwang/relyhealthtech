@@ -44,7 +44,7 @@ const Achievements = () => {
   return (
     <div className="w-full h-auto px-8 py-10 bg-backgroundColor lg:pt-20 lg:pb-32 lg:px-20">
       <h1 className="mb-5 text-2xl font-semibold lg:text-4xl text-textGreen lg:mb-10">
-        Our <span className="text-textPrimary">Achievements</span>
+        Why Choose Us ?
       </h1>
 
       <div className="relative flex">

@@ -66,6 +66,7 @@ const ClientCardCarousel = ({ CLIENTS }: any) => {
                   w={200}
                   h={140}
                   objectFit={"contain"}
+                  loading="eager"
                 />
               </CardBody>
             </Card>

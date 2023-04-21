@@ -34,7 +34,7 @@ const HomeCarousalMobile = ({ carousalImages }: any) => {
         autoPlay={true}
         infinite={true}
         rewindWithAnimation={true}
-        autoPlaySpeed={15000}
+        autoPlaySpeed={10000}
         arrows={true}
         showDots={true}
         // customTransition="transform 3000 ease-in-out"
@@ -54,6 +54,7 @@ const HomeCarousalMobile = ({ carousalImages }: any) => {
               src={urlFor(image.bannerImage).url()}
               fill
               alt="banner Image"
+              loading="eager"
             />
           </Box>
         ))}

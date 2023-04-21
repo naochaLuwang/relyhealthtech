@@ -1,4 +1,6 @@
 "use client";
+import { useTabs } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 
 import urlFor from "@/lib/urlFor";
 import {
@@ -12,10 +14,13 @@ import {
   Tabs,
 } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
+import Marquee from "react-fast-marquee";
 import { Box, Stack, Heading, Text, SimpleGrid } from "./ChakraElements";
 
 // @ts-ignore
 import ClientCardCarousel from "./ClientCardCarousel";
+import ClientCardMarquee from "./ClientCardMarquee";
+import DiagnosticCardMarquee from "./DiagnosticCardMarquee";
 
 interface Clients {
   name: string;
@@ -28,8 +33,14 @@ const ClientsHome = ({
   DIAGNOSTIC_CLIENTS,
   IVF_CLIENTS,
 }: any) => {
+  const [activeTab, setActiveTab] = useState(0);
+
+  const handleTabChange = (index: any) => {
+    setActiveTab(index);
+  };
+
   return (
-    <Box maxW="full" bg="gray.50" py={16}>
+    <Box maxW="full" bg="gray.50" py={16} minHeight={{ lg: "lg" }}>
       <Stack>
         <Heading
           fontSize={{ lg: "3xl", base: "2xl" }}
@@ -40,7 +51,12 @@ const ClientsHome = ({
           OUR HAPPIEST CLIENTS
         </Heading>
 
-        <Tabs variant="unstyled" size="sm">
+        <Tabs
+          variant="unstyled"
+          size="sm"
+          index={activeTab}
+          onChange={handleTabChange}
+        >
           <TabList>
             <Tab
               _selected={{ color: "white", bg: "brand.900" }}
@@ -98,58 +114,27 @@ const ClientsHome = ({
 
           <TabPanels>
             <TabPanel>
-              <Box px={{ lg: 10, base: 3 }} w="full">
-                <ClientCardCarousel CLIENTS={PRIVATE_CLIENTS} />
-              </Box>
+              {activeTab === 0 && (
+                <>
+                  <Box w="full">
+                    <ClientCardMarquee
+                      CLIENTS={PRIVATE_CLIENTS}
+                      key="Private"
+                    />
+                  </Box>
+                </>
+              )}
             </TabPanel>
             <TabPanel>
-              <SimpleGrid
-                columns={{ base: 2, md: 5 }}
-                spacing={{ base: 2, lg: 0 }}
-                pl={{ lg: 16, base: 2 }}
-                px={{ base: 3 }}
-              >
-                {GOVERNMENT_CLIENTS.map((client: any) => (
-                  <Center py={6} key={client.name}>
-                    <Card
-                      maxW="sm"
-                      variant={"elevated"}
-                      rounded="2xl"
-                      boxShadow={"xl "}
-                      border="1px solid"
-                      borderColor={"gray.200"}
-                    >
-                      <CardBody>
-                        <Image
-                          src={urlFor(client.clientImage).url()}
-                          alt="card image"
-                          w={200}
-                          h={140}
-                          objectFit={"contain"}
-                        />
-                      </CardBody>
-                    </Card>
-                  </Center>
-                ))}
-              </SimpleGrid>
-            </TabPanel>
-            <TabPanel>
-              <Box px={{ lg: 10, base: 3 }} w="full">
-                <ClientCardCarousel CLIENTS={DIAGNOSTIC_CLIENTS} />
-              </Box>
-            </TabPanel>
-            <TabPanel>
-              <Box px={{ lg: 10, base: 3 }} w="full">
-                {IVF_CLIENTS.length > 3 ? (
-                  <ClientCardCarousel CLIENTS={IVF_CLIENTS} />
-                ) : (
+              {activeTab === 1 && (
+                <>
                   <SimpleGrid
                     columns={{ base: 2, md: 5 }}
                     spacing={{ base: 2, lg: 0 }}
-                    pl={{ lg: 16, base: 2 }}
-                    px={{ base: 3 }}
+                    pl={{ lg: 0, base: 2 }}
+                    px={{ base: 0 }}
                   >
-                    {IVF_CLIENTS.map((client: any) => (
+                    {GOVERNMENT_CLIENTS.map((client: any) => (
                       <Center py={6} key={client.name}>
                         <Card
                           maxW="sm"
@@ -172,8 +157,56 @@ const ClientsHome = ({
                       </Center>
                     ))}
                   </SimpleGrid>
-                )}
-              </Box>
+                </>
+              )}
+            </TabPanel>
+            <TabPanel>
+              {activeTab === 2 && (
+                <Box px={{ lg: 0, base: 3 }} w="full" display={"block"}>
+                  <ClientCardMarquee CLIENTS={DIAGNOSTIC_CLIENTS} />
+                </Box>
+              )}
+            </TabPanel>
+            <TabPanel>
+              {activeTab === 3 && (
+                <>
+                  <Box px={{ lg: 0, base: 3 }} w="full">
+                    {IVF_CLIENTS.length > 3 ? (
+                      <ClientCardMarquee CLIENTS={IVF_CLIENTS} />
+                    ) : (
+                      <SimpleGrid
+                        columns={{ base: 2, md: 5 }}
+                        spacing={{ base: 2, lg: 0 }}
+                        pl={{ base: 2 }}
+                        px={{ base: 3 }}
+                      >
+                        {IVF_CLIENTS.map((client: any) => (
+                          <Center py={6} key={client.name}>
+                            <Card
+                              maxW="sm"
+                              variant={"elevated"}
+                              rounded="2xl"
+                              boxShadow={"xl "}
+                              border="1px solid"
+                              borderColor={"gray.200"}
+                            >
+                              <CardBody>
+                                <Image
+                                  src={urlFor(client.clientImage).url()}
+                                  alt="card image"
+                                  w={200}
+                                  h={140}
+                                  objectFit={"contain"}
+                                />
+                              </CardBody>
+                            </Card>
+                          </Center>
+                        ))}
+                      </SimpleGrid>
+                    )}
+                  </Box>
+                </>
+              )}
             </TabPanel>
           </TabPanels>
         </Tabs>
@@ -184,4 +217,4 @@ const ClientsHome = ({
 
 export default ClientsHome;
 
-export const revalidate = 60;
+export const revalidate = 20;

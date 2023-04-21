@@ -11,9 +11,9 @@ const CustomRightArrow = ({ onClick, ...rest }: any) => {
   return (
     <Button
       onClick={() => onClick()}
-      className="sm:hidden lg:flex lg:absolute right-12 rounded-full w-14 h-14  bg-purple100 bg-opacity-30"
+      className="absolute w-12 h-12 rounded-full  lg:flex lg:right-12 right-4 lg:w-14 lg:h-14 bg-purple100 bg-opacity-30"
     >
-      <TiChevronRight className="h-16 w-16 text-card " />
+      <TiChevronRight className="w-16 h-16 text-card " />
     </Button>
   );
 };
