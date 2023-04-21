@@ -131,8 +131,8 @@ const ClientsHome = ({
                   <SimpleGrid
                     columns={{ base: 2, md: 5 }}
                     spacing={{ base: 2, lg: 0 }}
-                    pl={{ lg: 0, base: 2 }}
-                    px={{ base: 0 }}
+                    pl={{ lg: 16, base: 2 }}
+                    px={{ base: "16" }}
                   >
                     {GOVERNMENT_CLIENTS.map((client: any) => (
                       <Center py={6} key={client.name}>
