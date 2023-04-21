@@ -162,7 +162,7 @@ const ClientsHome = ({
                   <Box
                     px={{ lg: 0, base: 3 }}
                     w="full"
-                    display={{ base: "block", lg: "hidden" }}
+                    display={{ base: "block", lg: "none" }}
                   >
                     <ClientCardMarquee CLIENTS={GOVERNMENT_CLIENTS} />
                   </Box>
