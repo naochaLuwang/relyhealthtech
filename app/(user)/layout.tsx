@@ -14,8 +14,7 @@ import FooterNew from "@/components/FooterNew";
 import { Nunito } from "next/font/google";
 import { Suspense } from "react";
 import Loading from "./loading";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
-import Head from "next/head";
+
 import Script from "next/script";
 
 const colors = {
@@ -53,7 +52,7 @@ export default function RootLayout({
       <head />
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-X1H2FP7QL6`}
+        src={`https://www.googletagmanager.com/gtag/js?id=UA-27852855-8`}
       />
       <Script
         id="google-analytics"
@@ -64,7 +63,7 @@ export default function RootLayout({
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-X1H2FP7QL6');
+  gtag('config', 'UA-27852855-8');
                 `,
         }}
       />
