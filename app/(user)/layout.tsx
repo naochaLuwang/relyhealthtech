@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <GoogleAnalytics GA_MEASUREMENT_ID="UA-27852855-8" />
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-X1H2FP7QL6" />
       <body className="nunito.className">
         <CacheProvider>
           <ChakraProvider theme={theme}>
