@@ -30,12 +30,13 @@ import FlagShipProducts from "@/components/FlagShipProducts";
 import ClientsHome from "@/components/ClientsHome";
 import ClientTestimonial from "@/components/ClientTestimonial";
 import WhatsNew from "@/components/WhatsNew";
-import { Suspense } from "react";
+
 import MobileApplication from "@/components/MobileApplication";
 import ContactHomePage from "@/components/ContactHomePage";
 import VideoSection from "@/components/VideoSection";
 import VideoSectionMobile from "@/components/VideoSectionMobile";
 import HomeCarousalMobile from "@/components/HomeCarousalMobile";
+import Loading from "./loading";
 const query = groq`
 *[_type=='carousalImage']{
   ...,
@@ -83,7 +84,8 @@ const HomePage = async () => {
   return (
     <Box>
       <HomeCarousal carousalImages={carousalImages} />
-      <HomeCarousalMobile carousalImages={carousalMobile} />{" "}
+      <HomeCarousalMobile carousalImages={carousalMobile} />
+
       <WhatsNew BANNER_NEW={bannerNew} />
       <Statistics />
       <Hero />

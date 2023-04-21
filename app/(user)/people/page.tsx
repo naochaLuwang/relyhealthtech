@@ -81,7 +81,7 @@ const People = async () => {
   const marketing = await client.fetch(marketingQuery);
   const support = await client.fetch(supportQuery);
   return (
-    <div>
+    <div className="w-full h-auto ">
       <Team
         founder={founder}
         advisor={advisor}

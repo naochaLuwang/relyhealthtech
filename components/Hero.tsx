@@ -50,7 +50,7 @@ const Hero = () => {
         </Fade>
 
         <Fade direction="up" triggerOnce>
-          <p className="mt-5 leading-relaxed lg:text-base">
+          <p className="mt-5 text-sm leading-relaxed lg:text-base">
             Clients can choose between on-premises or cloud solutions based on
             their organizational needs, as we strive to cater to diverse
             requirements. Our focus on staying updated with the latest

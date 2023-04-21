@@ -14,28 +14,28 @@ interface Team {
 const TeamCard = ({ name, title, profileImage, slug }: Team) => {
   return (
     <ClientSideRoute route={`/people/${slug.current}`}>
-      <div className="flex   shadow-lg py-4   bg-opacity-100 border border-brand   px-6 items-start justify-start rounded-xl cursor-pointer transition-transform duration-200 ease-in-out hover:scale-105">
-        <div className="lg:h-24   lg:w-24 w-16 h-16  rounded-full border-2 border-primary  border-opacity-80 shadow-md  relative ">
+      <div className="flex items-start justify-start w-full px-6 py-4 transition-transform duration-200 ease-in-out bg-opacity-50 border shadow-md cursor-pointer border-brand border-opacity-20 rounded-xl hover:scale-105">
+        <div className="relative w-16 h-16 border-2 shadow-md rounded-tr-2xl rounded-bl-2xl 0 border-borderhr rounded-tl-2xl rounded-br-2xl lg:h-24 lg:w-24">
           <Image
-            className="rounded-full"
+            className="rounded-tr-2xl rounded-bl-2xl rounded-tl-2xl rounded-br-2xl"
             src={urlFor(profileImage).url()}
             alt=""
-            layout="fill"
-            objectFit="fill"
+            fill
+            // style={{ objectFit: "cover" }}
           />
         </div>
 
-        <div className="flex flex-col flex-1 pl-4  items-start w-36 h-auto">
-          <h1 className="lg:text-2xl text-lg mt-5 font-bold text-center text-primary">
+        <div className="flex flex-col items-start flex-1 h-auto pl-4 w-36">
+          <h1 className="mt-5 text-lg font-semibold text-center lg:text-xl text-textPrimary">
             {name}
           </h1>
-          <p className=" text-sm lg:text-sm text-secondary">{title}</p>
+          <p className="text-sm lg:text-sm text-secondary">{title}</p>
         </div>
 
-        {/* <div className=" mt-5 flex space-x-5 items-center">
-          <FaFacebook className="text-secondary w-6 h-6" />
-          <FaLinkedin className="text-secondary w-6 h-6" />
-          <FaInstagram className="text-secondary w-6 h-6" />
+        {/* <div className="flex items-center mt-5 space-x-5 ">
+          <FaFacebook className="w-6 h-6 text-secondary" />
+          <FaLinkedin className="w-6 h-6 text-secondary" />
+          <FaInstagram className="w-6 h-6 text-secondary" />
         </div> */}
       </div>
     </ClientSideRoute>

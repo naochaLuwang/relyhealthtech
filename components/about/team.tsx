@@ -11,12 +11,12 @@ const Team = ({
   support,
 }: any) => {
   return (
-    <div className="relative h-auto overflow-hidden bg-buttonColor">
-      <div className="max-w-6xl py-10 mx-auto ">
-        <h1 className="max-w-2xl text-5xl font-medium ">
+    <div className="relative h-auto pb-20 overflow-hidden bg-buttonColor">
+      <div className="max-w-6xl px-5 py-10 mx-auto">
+        <h1 className="w-full text-2xl font-medium lg:text-5xl lg:max-w-2xl ">
           Meet our team of creators, designers and world class problem solver.
         </h1>
-        <p className="max-w-3xl mt-2">
+        <p className="max-w-3xl mt-2 text-sm lg:text-base">
           To be the company our customer want us to be. It takes an electric
           group of passionate operators. Get to know the people leading the way
           at Rely Healthcare Technologies
@@ -24,8 +24,8 @@ const Team = ({
       </div>
 
       {/* Founder and leadership team */}
-      <div className="flex items-center justify-start max-w-6xl mx-auto mt-5 lg:mt-5 lg:pt-6 lg:pb-3">
-        <h1 className="text-xl font-bold lg:text-3xl text-primary">
+      <div className="flex items-center justify-center max-w-6xl mx-auto mt-5 lg:justify-start lg:mt-5 lg:pt-6 lg:pb-3">
+        <h1 className="text-xl font-medium lg:text-3xl text-primary">
           Founder & Leadership Team
         </h1>
       </div>
@@ -39,7 +39,9 @@ const Team = ({
 
       {/* Advisor team */}
       <div className="flex items-center justify-start max-w-6xl mx-auto mt-5 lg:mt-5 lg:pt-6 lg:pb-3">
-        <h1 className="text-xl font-bold lg:text-3xl text-primary">Advisors</h1>
+        <h1 className="text-xl font-medium lg:text-3xl text-primary">
+          Advisors
+        </h1>
       </div>
       <div className="max-w-6xl px-20 mx-auto lg:px-0 mt-7 ">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-6 ">
@@ -51,7 +53,7 @@ const Team = ({
 
       {/* Management team */}
       <div className="flex items-center justify-start max-w-6xl mx-auto mt-5 lg:pt-6 lg:pb-3">
-        <h1 className="text-xl font-bold lg:text-3xl text-primary">
+        <h1 className="text-xl font-medium lg:text-3xl text-primary">
           Management Team
         </h1>
       </div>
@@ -65,7 +67,7 @@ const Team = ({
 
       {/* Technology team */}
       <div className="flex items-center justify-start max-w-6xl mx-auto mt-5 lg:pt-6 lg:pb-3">
-        <h1 className="text-xl font-bold lg:text-3xl text-primary">
+        <h1 className="text-xl font-medium lg:text-3xl text-primary">
           Technology Team
         </h1>
       </div>
@@ -79,8 +81,8 @@ const Team = ({
 
       {/* UI/UX Designer */}
 
-      <div className="flex items-center justify-center max-w-6xl mx-auto mt-5 lg:pt-6 lg:pb-3">
-        <h1 className="text-xl font-bold lg:text-3xl text-primary">
+      <div className="flex items-center justify-start max-w-6xl mx-auto mt-5 lg:pt-6 lg:pb-3">
+        <h1 className="text-xl font-medium lg:text-3xl text-primary">
           Design Team
         </h1>
       </div>
@@ -94,8 +96,8 @@ const Team = ({
 
       {/* marketing and sales team */}
 
-      <div className="flex items-center justify-center max-w-6xl mx-auto mt-5 lg:pt-6 lg:pb-3">
-        <h1 className="text-xl font-bold lg:text-3xl text-primary">
+      <div className="flex items-center justify-start max-w-6xl mx-auto mt-5 lg:pt-6 lg:pb-3">
+        <h1 className="text-xl font-medium lg:text-3xl text-primary">
           Marketing & Sales Team
         </h1>
       </div>
@@ -108,8 +110,8 @@ const Team = ({
       </div>
 
       {/* Support & Implemntation Team */}
-      <div className="flex items-center justify-center max-w-sm mx-auto mt-5 lg:max-w-6xl lg:pt-6 lg:pb-3">
-        <h1 className="text-xl font-bold text-center lg:text-3xl text-primary">
+      <div className="flex items-center justify-start max-w-sm mx-auto mt-5 lg:max-w-6xl lg:pt-6 lg:pb-3">
+        <h1 className="text-xl font-medium text-center lg:text-3xl text-primary">
           Support & Implementation Team
         </h1>
       </div>

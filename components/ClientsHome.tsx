@@ -140,7 +140,7 @@ const ClientsHome = ({
             </TabPanel>
             <TabPanel>
               <Box px={{ lg: 10, base: 3 }} w="full">
-                {IVF_CLIENTS.length > 5 ? (
+                {IVF_CLIENTS.length > 3 ? (
                   <ClientCardCarousel CLIENTS={IVF_CLIENTS} />
                 ) : (
                   <SimpleGrid
