@@ -17,11 +17,11 @@ const Achievements = () => {
     },
     {
       title:
-        "Installed more then 100 Hospitals/Clinic/Dianostic Centres in less than 5 years",
+        "Installed more than 100 Hospitals/Clinic/Dianostic Centres in less than 5 years",
     },
     {
       title:
-        "Our solutions are easy to use and known for proving clear MIS reports",
+        "Our solutions are easy to use and known for providing clear MIS reports",
     },
     {
       title: "Supports LIS/RIS/PACS integrations",
