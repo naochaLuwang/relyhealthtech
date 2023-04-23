@@ -43,7 +43,7 @@ const NabhCard = ({ article }: any) => {
         </p>
 
         <Link
-          href={`/view-NABH-check/${article.tenantID}?id=${
+          href={`/view-NABH-check/${article.eventID}?id=${
             article.eventID
           }&${generateSlug(article.eventName)}`}
         >

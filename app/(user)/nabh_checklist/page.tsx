@@ -14,7 +14,7 @@ export const metadata = {
 
 const apiUrl = process.env.CMS_API_URL!;
 
-const getAllNabh = async () => {
+export const getAllNabh = async () => {
   const responseData = await fetch(apiUrl);
 
   const response = await responseData.json();
