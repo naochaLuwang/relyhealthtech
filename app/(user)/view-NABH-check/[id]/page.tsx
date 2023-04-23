@@ -25,10 +25,8 @@ const getNabhArticleDetail = async (id: any) => {
 };
 
 const ViewNabh = async ({
-  params,
   searchParams,
 }: {
-  params: { slug: string };
   searchParams?: { [key: string]: string | string[] | undefined };
 }) => {
   const id = searchParams?.id;
@@ -37,9 +35,13 @@ const ViewNabh = async ({
 
   return (
     <div className="w-full h-auto">
-      <ViewNabhBanner title={articleDetails[0].eventName} />
-      <NabBreadcrumb title={articleDetails[0].eventName} />
-      <NabhDetail article={articleDetails[0]} />
+      {articleDetails && (
+        <>
+          <ViewNabhBanner title={articleDetails[0]?.eventName} />
+          <NabBreadcrumb title={articleDetails[0]?.eventName} />
+          <NabhDetail article={articleDetails[0]} />
+        </>
+      )}
     </div>
   );
 };

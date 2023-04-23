@@ -43,9 +43,9 @@ const NabhCard = ({ article }: any) => {
         </p>
 
         <Link
-          href={`/view-NABH-check/v?id=${article.eventID}&${generateSlug(
-            article.eventName
-          )}`}
+          href={`/view-NABH-check/${article.tenantID}?id=${
+            article.eventID
+          }&${generateSlug(article.eventName)}`}
         >
           <p className="relative inline-flex items-center justify-start py-2 pl-4 pr-12 mt-5 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
             <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-textPrimary group-hover:h-full"></span>
