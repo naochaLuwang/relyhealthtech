@@ -28,9 +28,8 @@ const NabhCard = ({ article }: any) => {
         <div className="relative flex-shrink-0 w-full h-40">
           <Image
             src={`http://admin.relyhealthtech.com/gallery/event/${article.eventImage}`}
-            alt="placeholder"
+            alt="nabh"
             fill
-            style={{ objectFit: "fill" }}
           />
         </div>
       </div>
@@ -44,7 +43,7 @@ const NabhCard = ({ article }: any) => {
         </p>
 
         <Link
-          href={`view-NABH-check?id=${article.eventID}&${generateSlug(
+          href={`/view-NABH-check/v?id=${article.eventID}&${generateSlug(
             article.eventName
           )}`}
         >

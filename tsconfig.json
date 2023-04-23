@@ -23,6 +23,6 @@
       "@/*": ["./*", "../*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/BoltLoader.tsx", "components/CustomRightArrow.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/BoltLoader.tsx", "components/CustomRightArrow.tsx", "app/(user)/not-found.tsx"],
   "exclude": ["node_modules"]
 }

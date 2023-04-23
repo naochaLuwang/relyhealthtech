@@ -7,8 +7,18 @@ const nextConfig = {
     domains: [
       "relyhealthtech.com",
       "cdn.sanity.io",
+      "website.relyth.com",
       "admin.relyhealthtech.com",
     ],
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "admin.relyhealthtech.com",
+        port: "",
+        pathname: "/gallery/event/**",
+      },
+    ],
+    unoptimized: false,
   },
 };
 
