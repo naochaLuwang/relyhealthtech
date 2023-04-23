@@ -30,6 +30,7 @@ const NabhCard = ({ article }: any) => {
             src={`http://admin.relyhealthtech.com/gallery/event/${article.eventImage}`}
             alt="nabh"
             fill
+            style={{ objectFit: "fill" }}
           />
         </div>
       </div>
