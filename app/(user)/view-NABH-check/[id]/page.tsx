@@ -37,8 +37,8 @@ const ViewNabh = async ({
 
   return (
     <div className="w-full h-auto">
-      <ViewNabhBanner title={articleDetails[0]?.eventName} />
-      <NabBreadcrumb title={articleDetails[0]?.eventName} />
+      <ViewNabhBanner title={articleDetails[0].eventName} />
+      <NabBreadcrumb title={articleDetails[0].eventName} />
       <NabhDetail article={articleDetails[0]} />
     </div>
   );
