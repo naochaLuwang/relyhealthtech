@@ -53,7 +53,7 @@ const ClientsHome = ({
 
         <Tabs
           variant="unstyled"
-          size="sm"
+          size="md"
           index={activeTab}
           onChange={handleTabChange}
         >
