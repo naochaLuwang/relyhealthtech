@@ -13,7 +13,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "http",
-        hostname: "admin.relyhealthtech.com",
+        hostname: "prewebsite.relyhealthtech.com",
         port: "",
         pathname: "/gallery/event/**",
       },

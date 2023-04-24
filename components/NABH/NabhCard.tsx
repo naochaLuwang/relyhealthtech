@@ -27,10 +27,11 @@ const NabhCard = ({ article }: any) => {
       <div className="w-full ">
         <div className="relative flex-shrink-0 w-full h-40">
           <Image
-            src={`http://admin.relyhealthtech.com/gallery/event/${article.eventImage}`}
+            src={`http://prewebsite.relyhealthtech.com/gallery/event/${article.eventImage}`}
             alt="nabh"
             fill
             style={{ objectFit: "fill" }}
+            priority={true}
           />
         </div>
       </div>

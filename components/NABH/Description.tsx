@@ -10,7 +10,7 @@ const Description = ({ dataContent, eventImage }: any) => {
     <div className="flex flex-col items-center w-full h-auto space-x-5 lg:items-start lg:flex-row">
       <div className="relative flex-shrink-0 w-56 h-56">
         <Image
-          src={`http://admin.relyhealthtech.com/gallery/event/${eventImage}`}
+          src={`http://prewebsite.relyhealthtech.com/gallery/event/${eventImage}`}
           alt=""
           fill
           style={{ objectFit: "fill" }}
