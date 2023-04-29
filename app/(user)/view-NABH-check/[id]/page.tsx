@@ -21,7 +21,6 @@ const getNabhArticleDetail = async (id: any) => {
   );
 
   const details = await response.json();
-  console.log(details.responseData);
 
   return details.responseData;
 };
@@ -34,8 +33,6 @@ const ViewNabh = async ({
   searchParams?: { [key: string]: string | string[] | undefined };
 }) => {
   const { id } = params;
-
-  console.log(id);
 
   const articleDetails = await getNabhArticleDetail(id);
 

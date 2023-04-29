@@ -53,7 +53,7 @@ const ProvidedServices = () => {
               color="white"
               pt={5}
             >
-              Web Design & Development
+              Healthcare Web Design & Development
             </Text>
           </Box>
 
@@ -81,7 +81,7 @@ const ProvidedServices = () => {
               color="white"
               pt={5}
             >
-              Digital Marketing
+              Healthcare Digital Marketing
             </Text>
           </Box>
           <Box w="full" h="96" boxShadow="xl" bg="brand.900" rounded="2xl">
@@ -108,7 +108,7 @@ const ProvidedServices = () => {
               color="white"
               pt={5}
             >
-              Logo Design
+              Healthcare Logo Design
             </Text>
           </Box>
           <Box w="full" h="96" boxShadow="xl" bg="brand.900" rounded="2xl">
@@ -124,7 +124,7 @@ const ProvidedServices = () => {
               <Lottie
                 animationData={planning}
                 loop={true}
-                className="w-52 h-64 mx-auto"
+                className="h-64 mx-auto w-52"
               />
             </Box>
 
@@ -135,7 +135,7 @@ const ProvidedServices = () => {
               color="white"
               pt={5}
             >
-              App Design
+              Healthcare App Design
             </Text>
           </Box>
         </SimpleGrid>
