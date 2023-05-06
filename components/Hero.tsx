@@ -19,7 +19,7 @@ const Hero = () => {
 
         <p className="text-2xl font-semibold leading-tight lg:text-4xl">
           <span className="text-brandColor">
-            Specialized in Healthcare IT Solutons
+            Specialized in Healthcare IT Solutions
           </span>{" "}
           <br />
           for more than 5 years.

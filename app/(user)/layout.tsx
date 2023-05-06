@@ -14,8 +14,10 @@ import FooterNew from "@/components/FooterNew";
 import { Nunito } from "next/font/google";
 import { Suspense } from "react";
 import Loading from "./loading";
+import { BsWhatsapp, BsFillTelephoneFill } from "react-icons/bs";
 
 import Script from "next/script";
+import Link from "next/link";
 
 const colors = {
   brand: {
@@ -77,7 +79,25 @@ export default function RootLayout({
               </Suspense>
               {/* <Footer /> */}
               <FooterNew />
-              {/* <div className="fixed right-0 w-10 h-10 bg-primary bottom-10"></div> */}
+              <Link
+                href="https://wa.me/8638057454"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="fixed right-0 flex items-center justify-center px-2 py-2 space-x-3 overflow-hidden transition-all duration-500 ease-in-out cursor-pointer h-14 hover:w-52 group rounded-bl-md rounded-tl-3xl w-14 bg-textGreen bottom-20">
+                  <BsWhatsapp className="flex-shrink-0 w-8 h-8 text-buttonColor" />
+                  <h1 className="hidden transition-all text-buttonColor group-hover:inline-flex transition-delay-200 ">
+                    Send a message
+                  </h1>
+                </div>
+              </Link>
+
+              <div className="fixed right-0 flex items-center justify-center px-2 py-2 space-x-3 overflow-hidden transition-all duration-500 ease-in-out cursor-pointer h-14 hover:w-52 group rounded-tl-md rounded-bl-3xl w-14 bg-primary bottom-5">
+                <BsFillTelephoneFill className="flex-shrink-0 w-6 h-6q text-buttonColor" />
+                <h1 className="hidden transition-all text-buttonColor group-hover:inline-flex transition-delay-200 ">
+                  18005729323
+                </h1>
+              </div>
             </div>
           </ChakraProvider>
         </CacheProvider>
