@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Description from "./Description";
 
@@ -5,7 +7,7 @@ const NabhDetail = ({ article }: any) => {
   return (
     <>
       {article && (
-        <div className="px-4 py-10 mx-auto max-w-7xl">
+        <div onCopy={(event: React.ClipboardEvent<HTMLDivElement>) => event.preventDefault()} className="px-4 py-10 mx-auto max-w-7xl">
           <h1 className="mb-5 text-xl font-semibold lg:text-2xl text-textPrimary ">
             {article?.eventName}
           </h1>

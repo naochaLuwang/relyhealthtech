@@ -3,7 +3,7 @@ import NabBreadcrumb from "@/components/NABH/NabBreadcrumb";
 import React from "react";
 import NabhDetail from "@/components/NABH/NabhDetail";
 import { getAllNabh } from "../../nabh_checklist/page";
-// import { getAllNabh } from "../../nabh_checklist/page";
+
 
 export const metadata = {
   icons: {
