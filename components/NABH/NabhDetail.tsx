@@ -7,7 +7,7 @@ const NabhDetail = ({ article }: any) => {
   useEffect(() => {
     // define a custom handler function
     // for the contextmenu event
-    const handleContextMenu = (e) => {
+    const handleContextMenu = (e:any) => {
       // prevent the right-click menu from appearing
       e.preventDefault();
     };
