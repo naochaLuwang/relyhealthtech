@@ -17,8 +17,8 @@ const Hero = () => {
           </div>
         </Slide>
 
-        <p className="text-2xl font-semibold leading-tight lg:text-4xl">
-          <span className="text-brandColor">
+        <p className="text-2xl antialiased font-semibold leading-tight tracking-tight lg:text-4xl text-secondary">
+          <span className="antialiased text-brandColor">
             Specialized in Healthcare IT Solutions
           </span>{" "}
           <br />
