@@ -80,10 +80,7 @@ const HomeCarousal = ({ carousalImages, loadingImage }: any) => {
           ))}
         </Carousel>
       ) : (
-        // <div className="w-full h-96">
-        //   <h1>Loading....</h1>
-        // </div>
-        <Skeleton height={96} />
+        <Skeleton height={96} isLoaded={loading} fadeDuration={1} />
       )}
     </Box>
   );

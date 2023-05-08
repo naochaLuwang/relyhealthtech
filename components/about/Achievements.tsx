@@ -48,7 +48,7 @@ const Achievements = () => {
       </h1>
 
       <div className="relative flex">
-        <div className="flex flex-col space-y-7">
+        <div className="flex flex-col max-w-6xl space-y-7">
           {achievements.map((achievement) => (
             <div
               className="flex items-start mt-3 space-x-2"
