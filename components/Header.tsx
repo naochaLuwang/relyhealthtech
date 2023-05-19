@@ -1,10 +1,8 @@
 "use client";
 import {
-  Text,
   Box,
   Flex,
   IconButton,
-  Button,
   Stack,
   Collapse,
   Image,

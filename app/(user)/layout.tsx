@@ -18,6 +18,7 @@ import { BsWhatsapp, BsFillTelephoneFill } from "react-icons/bs";
 
 import Script from "next/script";
 import Link from "next/link";
+import ClientOnly from "@/components/ClientOnly";
 
 const colors = {
   brand: {
@@ -73,12 +74,18 @@ export default function RootLayout({
         <CacheProvider>
           <ChakraProvider theme={theme}>
             <div className="relative w-full h-auto">
-              <Header />
+              <ClientOnly>
+                <Header />
+              </ClientOnly>
+
               <Suspense fallback={<Loading />}>
                 <Box pt={"60px"}>{children}</Box>
               </Suspense>
               {/* <Footer /> */}
-              <FooterNew />
+              <ClientOnly>
+                <FooterNew />
+              </ClientOnly>
+
               <Link
                 href="https://wa.me/8638057454"
                 target="_blank"
