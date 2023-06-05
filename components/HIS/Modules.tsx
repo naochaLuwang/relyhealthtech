@@ -73,6 +73,7 @@ const Modules = () => {
             <ListItem>Electronic Medical Report (EMR)</ListItem>
             <ListItem>Laboratory Information System</ListItem>
             <ListItem>Radiology Information System</ListItem>
+            <ListItem>Pharmacy Information System</ListItem>
             <ListItem>OP Clinical Management</ListItem>
             <ListItem>IP Clinical Management</ListItem>
             <ListItem>Discharge Management</ListItem>
