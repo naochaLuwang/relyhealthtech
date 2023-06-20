@@ -110,7 +110,7 @@ const HeroPage = () => {
               HEALTHCARE IT
             </p>
             <div
-              className="bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-base text-xs  w-fit px-3 lg:px-4 rounded-md text-buttonColor py-2 mt-12 font-semibold  block cursor-pointer"
+              className="bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-base text-xs  w-fit px-3 lg:px-4 rounded-md text-buttonColor py-3 mt-12 font-semibold  block cursor-pointer"
               onClick={onOpenClick}
             >
               SCHEDULE A DEMO
@@ -190,7 +190,7 @@ const HeroPage = () => {
             </Modal>
           </div>
         </div>
-        <div className="relative flex-1 w-full lg:h-[28rem] h-96">
+        <div className="relative flex-1 w-full lg:h-[28rem] h-96 pr-10">
           <Image
             src={"/homeimage.png"}
             alt="Hero Image"

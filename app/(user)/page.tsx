@@ -89,8 +89,7 @@ const HomePage = async () => {
       <WhatsNew BANNER_NEW={bannerNew} />
       <Statistics />
       <Hero />
-      <HomeCarousal carousalImages={carousalImages} />
-      <HomeCarousalMobile carousalImages={carousalMobile} />
+
       <FlagShipProducts />
       <MobileApplication />
       <ClientsHome
@@ -99,6 +98,8 @@ const HomePage = async () => {
         GOVERNMENT_CLIENTS={governmentClients}
         IVF_CLIENTS={ivfClients}
       />
+      <HomeCarousal carousalImages={carousalImages} />
+      <HomeCarousalMobile carousalImages={carousalMobile} />
       <ClientTestimonial />
       <ContactHomePage />
       <VideoSection />
