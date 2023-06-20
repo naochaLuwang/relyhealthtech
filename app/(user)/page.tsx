@@ -37,6 +37,7 @@ import VideoSection from "@/components/VideoSection";
 import VideoSectionMobile from "@/components/VideoSectionMobile";
 import HomeCarousalMobile from "@/components/HomeCarousalMobile";
 import Loading from "./loading";
+import HeroPage from "@/components/HeroPage";
 const query = groq`
 *[_type=='carousalImage']{
   ...,
@@ -83,12 +84,13 @@ const HomePage = async () => {
   const ivfClients = await client.fetch(ivfclientquery);
   return (
     <Box>
-      <HomeCarousal carousalImages={carousalImages} />
-      <HomeCarousalMobile carousalImages={carousalMobile} />
+      <HeroPage />
 
       <WhatsNew BANNER_NEW={bannerNew} />
       <Statistics />
       <Hero />
+      <HomeCarousal carousalImages={carousalImages} />
+      <HomeCarousalMobile carousalImages={carousalMobile} />
       <FlagShipProducts />
       <MobileApplication />
       <ClientsHome

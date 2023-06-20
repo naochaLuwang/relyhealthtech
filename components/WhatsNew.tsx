@@ -4,7 +4,7 @@ import VerticalCarousel from "./VerticalCarousal";
 
 const WhatsNew = ({ BANNER_NEW }: any) => {
   return (
-    <div className="flex w-full h-12 lg:h-10 border-2 border-[#6ebf4b]">
+    <div className="flex w-full h-12 lg:h-10">
       <div className="flex items-center justify-start relative bg-[#6ebf4b] lg:w-56 w-fit pr-3 lg:pr-0  border-right ">
         <h1 className="px-4 py-1 font-semibold text-buttonColor">
           What&apos;s New
@@ -21,3 +21,5 @@ const WhatsNew = ({ BANNER_NEW }: any) => {
 export default WhatsNew;
 
 export const revalidate = 60;
+
+//  border-[#6ebf4b]

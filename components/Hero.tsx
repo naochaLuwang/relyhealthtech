@@ -2,6 +2,43 @@
 import Image from "next/image";
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
+import { BiChevronRightCircle } from "react-icons/bi";
+
+const data = [
+  {
+    title: "Over 5 years of experience in the healthcare domain",
+  },
+  {
+    title:
+      "Specializing in web/browser-based solutions for hospitals, medical colleges, clinics, diagnostic centers, and pharmacy chains",
+  },
+  {
+    title: "Cloud-based hosting for flexible and accessible user experience",
+  },
+  {
+    title: "Strong presence in cities across India",
+  },
+  {
+    title:
+      "Successfully implemented solutions in hospitals ranging from 20 to 1000 beds",
+  },
+  {
+    title:
+      "Innovative add-on modules including Electronic Medical Records, Patient Portal, SMS/Email Connectivity, Online Lab Results, and Mobile Application for Doctors & Patients",
+  },
+  {
+    title:
+      "On-premises and cloud solutions available to meet diverse organizational needs",
+  },
+  {
+    title:
+      "Committed to staying updated with the latest technological advancements",
+  },
+  {
+    title:
+      "Reputation for excellent service and trusted reliability in the healthcare industry",
+  },
+];
 
 const Hero = () => {
   return (
@@ -25,7 +62,15 @@ const Hero = () => {
           for more than 5 years.
         </p>
 
-        <Fade direction="up" triggerOnce>
+        {data.map((item, index) => (
+          <Fade direction="up" triggerOnce key={index}>
+            <div className="flex items-start mt-4 space-x-3 leading-2">
+              <BiChevronRightCircle className="flex-shrink-0 w-6 h-6 text-greenBorder" />
+              <p className="font-medium leading-0">{item.title}</p>
+            </div>
+          </Fade>
+        ))}
+        {/* <Fade direction="up" triggerOnce>
           <p className="mt-5 text-sm leading-relaxed lg:text-base">
             We are a leading company with more than 5 years of experience in the
             healthcare domain, specializing in providing management information
@@ -58,7 +103,7 @@ const Hero = () => {
             service have earned us a reputation as a trusted and reliable
             provider of HIS solutions in the healthcare industry.
           </p>
-        </Fade>
+        </Fade> */}
       </div>
 
       <Fade direction="right" triggerOnce>

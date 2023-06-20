@@ -60,7 +60,7 @@ const ClientTestimonial = () => {
         customLeftArrow={<CustomLeftArrow />}
         removeArrowOnDeviceType="mobile"
       >
-        <div className="lg:max-w-6xl mx-auto py-20  lg:h-96 h-[40rem] bg-buttonColor bg-opacity-100 lg:bg-opacity-100 rounded-xl lg:rounded-xl lg:shadow-xl shadow-lg  justify-center   space-y-5 flex flex-col lg:py-8 px-8 ">
+        <div className="lg:max-w-6xl mx-auto py-20  lg:h-96 h-[40rem] bg-buttonColor bg-opacity-100 lg:bg-opacity-100 rounded-xl lg:rounded-xl lg:shadow-xl shadow-lg  justify-center mb-10  space-y-5 flex flex-col lg:py-8 px-8 ">
           <div className="flex flex-col items-center justify-between space-y-8 lg:flex-row lg:space-y-0">
             <div className="lg:pl-16">
               <div className="relative ">
