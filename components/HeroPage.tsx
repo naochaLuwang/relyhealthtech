@@ -82,8 +82,8 @@ const HeroPage = () => {
   };
   return (
     <div className="w-full h-auto py-20 lg:py-10">
-      <div className="grid w-full h-auto grid-cols-1 mx-auto lg:grid-cols-2 max-w-7xl">
-        <div className="relative w-full h-auto ">
+      <div className="grid w-full h-auto grid-cols-1 gap-10 mx-auto lg:grid-cols-3 max-w-7xl">
+        <div className="w-full h-auto ">
           {/* <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ const HeroPage = () => {
             />
           </svg> */}
 
-          <div className="flex flex-col justify-center w-full h-full pl-4 tracking-wider lg:pl-20">
+          <div className="flex flex-col justify-center w-full h-full pl-4 tracking-wider lg:pl-12">
             <p className="text-4xl font-extrabold tracking-wider lg:text-7xl text-textPrimary ">
               YOUR
             </p>
@@ -190,7 +190,8 @@ const HeroPage = () => {
             </Modal>
           </div>
         </div>
-        <div className="relative flex-1 w-full lg:h-[28rem] h-96 pr-10">
+
+        <div className="relative col-span-2 w-full lg:h-[32rem] h-96 pr-10 ">
           <Image
             src={"/homeimage.png"}
             alt="Hero Image"

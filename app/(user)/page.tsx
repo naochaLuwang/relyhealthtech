@@ -38,16 +38,7 @@ import VideoSectionMobile from "@/components/VideoSectionMobile";
 import HomeCarousalMobile from "@/components/HomeCarousalMobile";
 import Loading from "./loading";
 import HeroPage from "@/components/HeroPage";
-const query = groq`
-*[_type=='carousalImage']{
-  ...,
-} | order(_createdAt asc)
-`;
-const carousalQuery = groq`
-*[_type=='carousalMobile']{
-  ...,
-} | order(_createdAt asc)
-`;
+
 const clientquery = groq`
 *[_type=='clients' && clientCategory->name == "Private" ]{
   ...,
@@ -75,8 +66,6 @@ const ivfclientquery = groq`
 } | order(_createdAt asc)
 `;
 const HomePage = async () => {
-  const carousalImages = await client.fetch(query);
-  const carousalMobile = await client.fetch(carousalQuery);
   const privateclients = await client.fetch(clientquery);
   const bannerNew = await client.fetch(bannerquery);
   const diagnosticClients = await client.fetch(diagnosticclientquery);
@@ -86,7 +75,7 @@ const HomePage = async () => {
     <Box>
       <HeroPage />
 
-      <WhatsNew BANNER_NEW={bannerNew} />
+      {/* <WhatsNew BANNER_NEW={bannerNew} /> */}
       <Statistics />
       <Hero />
 
@@ -98,8 +87,7 @@ const HomePage = async () => {
         GOVERNMENT_CLIENTS={governmentClients}
         IVF_CLIENTS={ivfClients}
       />
-      <HomeCarousal carousalImages={carousalImages} />
-      <HomeCarousalMobile carousalImages={carousalMobile} />
+
       <ClientTestimonial />
       <ContactHomePage />
       <VideoSection />
