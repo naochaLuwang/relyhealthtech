@@ -28,8 +28,6 @@ function StatsCard(props: StatsCardProps) {
       border={{ base: "1px solid", lg: "0px" }}
       borderColor={"brand.900"}
       rounded={{ base: "lg", lg: "none" }}
-      maxW={{ xl: "7xl" }}
-      mx={"auto"}
     >
       <Flex justifyContent={"start"}>
         <Box
