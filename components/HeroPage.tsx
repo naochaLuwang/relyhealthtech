@@ -96,7 +96,7 @@ const HeroPage = () => {
             />
           </svg> */}
 
-          <div className="flex flex-col justify-center w-full h-full pl-4 tracking-wider lg:pl-12">
+          <div className="flex flex-col justify-center w-full h-full pl-6 tracking-wider lg:pl-10">
             <p className="text-4xl font-extrabold tracking-wider lg:text-7xl text-textPrimary ">
               YOUR
             </p>
@@ -191,7 +191,7 @@ const HeroPage = () => {
           </div>
         </div>
 
-        <div className="relative col-span-2 w-full lg:h-[32rem] h-96 pr-10 ">
+        <div className="relative col-span-2 w-full lg:h-[30rem] h-96 pr-10 ">
           <Image
             src={"/homeimage.png"}
             alt="Hero Image"
