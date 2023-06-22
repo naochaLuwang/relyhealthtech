@@ -38,6 +38,7 @@ import VideoSectionMobile from "@/components/VideoSectionMobile";
 import HomeCarousalMobile from "@/components/HomeCarousalMobile";
 import Loading from "./loading";
 import HeroPage from "@/components/HeroPage";
+import HeroMobile from "@/components/HeroMobilePage";
 
 const clientquery = groq`
 *[_type=='clients' && clientCategory->name == "Private" ]{
@@ -74,7 +75,7 @@ const HomePage = async () => {
   return (
     <Box>
       <HeroPage />
-
+      <HeroMobile />
       {/* <WhatsNew BANNER_NEW={bannerNew} /> */}
       <Statistics />
       <Hero />

@@ -19,7 +19,7 @@ import {
 import Image from "next/image";
 import { useState } from "react";
 
-const HeroPage = () => {
+const HeroMobile = () => {
   const { isOpen, onToggle, onOpen, onClose } = useDisclosure();
   const [open, setOpen] = useState(false);
   const [formData, setFormData] = useState<Message>({
@@ -81,8 +81,8 @@ const HeroPage = () => {
     setOpen(false);
   };
   return (
-    <div className="relative w-full h-[36rem] hidden lg:block">
-      <Image src="/pcview.jpg" alt="" fill />
+    <div className="relative w-full h-[36rem] lg:hidden block">
+      <Image src="/herom.jpg" alt="" fill />
 
       {/* <div className="grid w-full h-auto grid-cols-1 gap-10 mx-auto lg:grid-cols-3 max-w-7xl">
         <div className="w-full h-auto ">
@@ -102,7 +102,7 @@ const HeroPage = () => {
               HEALTHCARE IT
             </p> */}
       <div
-        className="absolute bottom-16 h-fit left-32  bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-base text-xs  w-fit px-3 lg:px-4 rounded-md text-buttonColor py-3  font-semibold  block cursor-pointer"
+        className="absolute top-56 h-fit left-12  bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-base text-xs  w-fit px-3 lg:px-4 rounded-md text-buttonColor py-3  font-semibold  block cursor-pointer"
         onClick={onOpenClick}
       >
         SCHEDULE A DEMO
@@ -197,4 +197,4 @@ const HeroPage = () => {
   );
 };
 
-export default HeroPage;
+export default HeroMobile;
