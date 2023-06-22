@@ -83,7 +83,7 @@ const HeroPage = () => {
   return (
     <div className="relative w-full lg:h-[36rem] h-[35rem]">
       <Image src="/pcview.jpg" alt="" fill className="hidden lg:block" />
-      <Image src="/mobileView.jpg" alt="" fill className="block lg:hidden" />
+      <Image src="/heromobile.jpg" alt="" fill className="block lg:hidden" />
       {/* <div className="grid w-full h-auto grid-cols-1 gap-10 mx-auto lg:grid-cols-3 max-w-7xl">
         <div className="w-full h-auto ">
           
