@@ -81,8 +81,9 @@ const HeroPage = () => {
     setOpen(false);
   };
   return (
-    <div className="relative w-full h-[36rem]">
-      <Image src="/pcview.jpg" alt="" fill />
+    <div className="relative w-full lg:h-[36rem] h-[35rem]">
+      <Image src="/pcview.jpg" alt="" fill className="hidden lg:block" />
+      <Image src="/mobileView.jpg" alt="" fill className="block lg:hidden" />
       {/* <div className="grid w-full h-auto grid-cols-1 gap-10 mx-auto lg:grid-cols-3 max-w-7xl">
         <div className="w-full h-auto ">
           
@@ -101,7 +102,7 @@ const HeroPage = () => {
               HEALTHCARE IT
             </p> */}
       <div
-        className="absolute bottom-12 left-32 bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-base text-xs  w-fit px-3 lg:px-4 rounded-md text-buttonColor py-3 mt-12 font-semibold  block cursor-pointer"
+        className="absolute lg:bottom-16 lg:left-32 top-44 left-12 bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-base text-xs  w-fit px-3 lg:px-4 rounded-md text-buttonColor py-3 mt-12 font-semibold  block cursor-pointer"
         onClick={onOpenClick}
       >
         SCHEDULE A DEMO
