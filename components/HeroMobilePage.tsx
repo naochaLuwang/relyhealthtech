@@ -82,7 +82,7 @@ const HeroMobile = () => {
   };
   return (
     <div className="relative w-full h-[36rem] lg:hidden block">
-      <Image src="/herom.jpg" alt="" fill />
+      <Image src="/heromob.jpg" alt="" fill style={{ objectFit: "contain" }} />
 
       {/* <div className="grid w-full h-auto grid-cols-1 gap-10 mx-auto lg:grid-cols-3 max-w-7xl">
         <div className="w-full h-auto ">
@@ -101,11 +101,13 @@ const HeroMobile = () => {
             <p className="text-4xl font-extrabold tracking-widest text-textGreen">
               HEALTHCARE IT
             </p> */}
-      <div
-        className="absolute top-56 h-fit left-12  bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-base text-xs  w-fit px-3 lg:px-4 rounded-md text-buttonColor py-3  font-semibold  block cursor-pointer"
-        onClick={onOpenClick}
-      >
-        SCHEDULE A DEMO
+      <div className="absolute inset-x-0 flex justify-center transform -translate-y-1/2 top-56">
+        <div
+          className="text-center bg-gradient-to-b from-[#297d05] to-[#6ebf4b] hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-base text-xs px-3 lg:px-4 rounded-md text-buttonColor py-3 font-semibold block cursor-pointer"
+          onClick={onOpenClick}
+        >
+          SCHEDULE A DEMO
+        </div>
       </div>
 
       <Modal
