@@ -175,7 +175,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       <Box
         role={"group"}
         display={"block"}
-        p={2}
+        p={1}
         rounded={"md"}
         _hover={{ bg: useColorModeValue("purple.50", "gray.900") }}
       >

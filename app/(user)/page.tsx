@@ -39,6 +39,7 @@ import HomeCarousalMobile from "@/components/HomeCarousalMobile";
 import Loading from "./loading";
 import HeroPage from "@/components/HeroPage";
 import HeroMobile from "@/components/HeroMobilePage";
+import Counter from "@/components/Home/Counter";
 
 const clientquery = groq`
 *[_type=='clients' && clientCategory->name == "Private" ]{
@@ -78,6 +79,7 @@ const HomePage = async () => {
       <HeroMobile />
       {/* <WhatsNew BANNER_NEW={bannerNew} /> */}
       <Statistics />
+      {/* <Counter /> */}
       <Hero />
 
       <FlagShipProducts />

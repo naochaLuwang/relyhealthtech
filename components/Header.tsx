@@ -101,17 +101,25 @@ const Header = () => {
   };
 
   return (
-    <Box width="100%" as="header" position={"fixed"} zIndex={50}>
+    <Box
+      width="100%"
+      as="header"
+      position={"fixed"}
+      zIndex={50}
+      borderBottom={1}
+      borderStyle={"solid"}
+      borderColor={useColorModeValue("gray.200", "gray.900")}
+      bg={useColorModeValue("white", "gray.800")}
+      color={useColorModeValue("gray.600", "white")}
+    >
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
-        borderBottom={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
+        width={"100%"}
       >
         <Flex
           flex={{ base: 1, md: "auto" }}
@@ -140,7 +148,7 @@ const Header = () => {
             Logo
           </Text> */}
 
-          <Box>
+          <Box ml={{ base: 0, lg: 20 }}>
             <Link href="/">
               <Image src="/logo.jpg" alt="logo" h={10} />
             </Link>
@@ -157,6 +165,7 @@ const Header = () => {
           direction={"row"}
           spacing={6}
           ml={6}
+          mr={10}
         >
           <button
             onClick={onOpenClick}

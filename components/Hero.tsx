@@ -22,22 +22,22 @@ const data = [
     title:
       "Successfully implemented solutions in hospitals ranging from 20 to 1000 beds",
   },
-  {
-    title:
-      "Innovative add-on modules including Electronic Medical Records, Patient Portal, SMS/Email Connectivity, Online Lab Results, and Mobile Application for Doctors & Patients",
-  },
-  {
-    title:
-      "On-premises and cloud solutions available to meet diverse organizational needs",
-  },
-  {
-    title:
-      "Committed to staying updated with the latest technological advancements",
-  },
-  {
-    title:
-      "Reputation for excellent service and trusted reliability in the healthcare industry",
-  },
+  // {
+  //   title:
+  //     "Innovative add-on modules including Electronic Medical Records, Patient Portal, SMS/Email Connectivity, Online Lab Results, and Mobile Application for Doctors & Patients",
+  // },
+  // {
+  //   title:
+  //     "On-premises and cloud solutions available to meet diverse organizational needs",
+  // },
+  // {
+  //   title:
+  //     "Committed to staying updated with the latest technological advancements",
+  // },
+  // {
+  //   title:
+  //     "Reputation for excellent service and trusted reliability in the healthcare industry",
+  // },
 ];
 
 const Hero = () => {
@@ -104,6 +104,10 @@ const Hero = () => {
             provider of HIS solutions in the healthcare industry.
           </p>
         </Fade> */}
+
+        <div className="w-fit py-2.5 px-4 border-2 mt-10 border-card rounded-full font-medium text-textPrimary hover:bg-card hover:text-buttonColor transition-all duration-150 ease-in-out">
+          Explore Rely Healthcare Technology
+        </div>
       </div>
 
       <Fade direction="right" triggerOnce>

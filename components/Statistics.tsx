@@ -77,7 +77,7 @@ function StatsCard(props: StatsCardProps) {
 
 const Statistics = () => {
   return (
-    <Box maxW="full" mx={"auto"} pt={2} px={{ base: 4, md: 12 }} mt={5}>
+    <Box maxW="7xl" mx={"auto"} pt={5} px={{ base: 4, md: 0 }} mt={10}>
       <SimpleGrid
         columns={{ base: 2, md: 5 }}
         spacing={{ base: 2, lg: 0 }}

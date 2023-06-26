@@ -52,16 +52,16 @@ const FlagshipItems: Array<FlagshipProduct> = [
 
 const FlagShipProducts = () => {
   return (
-    <Box maxW="8xl" mx="auto" py={{ lg: 16, base: 10 }} px={10}>
+    <Box maxW="7xl" mx="auto" py={{ lg: 0, base: 10 }} px={{ lg: 0, base: 10 }}>
       <Fade direction="left">
-        <Flex align={"center"} gap={2} pl={{ lg: 5, base: 0 }}>
+        <Flex align={"center"} gap={2}>
           <Box w={12} h={1} bg="brand.900" rounded={"2xl"}></Box>
           <Text color="brand.900">WHAT WE DO</Text>
         </Flex>
       </Fade>
 
       <Fade direction="down">
-        <Heading pl={{ lg: 6 }} fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}>
+        <Heading fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}>
           <Text color={"black"}>OUR FLAGSHIP PRODUCTS</Text>
         </Heading>
       </Fade>
