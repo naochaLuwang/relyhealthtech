@@ -150,7 +150,7 @@ const Header = () => {
 
           <Box ml={{ base: 0, lg: 20 }}>
             <Link href="/">
-              <Image src="/logo.jpg" alt="logo" h={10} />
+              <Image src="/logo.jpg" alt="logo" h={16} />
             </Link>
           </Box>
 

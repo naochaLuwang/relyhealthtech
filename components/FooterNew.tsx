@@ -14,7 +14,7 @@ const FooterNew = () => {
   return (
     <div className="flex flex-col justify-between w-full h-auto px-8 pt-10 pb-0 space-y-5 bg-textLight bg-opacity-30 lg:px-14">
       <div className="flex flex-col justify-between w-full lg:flex-row">
-        <div className="flex-col hidden lg:flex lg:space-y-5">
+        <div className="flex flex-col space-y-5">
           <div>
             <h1 className="text-2xl font-semibold text-brand">OUR SOLUTIONS</h1>
           </div>
@@ -22,7 +22,7 @@ const FooterNew = () => {
           <div className="flex flex-col space-y-3 text-base text-black">
             <Link href="/products/rely_his">
               <div className="flex items-center group">
-                <ChevronRightIcon className="w-6 h-6" />
+                <ChevronRightIcon className="hidden w-6 h-6 lg:inline-flex" />
                 <h1 className="transition-all duration-100 ease-in-out group-hover:font-semibold text-secondary">
                   Rely HIS(Hospital Information System)
                 </h1>
@@ -30,7 +30,7 @@ const FooterNew = () => {
             </Link>
             <Link href="/products/rely_lis">
               <div className="flex items-center group">
-                <ChevronRightIcon className="w-6 h-6" />
+                <ChevronRightIcon className="hidden w-6 h-6 lg:inline-flex" />
                 <h1 className="transition-all duration-100 ease-in-out group-hover:font-semibold text-secondary">
                   Rely LIS(Laboratory Information System)
                 </h1>
@@ -38,7 +38,7 @@ const FooterNew = () => {
             </Link>
             <Link href="/products/rely_hrm">
               <div className="flex items-center group">
-                <ChevronRightIcon className="w-6 h-6" />
+                <ChevronRightIcon className="hidden w-6 h-6 lg:inline-flex" />
                 <h1 className="transition-all duration-100 ease-in-out group-hover:font-semibold text-secondary">
                   Rely HRM(HR & Payroll Management System)
                 </h1>
@@ -46,7 +46,7 @@ const FooterNew = () => {
             </Link>
             <Link href="/products/rely_ris">
               <div className="flex items-center group">
-                <ChevronRightIcon className="w-6 h-6" />
+                <ChevronRightIcon className="hidden w-6 h-6 lg:inline-flex" />
                 <h1 className="transition-all duration-100 ease-in-out group-hover:font-semibold text-secondary">
                   Rely RIS(Radiology Information System)
                 </h1>
@@ -54,7 +54,7 @@ const FooterNew = () => {
             </Link>
             <Link href="/products/rely_pis">
               <div className="flex items-center group">
-                <ChevronRightIcon className="w-6 h-6" />
+                <ChevronRightIcon className="hidden w-6 h-6 lg:inline-flex" />
                 <h1 className="transition-all duration-100 ease-in-out group-hover:font-semibold text-secondary">
                   Rely PIS(Pharmacy Information System)
                 </h1>
@@ -62,7 +62,7 @@ const FooterNew = () => {
             </Link>
             <Link href="/products/rely_ais">
               <div className="flex items-center group">
-                <ChevronRightIcon className="w-6 h-6" />
+                <ChevronRightIcon className="hidden w-6 h-6 lg:inline-flex" />
                 <h1 className="transition-all duration-100 ease-in-out group-hover:font-semibold text-secondary">
                   Rely AIS(Asset Information System)
                 </h1>
@@ -70,7 +70,7 @@ const FooterNew = () => {
             </Link>
             <Link href="/products/rely_ivf">
               <div className="flex items-center group">
-                <ChevronRightIcon className="w-6 h-6" />
+                <ChevronRightIcon className="hidden w-6 h-6 lg:inline-flex" />
                 <h1 className="transition-all duration-100 ease-in-out group-hover:font-semibold text-secondary">
                   Rely IVF
                 </h1>
@@ -78,7 +78,7 @@ const FooterNew = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col space-y-3 lg:space-y-5 lg:mt-0">
+        <div className="flex flex-col mt-5 space-y-3 lg:space-y-5 lg:mt-0">
           <div>
             <h1 className="text-xl font-semibold text-brand lg:text-2xl">
               QUICK LINKS

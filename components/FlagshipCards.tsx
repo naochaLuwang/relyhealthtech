@@ -35,7 +35,7 @@ export default function FlagshipCards({
       style={{ boxShadow: "5px 2px 3px rgba(0,0,0,0.2)" }}
     >
       <Image src={icon} alt="service" width={100} height={100} />
-      <h1 className="mt-3 text-xl font-semibold tracking-wider lg:text-2xl">
+      <h1 className="mt-3 text-xl font-semibold tracking-wider lg:text-2xl text-textPrimary">
         {title}
       </h1>
       <p className="h-20 mt-3 mb-5 overflow-hidden text-sm text-neutral-600 line-clamp-3">
