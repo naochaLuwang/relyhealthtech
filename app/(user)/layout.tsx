@@ -79,7 +79,7 @@ export default function RootLayout({
               </ClientOnly>
 
               <Suspense fallback={<Loading />}>
-                <Box pt={"60px"}>{children}</Box>
+                <Box pt={"28"}>{children}</Box>
               </Suspense>
               {/* <Footer /> */}
               <ClientOnly>
