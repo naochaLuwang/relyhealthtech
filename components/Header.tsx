@@ -3,18 +3,10 @@ import {
   Box,
   Flex,
   IconButton,
-  Stack,
   Collapse,
   Image,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
-  useColorMode,
-  SimpleGrid,
-  FormControl,
-  FormLabel,
-  Input,
-  Textarea,
 } from "@chakra-ui/react";
 
 import {
@@ -106,9 +98,9 @@ const Header = () => {
       as="header"
       position={"fixed"}
       zIndex={50}
-      borderBottom={1}
-      borderStyle={"solid"}
-      borderColor={useColorModeValue("gray.200", "gray.900")}
+      // borderBottom={1}
+      // borderStyle={"solid"}
+      // borderColor={useColorModeValue("gray.200", "gray.900")}
       bg={useColorModeValue("white", "gray.800")}
       color={useColorModeValue("gray.600", "white")}
     >
@@ -122,7 +114,26 @@ const Header = () => {
         width={"100%"}
       >
         <Flex
-          flex={{ base: 1, md: "auto" }}
+          flex={{ base: 1 }}
+          justify={{ base: "start", md: "space-between" }}
+          align={"center"}
+        >
+          <Box ml={{ base: 0, lg: 20 }}>
+            <Link href="/">
+              <Image src="/logo.jpg" alt="logo" h={{ lg: "20", base: "14" }} />
+            </Link>
+          </Box>
+
+          <Flex
+            display={{ base: "none", md: "flex" }}
+            ml={10}
+            mr={{ lg: "12" }}
+          >
+            <DesktopNav />
+          </Flex>
+        </Flex>
+        <Flex
+          flex={{ base: 0, md: "auto" }}
           ml={{ base: -2 }}
           display={{ base: "flex", md: "none" }}
         >
@@ -135,118 +146,6 @@ const Header = () => {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex
-          flex={{ base: 1 }}
-          justify={{ base: "center", md: "space-between" }}
-          align={"center"}
-        >
-          {/* <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          >
-            Logo
-          </Text> */}
-
-          <Box ml={{ base: 0, lg: 20 }}>
-            <Link href="/">
-              <Image src="/logo.jpg" alt="logo" h={"24"} />
-            </Link>
-          </Box>
-
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            <DesktopNav />
-          </Flex>
-        </Flex>
-
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-          ml={6}
-          mr={10}
-        >
-          <button
-            onClick={onOpenClick}
-            className="bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-sm text-xs lg:w-36 w-fit px-3 lg:px-0 rounded-md text-buttonColor lg:py-2 py-1 font-semibold  block "
-          >
-            BOOK A DEMO
-          </button>
-        </Stack>
-
-        <Modal
-          isOpen={open}
-          onClose={onCloseClick}
-          isCentered
-          size={{ base: "sm", lg: "4xl" }}
-        >
-          <ModalOverlay>
-            <ModalContent>
-              <ModalHeader px={10}>Book a Demo</ModalHeader>
-              <ModalCloseButton />
-              <ModalBody px={10}>
-                <form onSubmit={handleSubmit}>
-                  <SimpleGrid w="full" columns={{ base: 1, lg: 2 }} gap={5}>
-                    <FormControl isRequired>
-                      <FormLabel>First Name</FormLabel>
-                      <Input
-                        type={"text"}
-                        name="firstName"
-                        onChange={handleInputChange}
-                        value={formData.firstName}
-                      />
-                    </FormControl>
-                    <FormControl>
-                      <FormLabel>Last Name</FormLabel>
-                      <Input
-                        type={"text"}
-                        name="lastName"
-                        onChange={handleInputChange}
-                        value={formData.lastName}
-                      />
-                    </FormControl>
-                    <FormControl>
-                      <FormLabel>Email</FormLabel>
-                      <Input
-                        type={"email"}
-                        name="email"
-                        onChange={handleInputChange}
-                        value={formData.email}
-                      />
-                    </FormControl>
-                    <FormControl isRequired>
-                      <FormLabel>Mobile No.</FormLabel>
-                      <Input
-                        type={"text"}
-                        name="phone"
-                        onChange={handleInputChange}
-                        value={formData.phone}
-                        rounded="lg"
-                        maxLength={15}
-                      />
-                    </FormControl>
-                  </SimpleGrid>
-                  <FormControl isRequired mt="5">
-                    <FormLabel>Message</FormLabel>
-                    <Textarea
-                      noOfLines={3}
-                      name="message"
-                      onChange={handleInputChange}
-                      value={formData.message}
-                    ></Textarea>
-                  </FormControl>
-                  <button
-                    className="w-full px-4 py-2 mt-5 mb-10 font-semibold rounded-md lg:w-fit bg-whatsNew text-buttonColor"
-                    type="submit"
-                  >
-                    {loading ? "Submitting..." : "Submit"}
-                  </button>
-                </form>
-              </ModalBody>
-            </ModalContent>
-          </ModalOverlay>
-        </Modal>
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>

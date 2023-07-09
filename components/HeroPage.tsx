@@ -81,26 +81,9 @@ const HeroPage = () => {
     setOpen(false);
   };
   return (
-    <div className="relative w-full h-[36rem] hidden lg:block">
-      <Image src="/pcview.jpg" alt="" fill />
+    <div className="relative w-full h-[32rem] hidden lg:block">
+      <Image src="/pcviewnew.jpeg" alt="" fill />
 
-      {/* <div className="grid w-full h-auto grid-cols-1 gap-10 mx-auto lg:grid-cols-3 max-w-7xl">
-        <div className="w-full h-auto ">
-          
-
-          <div className="flex flex-col justify-center w-full h-full pl-6 tracking-wider lg:pl-10">
-            <p className="text-4xl font-extrabold tracking-wider lg:text-7xl text-textPrimary ">
-              YOUR
-            </p>
-            <p className="text-4xl font-extrabold tracking-widest text-textGreen">
-              ONE-STOP
-            </p>
-            <p className="text-lg font-extrabold tracking-widest text-textPrimary">
-              SOLUTION & PARTNER FOR
-            </p>
-            <p className="text-4xl font-extrabold tracking-widest text-textGreen">
-              HEALTHCARE IT
-            </p> */}
       <div
         className="absolute bottom-16 h-fit left-32  bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-base text-xs  w-fit px-3 lg:px-4 rounded-md text-buttonColor py-3  font-semibold  block cursor-pointer"
         onClick={onOpenClick}
@@ -155,7 +138,8 @@ const HeroPage = () => {
                       name="phone"
                       onChange={handleInputChange}
                       value={formData.phone}
-                      rounded="lg"
+                      variant="outline"
+                      colorScheme={"cyan"}
                       maxLength={15}
                     />
                   </FormControl>
@@ -170,7 +154,7 @@ const HeroPage = () => {
                   ></Textarea>
                 </FormControl>
                 <button
-                  className="w-full px-4 py-2 mt-5 mb-10 font-semibold rounded-md lg:w-fit bg-whatsNew text-buttonColor"
+                  className="w-full px-4 py-2 mt-5 mb-10 font-semibold rounded-md lg:w-fit bg-primary text-buttonColor"
                   type="submit"
                 >
                   {loading ? "Submitting..." : "Submit"}
@@ -180,19 +164,6 @@ const HeroPage = () => {
           </ModalContent>
         </ModalOverlay>
       </Modal>
-      {/* </div>
-        </div>
-
-        <div className="relative col-span-2 w-full lg:h-[30rem] h-96 pr-10 ">
-          <Image
-            src={"/homeimage.png"}
-            alt="Hero Image"
-            
-            fill
-            style={{ objectFit: "fill" }}
-          />
-        </div>
-      </div> */}
     </div>
   );
 };

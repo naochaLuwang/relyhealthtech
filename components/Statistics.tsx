@@ -114,7 +114,7 @@ const Statistics = () => {
           title={"User Per Month"}
           stat={"275000+"}
           icon={"user.png"}
-          bgc={"stats.500"}
+          bgc={"stats.900"}
         />
       </SimpleGrid>
     </Box>

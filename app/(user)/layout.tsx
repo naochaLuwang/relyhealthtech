@@ -30,7 +30,7 @@ const colors = {
     400: "#25D366",
   },
   stats: {
-    900: "#110ab1",
+    900: "#454545",
     800: "#78b8ae",
     700: "#669ebb",
     600: "#e5ae35",
@@ -79,7 +79,7 @@ export default function RootLayout({
               </ClientOnly>
 
               <Suspense fallback={<Loading />}>
-                <Box pt={"28"}>{children}</Box>
+                <Box pt={"32"}>{children}</Box>
               </Suspense>
               {/* <Footer /> */}
               <ClientOnly>
