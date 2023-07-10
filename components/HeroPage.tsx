@@ -82,7 +82,7 @@ const HeroPage = () => {
   };
   return (
     <div className="relative w-full h-[32rem] hidden lg:block">
-      <Image src="/pcviewnew.jpeg" alt="" fill />
+      <Image src="/pcview2.jpg" alt="" fill />
 
       <div
         className="absolute bottom-16 h-fit left-32  bg-gradient-to-b from-[#297d05] to-[#6ebf4b]  hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-base text-xs  w-fit px-3 lg:px-4 rounded-md text-buttonColor py-3  font-semibold  block cursor-pointer"

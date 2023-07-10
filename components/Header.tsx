@@ -120,7 +120,11 @@ const Header = () => {
         >
           <Box ml={{ base: 0, lg: 20 }}>
             <Link href="/">
-              <Image src="/logo.jpg" alt="logo" h={{ lg: "20", base: "14" }} />
+              <Image
+                src="/relylogonew.svg"
+                alt="logo"
+                h={{ lg: "24", base: "14" }}
+              />
             </Link>
           </Box>
 

@@ -82,7 +82,7 @@ const HeroMobile = () => {
   };
   return (
     <div className="relative w-full h-[36rem] lg:hidden block">
-      <Image src="/heromob.jpg" alt="" fill style={{ objectFit: "contain" }} />
+      <Image src="/mobile2.jpg" alt="" fill style={{ objectFit: "contain" }} />
 
       {/* <div className="grid w-full h-auto grid-cols-1 gap-10 mx-auto lg:grid-cols-3 max-w-7xl">
         <div className="w-full h-auto ">
