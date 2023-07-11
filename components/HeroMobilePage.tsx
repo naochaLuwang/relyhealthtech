@@ -81,7 +81,7 @@ const HeroMobile = () => {
     setOpen(false);
   };
   return (
-    <div className="relative block w-full h-[40rem] lg:hidden">
+    <div className="relative block w-full h-[42rem] lg:hidden">
       <Image src="/mobile2.jpg" alt="" fill style={{ objectFit: "cover" }} />
 
       {/* <div className="grid w-full h-auto grid-cols-1 gap-10 mx-auto lg:grid-cols-3 max-w-7xl">
@@ -101,7 +101,7 @@ const HeroMobile = () => {
             <p className="text-4xl font-extrabold tracking-widest text-textGreen">
               HEALTHCARE IT
             </p> */}
-      <div className="absolute inset-x-0 flex justify-center transform -translate-y-1/2 top-64">
+      <div className="absolute inset-x-0 flex justify-center transform -translate-y-1/2 top-72">
         <div
           className="text-center bg-gradient-to-b from-[#297d05] to-[#6ebf4b] hover:from-[#6ebf4b] hover:to-[#297d05] transition-all duration-200 ease-in-out lg:text-base text-xs px-3 lg:px-4 rounded-md text-buttonColor py-3 font-semibold block cursor-pointer"
           onClick={onOpenClick}
